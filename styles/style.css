@@ -4,9 +4,6 @@
 
 body, main, header, footer {
     box-shadow: 1px 6px 9px rgb(0 0 0 / 44%);
-    
-    
-
 }
 
 body {
@@ -38,8 +35,9 @@ header img {
     
 }
 ul {
-    /* list-style-position: inside */
+   
     line-height: 1.5em;
+    border-bottom: 1px solid black;
 }
 header h1 {
 
@@ -53,6 +51,9 @@ header h1 {
 }
 h2 {
     text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin: auto;
     
 }
 
@@ -60,7 +61,6 @@ h2 {
 
 main {
 
-    /* text-align: center; */
     background-color: white;
     padding: 5px;
     margin: auto;
