@@ -1,0 +1,46 @@
+@media only screen and (min-width: 32.5em) {
+    header {
+        display: flex;
+        padding: 10px;
+        border-radius: 5px 5px 0px 0px;
+
+    }
+    h1 {
+        font-size: 2em;
+        padding: 10px;
+        margin: auto;
+    }
+    
+    h2 {
+        
+        text-align: center;
+        padding: 5px;        
+        font-size: 1.5em;
+    } 
+    
+    body {
+        max-width: 600px;
+    }
+
+    img {
+        max-width: 110px;
+    }
+    body,
+    main,
+    header,
+    footer {
+        box-shadow: 1px 6px 9px rgb(0 0 0 / 44%);
+        }
+    footer {
+        text-align: center;
+        
+
+    }
+    ul {
+
+        line-height: 1.5em;
+        border-bottom: 1px solid black;
+    }
+   
+
+}
