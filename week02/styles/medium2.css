@@ -1,0 +1,56 @@
+@media only screen and (min-width: 37.5em) {
+    body {
+        max-width: 600px;
+    }
+
+    main {
+        
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    header {
+        font-size: 1.5rem;
+        margin: 5px -28px 2px 2px;
+    }
+    header h2 {
+        font-size: 1.7rem
+    }
+
+    section {
+        padding: auto;
+        margin-right: 3px;
+    }
+
+    main h2 {
+        
+        padding: 5px;
+        font-size: 1.3rem;
+        margin-bottom: 5px
+    }
+
+    main section:nth-child(3) {
+        grid-column: span 2;
+        grid-gap: 5px;
+        
+        
+       
+    }
+    main section img:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    main img {
+        text-align: center;
+        max-width: 377px;
+    }
+
+    footer{
+        text-align: center;
+    }
+    main section p:nth-child(3) {
+        text-align: left;
+    }
+
+    
+}    

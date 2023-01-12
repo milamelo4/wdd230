@@ -10,7 +10,7 @@
     
 }
 
-body, section {
+body {
     max-width: 310px;
     margin: 2px;
     
@@ -42,7 +42,7 @@ header h2 {
 }
 
 
-p, h3, a{
+h3{
     text-align: left;
     padding: 8px;
     margin: 4px -6px;
@@ -54,7 +54,7 @@ main {
     
 }
 section {
-    margin-top: 7px;
+    margin-top: 14px;
     border: 2px solid rgba(0, 0, 0, 0.401);
     background-color: rgb(232, 231, 231);
     border-radius: 5px 5px 0 0;
@@ -67,7 +67,7 @@ main h2 {
     border-radius: 5px 5px 0 0;
     color: aliceblue;
     padding: 7px;
-    margin: -6px;
+    margin: -6.1px;
     text-shadow: 2px 7px 9px rgba(0, 0, 0, 0.503);
     
     
@@ -77,9 +77,11 @@ h3 {
     font-size: 16px;
 }
 
+
+
 section img {
    
-    margin: 10px 0px 5px -0.5px
+    margin: 10px 0px -7px -0.5px
 }
 
 footer {
