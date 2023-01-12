@@ -1,0 +1,68 @@
+:root {
+    --fonte: Verdana, Arial, Helvetica;
+    --bebas: 'Bebas Neue', cursive;
+    --lato: 'Lato', sans-serif;
+    --nunito: 'Nunito Sans',
+        sans-serif;
+}
+*{
+    font-family: var(--nunito);
+}
+
+body, section {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 10px;
+    background-color: dodgerblue;
+    color: aliceblue;
+    margin-bottom: 18px;
+    
+    
+    
+}
+footer {
+    padding: 5px;
+    background-color: rgb(6, 79, 147);
+    text-align: left;
+    color: rgb(250, 243, 243);
+    
+}
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-shadow: 2px 7px 9px rgba(0, 0, 0, 0.503);
+    text-align: center;
+}
+header h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    text-shadow: 2px 7px 9px rgba(0, 0, 0, 0.503);
+}
+
+
+p{
+    text-align: left;
+    margin: 3px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: lightgray;
+}
+section {
+    /* border: 1px solid black; */
+    border-radius: 5px 5px 0 0;
+    
+    
+}
+main h2 {
+    margin-top: -3px;
+    background-color: rgb(9, 129, 241);
+    border-radius: 5px 5px 0 0;
+    color: aliceblue;
+    margin-top: 5px;
+    
+}
