@@ -51,7 +51,7 @@
 
     footer {
         font-size: 18px;
-        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.437), dodgerblue);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.437), dodgerblue);
     }
 
 }    
