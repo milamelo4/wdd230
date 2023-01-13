@@ -83,6 +83,9 @@ section img {
    
     margin: 10px 0px -7px -0.5px
 }
+#third img {
+    max-width: 100%;
+}
 
 footer {
     padding: 5px;

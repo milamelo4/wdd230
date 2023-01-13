@@ -12,6 +12,10 @@
         grid-column: span 1;
     }
 
+    header {
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.437), dodgerblue) ;
+    }
+
     header h1, h2 {
         margin: 10px ;
         
@@ -37,11 +41,23 @@
         text-align: left;
         line-height: 1.5rem;
         margin-right: auto;
+        
+    }
+    section h2{
+        padding: 20px;
+        
+        
+    }
+    #third img {
+        max-width: 90%;
+        margin: 10px auto;
     }
 
     footer {
         margin-right: -30px;
         margin-bottom: 7px;
+        font-size: 18px;
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.437), dodgerblue);
     }
 
 }    
