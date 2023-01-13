@@ -1,30 +1,23 @@
 @media only screen and (min-width: 37.5em) {
     body {
-        max-width: 600px;
-    }
-
-    main {
-        
-        grid-template-columns: 1fr 1fr;
-
+        max-width: 650px;
     }
 
     header {
         font-size: 1.5rem;
-        margin: 5px -28px 2px 2px;
     }
     header h2 {
         font-size: 1.7rem
     }
 
-    section {
-        padding: auto;
-        margin-right: 5px;
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+
     }
 
-    main h2 {
-        
-        padding: 5px;
+
+    section h2 {
         font-size: 1.3rem;
         margin-bottom: 5px
     }
@@ -33,26 +26,21 @@
         grid-column: span 2;
         text-align: center;
         
-        
-        
-       
     }
-    #third img {
-        padding: auto;
-        max-width: 200%;
-    }
-    section img:nth-child(3) {
-        grid-column: span 2;
-        
-        
+    #image {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
         
     }
-    #third h2, h3{
+    
+    #third h3{
         text-align: center;
-    }
+    } 
 
     #third a {
         display: block;
+        text-align: center;
     }
     #third p {
         text-align: left;
@@ -60,10 +48,8 @@
 
     footer{
         text-align: center;
+        margin: auto;
+    
     }
-    main section p:nth-child(3) {
-        text-align: left;
-    }
-
     
 }    

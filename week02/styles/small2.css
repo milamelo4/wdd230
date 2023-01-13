@@ -12,7 +12,7 @@
 
 body {
     max-width: 310px;
-    margin: 2px;
+    margin: 5px;
     
 }
 
@@ -20,17 +20,15 @@ header {
     padding: 10px;
     background-color: dodgerblue;
     color: aliceblue;
-    margin: 5px -4px 2px 2px;
-    
-    
     
 }
 
-h1 {
-    margin: 0;
+header h1 {
+    
     font-size: 1.5em;
     text-shadow: 2px 7px 9px rgba(0, 0, 0, 0.503);
     text-align: center;
+    line-height: 2rem;
     
 }
 header h2 {
@@ -42,63 +40,61 @@ header h2 {
 }
 
 
-h3{
-    text-align: left;
-    padding: 8px;
-    margin: 4px -6px;
-    
-}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
     
+    
+    
 }
 section {
-    margin-top: 14px;
+    margin-top: 10px;
     border: 2px solid rgba(0, 0, 0, 0.401);
     background-color: rgb(232, 231, 231);
     border-radius: 5px 5px 0 0;
-    padding: 5px;
+    
     
     
 }
-main h2 {
+section h2 {
     background-color: rgb(9, 129, 241);
     border-radius: 5px 5px 0 0;
     color: aliceblue;
-    padding: 7px;
-    margin: -6.1px;
+    padding: 10px;
+    margin: -2px;
     text-shadow: 2px 7px 9px rgba(0, 0, 0, 0.503);
-    
-    
+   
 }
 
-h3 {
+section h3 {
     font-size: 16px;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    
 }
-
-
 
 section img {
-   
-    margin: 10px 0px -7px -0.5px
+    padding: 5px;
 }
-#third img {
-    max-width: 100%;
+
+section p, a {
+    padding: 5px;
+    margin: 5px;
+}
+a:hover {
+    background-color: rgb(42, 157, 165);
+    color: aliceblue;
 }
 
 footer {
     padding: 5px;
     background-color: rgb(9, 129, 241);
-    text-align: left;
+    text-align: center;
     color: black;
-    margin: 0px -4px 1px 2px;
-    
+    margin: 3px -4px 1px 2px;
 
 }
 
 
-a:hover {
-    background-color: rgb(42, 157, 165);
-    color: aliceblue;
-}
