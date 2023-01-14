@@ -1,8 +1,5 @@
 @media only screen and (min-width: 65em) {
-    /* body {
-        max-width: 900%;
-        
-    } */
+    
 
     header {
         background-image: linear-gradient(to top, rgba(255, 255, 255, 0.437), dodgerblue) ;
@@ -10,15 +7,15 @@
 
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
     }
 
     main section:nth-child(3) {
         grid-column: span 1;
     }
     section h2 {
-        font-size: 27px;
         text-align: center;
-        padding: 20px;
+        
     }
     section h3{
         text-align: center;
@@ -35,7 +32,7 @@
     
     
     section img, #image {
-        width: 80%;
+        width: 90%;
     }
 
     #third p {

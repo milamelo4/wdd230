@@ -1,7 +1,4 @@
 @media only screen and (min-width: 32.5em) {
-    /* body {
-        max-width: 650px;
-    } */
 
     header {
         font-size: 1.5rem;
@@ -12,7 +9,7 @@
 
     main {
         grid-template-columns: 1fr 1fr;
-        
+        max-width: 610px;
 
     }
 
@@ -25,26 +22,19 @@
     section h2 {
         font-size: 1.3rem;
     }
-
+    section img {
+        width: 95%;
+    }
     
     #image {
         display: block;
-        margin: 0 auto;
-        width: 50%;
+        width: 70%;
         
     }
 
-    #third h3 {
+    #third h3, a{
         text-align: center;
     }
 
-    #third a {
-        text-align: center;
-    }
-
-    #third p {
-        text-align: center;
-    }
-    
     
 }    
