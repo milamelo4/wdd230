@@ -1,10 +1,8 @@
-@media only screen and (min-width: 60em) {
-    body {
+@media only screen and (min-width: 65em) {
+    /* body {
         max-width: 900%;
         
-    }
-
-    
+    } */
 
     header {
         background-image: linear-gradient(to top, rgba(255, 255, 255, 0.437), dodgerblue) ;
@@ -12,8 +10,6 @@
 
     main {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
-
     }
 
     main section:nth-child(3) {
@@ -22,6 +18,7 @@
     section h2 {
         font-size: 27px;
         text-align: center;
+        padding: 20px;
     }
     section h3{
         text-align: center;
@@ -29,24 +26,20 @@
     }
 
     section a{
-        display: block;
         text-align: center;
     }
 
     section p {
         line-height: 1.5rem;
-        
-    }
-    section h2{
-        padding: 20px;
-        
-        
     }
     
-    section img {
-        display: block;
-        margin: 0 auto;
-        width: 70%;
+    
+    section img, #image {
+        width: 80%;
+    }
+
+    #third p {
+        text-align: left;
     }
 
     footer {

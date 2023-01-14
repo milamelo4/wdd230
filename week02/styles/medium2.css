@@ -1,7 +1,7 @@
-@media only screen and (min-width: 37.5em) {
-    body {
+@media only screen and (min-width: 32.5em) {
+    /* body {
         max-width: 650px;
-    }
+    } */
 
     header {
         font-size: 1.5rem;
@@ -12,14 +12,8 @@
 
     main {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
+        
 
-    }
-
-
-    section h2 {
-        font-size: 1.3rem;
-        margin-bottom: 5px
     }
 
     main section:nth-child(3) {
@@ -27,29 +21,30 @@
         text-align: center;
         
     }
+    
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    
     #image {
         display: block;
         margin: 0 auto;
-        width: 70%;
+        width: 50%;
         
     }
-    
-    #third h3{
+
+    #third h3 {
         text-align: center;
-    } 
+    }
 
     #third a {
-        display: block;
         text-align: center;
-    }
-    #third p {
-        text-align: left;
     }
 
-    footer{
+    #third p {
         text-align: center;
-        margin: auto;
-    
     }
+    
     
 }    
