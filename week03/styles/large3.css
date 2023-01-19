@@ -25,7 +25,8 @@
         header h1 {
             background-image: linear-gradient(to right, var(--color1), var(--color4));
             padding: 40px;
-            font-size: 30px;
+            font-size: 32px;
+            text-shadow: 2px 3px 0px black;
         }
         table {
             margin-left: auto;

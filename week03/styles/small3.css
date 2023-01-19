@@ -93,7 +93,7 @@ h3 {
 }
 .first-page h2, #font, #heading{
     font-size: 20px;
-    font-weight: 500px;
+    font-weight: 500;
     color: var(--color2);
     font-family: var(--nunito);
 }
