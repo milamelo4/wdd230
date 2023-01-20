@@ -20,7 +20,7 @@ header h1 {
     background-color: var(--color1);
     color: var(--color3);
     text-align: center;
-    padding: 8px;
+    padding: 12px;
     font-size: 24px;
 }
 #heading{
