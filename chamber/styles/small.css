@@ -37,9 +37,8 @@ header {
     margin-top: 30px;
     color: var(--color3);
     align-self: flex-start;
-    justify-self: left;
     line-height: 1.5rem;
-    text-align: start;
+    text-align: center;
     font-size: 26px;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -53,7 +52,7 @@ header {
     text-align: center;
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 60px;
+    margin-top: 90px;
     align-self: flex-start;
     justify-self: left;
 
@@ -66,9 +65,8 @@ header {
     color: var(--color3);
     grid-column: -4/-1;
     grid-row: 2/3;
-    align-self: left;
-    justify-self: left;
-    margin-left: 10px;
+    justify-self: center;
+    margin-left: -7px;
     margin-top: 1px;
     
 
@@ -98,6 +96,7 @@ nav button {
     color: var(--color3);
     font-weight: bold;
     font-size: 2rem;
+    padding-left: 2px;
 
 }
 
@@ -154,11 +153,37 @@ nav a:hover {
     display: block;
 }
 
-footer p {
+footer {
     font-family: var(--nunito);
     color: var(--color3);
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--color1), var(--color2));
+    background-image: linear-gradient(to left, var(--color1), var(--color2));
     font-size: 16px;
-    padding: 10px;
+    padding: 5px;
+    
+}
+footer img {
+    width: 70px;
+    margin-bottom: 5px;
+}
+footer address {
+    margin-bottom: 5px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--color3);
+    padding: 5px;
+}
+footer a:hover {
+    
+    color: var(--body);
+    background-color: var(--color1);
+        
+}
+.info {
+    border-top: 2px solid var(--color5);
+    text-align: center;
+    padding-top: 10px;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
 }
