@@ -1,52 +1,11 @@
 @media only screen and (min-width: 37.5rem) {
-    .site-name h1 {
-        display: block;
-        text-align: start;
-        line-height: 2.5rem;
+    .site-name {
         font-size: 40px;
-        text-shadow: 2px 3px 0px black;
-        margin-top: 30px;
-        padding-right: 40px;
         
-       
     }
-    /* header {
-        display: flex;
-        
-    } */
-    .social a img{
-        justify-content: end;
-    } 
-    /* .social {
-        margin-top: -130px;
+    .chamber {
+        margin-top: 67px;
     }
     
-   
-    .social a img{
-        display: flex;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        margin-top: -2px;
-       
-        
-        
-        
-
-    } */
-    footer p {
-        font-family: var(--nunito);
-        color: var(--body);
-        text-align: center;
-        background-color: var(--color1);
-        font-size: 18px;
-        padding: 10px;
-    }
-    .site-name h3 {
-        display: flex;
-        justify-content: start;
-        margin-top: -20px;
-        
-       
-    }
 
 }
