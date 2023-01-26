@@ -15,7 +15,6 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        
 
     }
     nav ul li {
@@ -49,6 +48,13 @@
     }
     .social {
         display: flex;
+    }
+    .social img {
+        width: 100%;
+        
+    }
+    .social a {
+        margin-right: 5px;
     }
 
     .logo-img img {

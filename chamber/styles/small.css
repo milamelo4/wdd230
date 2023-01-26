@@ -18,7 +18,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 100px auto 100px;
+    grid-template-columns: 100px auto 120px;
     background-image: linear-gradient(to right, var(--color1), var(--color4));
 
 }
@@ -79,6 +79,7 @@ header {
     grid-column: 3/4;
     grid-row: 1/2;
     justify-self: end;
+    align-self: center;
 }
 
 .social img {
@@ -86,11 +87,12 @@ header {
     margin: 5px;
     margin-right: 5px;
     width: 50%;
+    margin-top: 5px;
 
 }
 
 nav button {
-    margin: .1rem;
+    margin-left: -2px;
     background: transparent;
     border: none;
     color: var(--color3);

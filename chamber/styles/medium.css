@@ -1,10 +1,22 @@
 @media only screen and (min-width: 37.5rem) {
     .site-name {
         font-size: 40px;
+        justify-self: center;
         
     }
     .chamber {
         margin-top: 67px;
+        justify-self: center;
+        font-size: 16px;
+    }
+
+    #date {
+        justify-self: center;
+        grid-column: 2/3;
+       
+    }
+    .social img {
+        width: 60%;
     }
     
 
