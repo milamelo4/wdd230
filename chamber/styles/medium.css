@@ -1,0 +1,35 @@
+@media only screen and (min-width: 40rem) {
+    .site-name h1 {
+        display: flex;
+        text-align: center;
+        line-height: 3rem;
+        font-size: 40px;
+        text-shadow: 2px 3px 0px black;
+        margin-top: 30px;
+    }
+    section .social a{
+        display: block;
+        align-self: end;
+    }
+    .social a img{
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        
+
+    }
+    footer p {
+        font-family: var(--nunito);
+        color: var(--body);
+        text-align: center;
+        background-color: var(--color1);
+        font-size: 18px;
+        padding: 10px;
+    }
+    .site-name span {
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+}
