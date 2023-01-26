@@ -45,34 +45,44 @@ header  {
     border-radius: 100%;
     
 }
-.site-name {
-    display: block;
-    /* margin-right: 70px; */
-  
-    
-}
+
 
 .site-name h1{
     display: block;
     font-family: var(--nunito);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.565);
     color: white;
-    margin-top: 2px;
+    margin-top: 10px;
     color: var(--color3);
-    text-align: center;
+    text-align: left;
     line-height: 2rem;
-    margin-right: 15px;
     
+    font-size: 24px;
 
+}
+.site-name h3 {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    font-family: var(--nunito);
+    margin-left: 1px;
+    font-size: 16px;
+    color: var(--body);
+}
+.social {
+    float: right;
+    margin-top: -110px;
+    margin-right: 5px;
 }
 
 .social a{
     display: block;
-    float: right;
+    
+    /* float: right; */
     
 }
 nav button {
-    margin: .2rem 2vw;
+    margin: .2rem 1vw;
     background: transparent;
     border: none;
     color: var(--color3);
@@ -82,13 +92,15 @@ nav button {
 }
 nav {
    background-color: #184d71bb;
-   margin-top: 10px; 
 }
 nav ul {
-    list-style: none;
+    list-style: none; 
     padding: 0;
     margin: 0;
+    display: none;
+
 }
+nav ul.open{display: block;}
 nav ul li a {
     display: block;
     padding: .8rem 2vw;
@@ -108,43 +120,9 @@ nav a:hover {
     color: var(--color3);
     background-color: var(--color1);
 }
-.site-name span {
-    display: block;
-    text-align: center;
-    padding: 0;
-    font-family: var(--nunito);
-    margin-left: 10px;
-    font-size: 18px;
-    color: var(--body);
-    margin-bottom: -5px;
-}
-/* header nav ul {
-    display: flex;
-    background-color: #184d71bb;
-    list-style: none;
-    padding: 10px;
-    margin: 0 auto;
-    justify-content: center;
 
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
 
-
-}
-header nav ul li {
-    align-content: center;
-    text-align: center;
-}
-
-header nav ul li a {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-family: var(--lato);
-    text-decoration: none;
-    padding: 10px;
-}
-
-.navigation {
-    list-style: none;
-    text-align: center;
-} */
-
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}

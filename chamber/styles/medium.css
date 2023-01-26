@@ -1,20 +1,25 @@
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 38rem) {
     .site-name h1 {
         display: flex;
-        text-align: center;
-        line-height: 3rem;
+        text-align: start;
+        line-height: 2.5rem;
         font-size: 40px;
         text-shadow: 2px 3px 0px black;
         margin-top: 30px;
+        padding-right: 60px;
     }
-    section .social a{
-        display: block;
-        align-self: end;
+    .social {
+        margin-top: -130px;
     }
+    
+   
     .social a img{
-        display: block;
-        margin-right: 10px;
+        display: flex;
+        margin-right: 5px;
         margin-bottom: 5px;
+        margin-top: -2px;
+        
+        
         
 
     }
@@ -26,10 +31,12 @@
         font-size: 18px;
         padding: 10px;
     }
-    .site-name span {
+    .site-name h3 {
         display: flex;
-        justify-content: center;
-        margin-left: 10px;
+        justify-content: start;
+        margin-top: -20px;
+        
+       
     }
 
 }
