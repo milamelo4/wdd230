@@ -20,9 +20,10 @@ body {
 
 header  {
     background-image: linear-gradient(to right, var(--color1), var(--color4));
-    display: flex;
-    padding: auto;
+    display: block;
+    /* padding: auto; */
     padding-bottom: 10px;
+    
     
 }
 .logo {
@@ -35,27 +36,31 @@ header  {
 }
 
 .logo img{
-    
+    padding-left: 0;
     background-color: var(--body);
-    max-width: 100%;
+    padding-right: 0;
     padding: 10px;
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 5px;
+    margin-left: 1px;
+    margin-right: 0px;
     border-radius: 100%;
     
+}
+.site-name {
+    margin-left: 2px;
 }
 
 
 .site-name h1{
+   
     display: block;
     font-family: var(--nunito);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.565);
     color: white;
     margin-top: 10px;
     color: var(--color3);
-    text-align: left;
-    line-height: 2rem;
+    margin-right: 10px;
+    line-height: 1.5rem;
     
     font-size: 24px;
 

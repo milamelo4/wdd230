@@ -1,6 +1,6 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 65rem) {
     .logo img {
-        width: 6%;
+        margin: 15px;
         margin-top: 20px;
     }
     nav button {
@@ -29,6 +29,7 @@
     
     header {
         display: flex;
+        
     }
     .site-name {
         display: block;
@@ -45,7 +46,7 @@
         font-size: 50px;
         padding: 15px;
         margin-bottom: -1px;
-        padding-right: 10px;
+        padding-right: 50px;
         margin-right: 200px;
         justify-content: center;
         
@@ -68,19 +69,26 @@
     }
     .social {
         display: flex;
+        /* justify-content: center; */
+        margin: 0 auto
+        /* flex-wrap: wrap; */
+        
         
     }
 
     .social a {
         display: flex;
-        justify-content: end;
+        margin: 2px;
         
         
         
     }
     .social a img {
-        margin-top: 40px;
+        /* margin-top: 40px; */
         display: flex;
+        justify-content: end;
+        align-self: center;
+        margin-top: 15px;
     }
     
        
