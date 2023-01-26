@@ -18,6 +18,68 @@
     .social img {
         width: 60%;
     }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        background-image: linear-gradient(to right, var(--color1), var(--color2));
+        
+    }
+    footer img {
+        width: 70px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        /* margin-right: 15px; */
+    }
+    footer address {
+        align-self: center;
+        margin-top: 50px;
+        text-align: center;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin-left: 15px;
+        
+    }
+    .email{
+        grid-column: 3/4;
+        grid-row: 1/2;
+       
+        
+    }
+    .phone {
+        grid-column: 3/4;
+        grid-row: 1/span 1;
+        margin-top: 30px;
+    }
+    map {
+        grid-column: 3/4;
+        grid-row: 1/span 1;
+        margin-top: 55px;
+
+    }
+    footer h5 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        align-self: center;
+        margin-top: 20px;
+        margin-left: 15px;
+        
+        
+        
+        
+    }
+
+    
+
+    .info {
+        
+        grid-column: span 3;
+        grid-row: 3/4;
+    }
+    
     
 
 }
