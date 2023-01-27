@@ -79,13 +79,14 @@ header {
     justify-self: end;
     align-self: center;
 }
+.social {
+    margin-top: 5px;
+}
 
 .social img {
     display: block;
     margin: 5px;
     margin-right: 5px;
-    width: 50%;
-    margin-top: 5px;
 
 }
 
@@ -96,7 +97,7 @@ nav button {
     color: var(--color3);
     font-weight: bold;
     font-size: 2rem;
-    padding-left: 2px;
+    padding-left: 4px;
 
 }
 
@@ -199,9 +200,10 @@ footer h5 {
 .main-grid {
     display: grid;
     gap: 2px;
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(8, 200px);
     grid-template-columns: auto;
     margin: 5px;
+    
 }
 .home-page section {
     font-family: var(--lato);
@@ -239,10 +241,8 @@ footer h5 {
     padding-left: 5px;
     padding-top: 5px;
 }
-.join, .spotthree{
-    display: none;
-}
-.spotOne, .spottwo{
+
+.spotOne, .spottwo, .join, .spotthree{
     padding-left: 5px;
     padding-top: 5px;
 }

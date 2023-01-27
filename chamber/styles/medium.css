@@ -15,9 +15,6 @@
         grid-column: 2/3;
        
     }
-    .social img {
-        width: 60%;
-    }
 
     footer {
         display: grid;
@@ -67,19 +64,56 @@
         margin-top: 20px;
         margin-left: 15px;
         
-        
-        
-        
     }
 
-    
-
     .info {
-        
         grid-column: span 3;
         grid-row: 3/4;
     }
-    
+
+    .main-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-rows: repeat(5, 200px);
+        margin: 5px;
+        column-gap: 5px;
+
+    }
+    .hero {
+        grid-column: span 3;
+        grid-row: 1/2;
+
+    }
+    .news {
+        grid-column: span 3;
+        grid-row: 2/3;
+    }
+    .spotOne {
+        grid-row: 3/4;
+    }
+     .spottwo {
+        grid-row: 3/4;
+        
+    }
+    .spotthree {
+        grid-row: 4/5;
+
+    }
+    .event {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        
+    }
+    .weather {
+        width: 330px;
+        grid-column: 2/3;
+        grid-row: 5/6;
+        justify-self: end;
+    } 
+    .join {
+        width: 622px;
+        grid-row: 5/6;
+    }
+     
     
 
 }
