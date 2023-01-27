@@ -72,10 +72,8 @@
     }
 
     .main-grid {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        grid-template-rows: repeat(5, 200px);
-        margin: 5px;
-        column-gap: 5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
 
     }
     .hero {
@@ -87,33 +85,40 @@
         grid-column: span 3;
         grid-row: 2/3;
     }
-    .spotOne {
+    .spot1-2-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-row: 3/4;
+        grid-column: span 3;
     }
-     .spottwo {
-        grid-row: 3/4;
+    .spotOne {
+        margin: 0px 2.5px 0px 2.5px;
+    }
+
+    .spottwo {
+        margin: 0px 0px 0px 2.5px;
+    }
+   
+    .join {
+        grid-column: span 3;
+        grid-row: 4/5;
         
     }
+    .event {
+        grid-column: span 2;
+        grid-row: 5/6;
+    }
+
+    .weather {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    } 
+    
+     
     .spotthree {
         grid-row: 4/5;
 
     }
-    .event {
-        grid-column: 2/3;
-        grid-row: 4/5;
-        
-    }
-    .weather {
-        width: 330px;
-        grid-column: 2/3;
-        grid-row: 5/6;
-        justify-self: end;
-    } 
-    .join {
-        width: 622px;
-        grid-row: 5/6;
-    }
-     
     
 
 }
