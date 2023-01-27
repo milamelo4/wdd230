@@ -12,7 +12,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     background-color: var(--body);
 }
 
@@ -68,7 +68,7 @@ header {
     justify-self: center;
     margin-left: -7px;
     margin-top: 1px;
-    
+
 
 }
 
@@ -157,33 +157,30 @@ footer {
     font-family: var(--nunito);
     color: var(--color3);
     text-align: center;
-    background-image: linear-gradient(to left, var(--color1), var(--color2));
+    background-image: linear-gradient(to bottom, var(--color1), var(--color2));
     font-size: 16px;
     padding: 5px;
-    
+
 }
+
+
 footer img {
     width: 70px;
     margin-bottom: 7px;
 }
 footer address {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     margin-top: -5px;
 }
 footer a {
     text-decoration: none;
     color: var(--color3);
     padding: 5px;
-    text-align: center;
 }
-/* footer .email {
-    margin-top: 15px;
-} */
 footer a:hover {
-    
     color: var(--body);
     background-color: var(--color1);
-        
+
 }
 .info {
     border-top: 2px solid var(--color5);
@@ -198,3 +195,56 @@ footer h5 {
     text-shadow: 3px 2px 0 rgb(0 0 0 / 60%);
     font-family: var(--nunito);
 }
+
+.main-grid {
+    display: grid;
+    gap: 2px;
+    grid-template-rows: repeat(6, 200px);
+    grid-template-columns: auto;
+    margin: 5px;
+}
+.home-page section {
+    font-family: var(--lato);
+    border-top: 2px solid var(--color5);
+    border-bottom: 2px solid var(--color5);
+    border-left: 2px solid var(--color5);
+    border-right: 2px solid var(--color5);
+    margin-top: 5px;
+
+}
+
+.hero {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 5px;
+    padding-top: 5px;
+
+}
+.event {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.weather {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.news {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.join, .spotthree{
+    display: none;
+}
+.spotOne, .spottwo{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+
