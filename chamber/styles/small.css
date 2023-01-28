@@ -205,7 +205,7 @@ footer h5 {
     
     
 }
-.home-page section {
+.main-grid div {
     font-family: var(--lato);
     border-top: 2px solid var(--color5);
     border-bottom: 2px solid var(--color5);
