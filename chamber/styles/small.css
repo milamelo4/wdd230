@@ -78,10 +78,9 @@ header {
     grid-row: 1/2;
     justify-self: end;
     align-self: center;
-}
-.social {
     margin-top: 5px;
 }
+
 
 .social img {
     display: block;
@@ -127,10 +126,8 @@ nav ul li a {
 
 }
 
-
 nav ul li.active a {
     background-color: var(--color1);
-
 }
 
 nav a:hover {
@@ -177,20 +174,22 @@ footer a {
     text-decoration: none;
     color: var(--color3);
     padding: 5px;
+    
 }
 footer a:hover {
     color: var(--body);
     background-color: var(--color1);
+    
 
 }
 .info {
     border-top: 2px solid var(--color5);
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
     line-height: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-footer h3 {
+footer .siteName {
     font-size: 18px;
     margin-top: -4px;
     text-shadow: 3px 2px 0 rgb(0 0 0 / 60%);
@@ -199,10 +198,7 @@ footer h3 {
 
 .main-grid {
     display: block;
-    gap: 2px;
     margin: 5px;
-    
-    
     
 }
 .main-grid div {
@@ -212,6 +208,7 @@ footer h3 {
     border-left: 2px solid var(--color5);
     border-right: 2px solid var(--color5);
     padding-top: 5px;
+    margin-top: 5px;
 
 }
 .spot1-2-3 {
@@ -219,6 +216,7 @@ footer h3 {
     border: 2px solid black;
     margin-top: 5px;
     background-color: #52b69a;
+    
     
    
 }
@@ -229,11 +227,11 @@ footer h3 {
 }
 .spotthree {
     display: none;
-    /* height: 200px; */
 }
 
 .hero, .news, .event, .weather, .join {
     height: 200px;
+    padding: 5px;
 }
 .social a:hover{
     transform: scale(1.2);

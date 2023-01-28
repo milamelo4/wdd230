@@ -15,8 +15,6 @@
         justify-content: center;
         align-content: flex-start;
         list-style: none;
-        padding: 0;
-        margin: 0;
 
     }
     nav ul li {
@@ -68,8 +66,16 @@
     }
     footer img {
         width: 120px;
-        justify-self: center;
+        padding-top: 0;
         
+        
+    }
+    footer .siteName {
+        font-size: 1.5rem;
+        padding-left: 70px;
+    }
+    footer address {
+        padding-left: 200px;
     }
     .main-grid {
         gap: 5px;
@@ -93,7 +99,6 @@
         grid-template-columns: 1fr;
         grid-column: 4/5;
         grid-row: 1/4;
-        display: grid;
         margin-top: 0;
         padding-top: 0;
         
@@ -102,6 +107,7 @@
         grid-column: 1/2;
         grid-row: 2/3;
         height: auto;
+        margin-right: 0;
     }
     .join {
         grid-column: 1/2;
