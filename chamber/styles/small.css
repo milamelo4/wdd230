@@ -203,6 +203,7 @@ footer h5 {
     margin: 5px;
     
     
+    
 }
 .home-page section {
     font-family: var(--lato);
@@ -210,8 +211,6 @@ footer h5 {
     border-bottom: 2px solid var(--color5);
     border-left: 2px solid var(--color5);
     border-right: 2px solid var(--color5);
-    
-    /* padding-left: 5px; */
     padding-top: 5px;
 
 }
@@ -220,12 +219,24 @@ footer h5 {
     border: 2px solid black;
     margin-top: 5px;
     background-color: #52b69a;
+    
+   
 }
 .spotOne, .spottwo {
     background-color: var(--body);
+    height: 200px;
+    
 }
 .spotthree {
     display: none;
+    /* height: 200px; */
+}
+
+.hero, .news, .event, .weather, .join {
+    height: 200px;
+}
+.social a:hover{
+    transform: scale(1.2);
 }
 
 
