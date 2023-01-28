@@ -57,9 +57,6 @@
         margin-right: 5px;
     }
 
-    .logo-img img {
-        width: 120px;
-    }
 
     .active {
         border-left: 5px solid var(--color1);

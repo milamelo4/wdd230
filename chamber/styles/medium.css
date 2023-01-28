@@ -14,6 +14,10 @@
         grid-column: 2/3;
        
     }
+    .logo-img img {
+        width: 120px;
+    }
+    
 
     footer {
         display: grid;
