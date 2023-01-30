@@ -2,18 +2,23 @@
     .site-name {
         font-size: 40px;
         justify-self: center;
+        margin: 20px;
         
     }
     .chamber {
         margin-top: 67px;
         justify-self: center;
         font-size: 16px;
+        
+        margin-left: 20px;
+        
     }
 
     #date {
-        grid-column: 2/3;
+        grid-column: 2/4;
         grid-row: 1/2;
         margin-top: 110px;
+        justify-self: center;
        
     }
     .logo-img img {

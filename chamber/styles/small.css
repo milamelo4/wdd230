@@ -52,11 +52,11 @@ header {
     font-family: var(--nunito);
     color: var(--color3);
     font-size: 14px;
-    text-align: center;
-    grid-column: 2/3;
+    text-align: start;
+    grid-column: 2/4;
     grid-row: 1/2;
     margin-top: 60px;
-    margin-left: 15px;
+    margin-left: 10px;
     /* align-self: flex-start; */
   
 
