@@ -44,7 +44,7 @@
         background-image: linear-gradient(to right, var(--color1), var(--color2));
         padding: 10px;
         border-radius: 10px 0 10px 0;
-        margin-bottom: -5px;
+        /* margin-bottom: -5px; */
     }
     .social {
         display: flex;
@@ -62,17 +62,23 @@
         border-left: 5px solid var(--color1);
     }
     footer img {
-        width: 120px;
+        /* margin-left: 20px; */
         padding-top: 0;
+        justify-self: center;
         
         
     }
     footer .siteName {
         font-size: 1.5rem;
-        padding-left: 70px;
+        justify-self: center;
+        align-self: center;
+        
+        /* padding-left: 70px; */
     }
     footer address {
-        padding-left: 200px;
+        /* padding-left: 200px; */
+        justify-self: center;
+        align-self: center;
     }
     .main-grid {
         gap: 5px;

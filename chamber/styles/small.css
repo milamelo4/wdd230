@@ -19,15 +19,15 @@ body {
 header {
     display: grid;
     grid-template-columns: 100px auto 120px;
-    background-image: linear-gradient(to bottom, var(--color1), var(--color4));
+    background-image: linear-gradient(to right, var(--color1), var(--color2), var(--color4));
 
 }
 
 .logo-img img {
-    width: 80px;
+    width: 120px;
     margin: 5px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 0;
 }
 
 .site-name {
@@ -68,6 +68,7 @@ header {
     justify-self: center;
     margin-left: -7px;
     margin-top: 1px;
+    text-shadow: 1px 1px 1px black;
 
 
 }
@@ -163,7 +164,7 @@ footer {
 
 
 footer img {
-    width: 70px;
+    width: 120px;
     margin-bottom: 7px;
 }
 footer address {
