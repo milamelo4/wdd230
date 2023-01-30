@@ -24,10 +24,10 @@ header {
 }
 
 .logo-img img {
-    width: 120px;
+    width: 200px;
     margin: 5px;
     margin-top: 10px;
-    margin-left: 0;
+    margin-left: -21px;
 }
 
 .site-name {
