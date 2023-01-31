@@ -64,22 +64,14 @@
     footer img {
         width: 250px;
         padding-top: 0;
-        justify-self: center;
+        justify-self: start;
         
         
     }
     footer .siteName {
-        font-size: 1.5rem;
-        justify-self: center;
-        align-self: center;
+        font-size: 2rem;
         
-        /* padding-left: 70px; */
-    }
-    footer address {
-        /* padding-left: 200px; */
-        justify-self: center;
-        align-self: center;
-    }
+    } 
     .main-grid {
         gap: 5px;
         grid-template-columns: repeat(4, 1fr);
