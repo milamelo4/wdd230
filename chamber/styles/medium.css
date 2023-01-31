@@ -92,24 +92,27 @@
 
     .main-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows:  400px 300px auto auto auto;
         
 
     }
     .hero {
-        grid-column: 1/4;
-        grid-row: 1/2;
-
+        display: grid;
+        
+        
+        
     }
     .news {
-        grid-column: span 3;
+        grid-column: 1/3;
         grid-row: 2/3;
     }
     .spot1-2-3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-row: 3/4;
+        grid-row: 4/5;
         grid-column: span 3;
+        width: 94vw;
     }
     .spotOne {
         margin: 0px 2.5px 0px 2.5px;
@@ -118,10 +121,13 @@
     .spottwo {
         margin: 0px 0px 0px 2.5px;
     }
+    
    
     .join {
+        display: grid;
         grid-column: span 3;
         grid-row: 4/5;
+        height: 200px;
         
     }
     .event {
@@ -139,6 +145,21 @@
     .spotthree {
         grid-row: 4/5;
 
+    }
+    .hero img {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        max-width: 100%;
+        margin: 5px auto;
+        
+       
+    }
+    .herodiv {
+        margin: 5px auto;
+    }
+    .image-container p {
+        bottom:  -50px;
+        right: 30px;
     }
     
     

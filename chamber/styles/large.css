@@ -84,9 +84,10 @@
         height: auto;
     }
     .hero {
-        grid-column: 2/4;
+        display: grid;
+        /* grid-column: 2/4;
         grid-row: 1/3;  
-        height: auto;
+        height: auto; */
         
        
     }
@@ -124,6 +125,13 @@
     }
     .spotthree, .spottwo, .spotOne {
         margin: 2.5px;
+    }
+
+    .hero img {
+        max-width: 200%;
+        grid-column: 2/4;
+        grid-row: 1/3;
+        height: auto;
     }
 
 

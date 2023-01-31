@@ -210,11 +210,11 @@ footer .siteName {
 }
 .main-grid div {
     font-family: var(--lato);
-    border-top: 2px solid var(--color5);
+    /* border-top: 2px solid var(--color5);
     border-bottom: 2px solid var(--color5);
     border-left: 2px solid var(--color5);
-    border-right: 2px solid var(--color5);
-    padding-top: 5px;
+    border-right: 2px solid var(--color5); */
+    /* padding-top: 5px; */
     margin-top: 5px;
 
 }
@@ -236,12 +236,55 @@ footer .siteName {
     display: none;
 }
 
-.hero, .news, .event, .weather, .join {
+.news, .event, .weather {
     height: 200px;
     padding: 5px;
 }
 .social a:hover{
     transform: scale(1.2);
+}
+.join {
+    display: none;
+}
+.hero img {
+    max-width: 100%;
+    max-height: 90vh;
+    border: 5px solid var(--color1);
+    box-shadow: 5px 6px 1px rgb(0 0 0 / 21%);
+    margin: 2px 1px;
+    margin-left: -5px;
+    
+}
+.herodiv {
+    position: relative;
+    /* margin:  10px; */
+    padding: 5px;
+    
+    
+}
+.image-container h2 {
+    position: absolute;
+    top: 0;
+    color: var(--color1);
+    margin-left: 15px;
+    text-shadow: 1px 1px 0px black;
+    padding: 5px;
+    
+    
+}
+.image-container p {
+    position: absolute;
+    background-color: #34a0a4af;
+    padding: 10px;
+    right: 5px;
+    bottom: 0;
+    font-size: 20px;
+    margin-right: 5px;
+    border-radius: 15px;
+    color: var(--color3);
+    font-weight: bolder;
+    text-shadow: 2px 1px 1px black;
+    
 }
 
 
