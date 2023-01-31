@@ -230,6 +230,9 @@ main {
     
 
 }
+.only-bigscreen {
+    display: none;
+}
 
 .event {
     border: 5px solid var(--color1);
@@ -239,7 +242,7 @@ main {
     background-color: var(--color2);
     
 }
-.event h2, .news h2, .spot1-2-3 h2 {
+.event h2, .news h2, .spot1-2-3 h2, .join h2 {
     color: var(--color3);
     text-shadow: 1px 1px 1px black;
 }
@@ -262,7 +265,7 @@ main {
     background-color: var(--color5);
    
 }
-.spotOne, .spottwo {
+.spotOne, .spottwo, .spotthree {
     background-color: var(--color2);
     height: 200px;
     padding-top: 1px;
