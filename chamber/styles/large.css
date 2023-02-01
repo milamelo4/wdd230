@@ -95,15 +95,21 @@
     .image-container h2 {
         display: none;
     }
-    .only-bigscreen{
-        display: grid;
+    .only-bigscreen > p{
+        font-style: italic;
+        margin-top: -10px;
+        font-size: 20px;
     }
     .only-bigscreen h2 {
+        font-size: 24;
+        margin-top: 5px;
+    }
+    .only-bigscreen {
+        display: grid;
         position: absolute;
-        top: 10px;
+        top: 5px;
         right: -300px;
-        font-size: 28px;
-        background-color: #34a0a47c;
+        background-color: #184d717f;
         width: 200px;
         text-align: center;
         color: white;
@@ -114,6 +120,8 @@
     .image-container p {
         right: -300px;
         bottom: 1px;
+        background-color: #184d71c5;
+        text-shadow: 2px 2px 2px var(--color1);
 
     }
     .event {
