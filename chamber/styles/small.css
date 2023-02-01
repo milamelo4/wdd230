@@ -158,19 +158,24 @@ main {
     padding: 5px;
     /* border: 2px solid #184d71bb; */
 }
+.hero {
+    max-width: 100%;
+}
 .hero img {
     max-width: 100%;
-    max-height: 90vh;
+    /* max-height: 90vh; */
     border: 5px solid var(--color1);
+    /* margin: auto; */
     /* box-shadow: 2px 2px 1px rgba(78, 77, 77, 0.738); */
-    margin: -10px;
-    margin-left: -5px;
+    /* margin: -10px;*/
+    margin-left: -4px;
+   
+    
 
 }
 
 .herodiv {
     position: relative;
-    padding: 5px;
 
 
 }
@@ -181,13 +186,9 @@ main {
     right: 10px;
     color: white;
     text-shadow: 2px 2px 2px var(--color1);
-    /* color: var(--color1); */
     margin-left: 15px;
-    /* text-shadow: 1px 1px 0px var(--color3); */
     padding: 5px;
-    /* background-color: rgba(245, 245, 245, 0.251); */
     border-radius: 15px;
-    /* background-color: #b5e48c8c; */
     background-color: #34a0a48d;
 
 
@@ -196,17 +197,13 @@ main {
 
 .image-container p {
     position: absolute;
-    /* background-color: rgba(255, 255, 255, 0.548); */
-    /* background-color: #b5e48caf; */
     padding: 10px;
     right: 5px;
     bottom: 0;
     font-size: 20px;
     margin-right: 5px;
     border-radius: 15px;
-    /* color: var(--color1); */
     font-weight: bolder;
-    /* text-shadow: 1px 1px 1px var(--color3); */
     background-color: #34a0a4a7;
     color: white;
     text-shadow: 2px 2px 2px var(--color1);
@@ -222,10 +219,19 @@ main {
 .event {
     border: 5px solid var(--color1);
     padding: 5px;
-    margin-top: 5px;
     text-align: center;
     background-color: var(--color2);
     
+}
+.more-info {
+    color: var(--color3);
+    text-decoration: none;
+}
+.more-info:hover, .spotOne a:hover {
+    background-color: var(--color1);
+    color: white;
+    text-decoration: underline;
+
 }
 .event h2, .news h2, .spot1-2-3 h2, .join h2 {
     color: var(--color3);
@@ -248,17 +254,36 @@ main {
     border: 5px solid var(--color1);
     margin-top: 5px;
     background-color: var(--color5);
+    justify-self: center;
+    align-self: stretch;
    
 }
 .spotOne, .spottwo, .spotthree {
     background-color: var(--color2);
-    height: 200px;
+    /* height: 200px; */
     padding-top: 1px;
     color: white;
     padding: 10px;
     text-align: center;
     margin-bottom: 5px;
     
+}
+div.spotOne {
+    height: auto;
+}
+.spotOne p {
+    border-bottom: 2px solid var(--color3);
+    padding-bottom: 2px;
+}
+.spotOne a {
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: bold;
+
+}
+.spottwo .phone {
+    color: var(--color3);
+    font-weight: bold;
 }
 .spotthree {
     display: none;
