@@ -11,7 +11,7 @@ const datefield = document.querySelector("#date"); // Select the element to mani
 const now = Date.now(); // derive the current date using a date object
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 
-datefield.innerHTML = `Today is ${fulldate}`;
+datefield.innerHTML =  fulldate;
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");

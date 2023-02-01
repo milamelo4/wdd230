@@ -1,46 +1,27 @@
 @media only screen and (min-width: 37.5rem) {
     .site-name {
         font-size: 40px;
-        justify-self: center;
-        margin: 20px;
-        margin-top: 30px;
-        
     }
     .chamber {
-        margin-top: 67px;
-        justify-self: center;
+        margin-top: -20px;
         font-size: 16px;
-        
-        margin-left: 20px;
-        
     }
 
-    #date {
-        grid-column: 2/4;
-        grid-row: 1/2;
-        margin-top: 110px;
-        justify-self: center;
-       
-    }
     .logo-img img {
         width: 250px;
     }
     
-  
     .main-grid {
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: auto auto auto auto auto;
         margin-left: auto;
         margin-right: auto;
-
     }
-    
 
     .herodiv {
         display: grid;
         max-width: 100vw;
-        /* margin: 5px auto; */
     }
 
    

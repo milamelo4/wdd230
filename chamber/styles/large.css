@@ -8,13 +8,16 @@
         border-top: 5px solid var(--color1);
         border-right: 5px solid var(--color1);
         border-bottom: 5px solid var(--color1);
+        grid-column: 2/4;
+        justify-self: end;
+        align-self: flex-end;
+        
 
     }
     nav ul {
         display: flex;
-        justify-content: center;
-        align-content: flex-start;
         list-style: none;
+        
 
     }
     nav ul li {
@@ -23,11 +26,16 @@
 
     }
     nav ul li a {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .name-chamber {
+        align-self: center;
+        justify-self: start;
     }
 
     .site-name {
         font-size: 50px;
+        margin-bottom: 20px;
     }
     header {
         padding: 10px;
@@ -35,15 +43,20 @@
 
     .chamber {
         font-size: 20px;
-        margin-top: 80px;
-        margin-bottom: -10px;
+        
     }
 
     #date {
+        margin: 5px 0 2px 5px;
+        grid-column: 1/2;
+        grid-row: 2/3;
         font-size: 20px;
-        background-image: linear-gradient(to right, var(--color1), var(--color2));
-        padding: 10px;
+        background-image: linear-gradient(to left, var(--color1), var(--color2));
+        padding: 20px;
         border-radius: 10px 0 10px 0;
+        align-self: flex-start;
+        justify-self: start;
+        box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.559);
     }
     .social {
         display: flex;
