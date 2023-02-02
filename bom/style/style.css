@@ -78,6 +78,10 @@ li {
 div label {
     font-weight: bold;
 }
+footer {
+    color: aliceblue;
+    font-size: 18px;
+}
 
 @media only screen and (min-width: 32.5em) {
     h1 {
