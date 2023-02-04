@@ -10,10 +10,34 @@
     --body: #e0f8f1;
 
 }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0 auto;
-    background-color: var(--body);
+    background-color: lightgray;
+    
+}
+
+#message {
+    margin: 5px;
+    font-family: var(--nunito);
+    color: var(--color3);
+    
+    
+
+}
+.closeBtn {
+    margin-left: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.closeBtn:hover {
+    color: #b5e48c;
+    text-decoration: underline;
+    cursor: pointer;
+    
 }
 
 header {
@@ -28,9 +52,10 @@ header {
     margin: 5px;
     margin-top: 10px;
     margin-left: -25px;
+    
 }
 .name-chamber {
-    display: block;
+    display: grid;
     font-family: var(--nunito);
     color: var(--color3);
     grid-column: 2/3;
@@ -42,13 +67,14 @@ header {
 
 .site-name {
     text-shadow: 2px 4px 0px rgb(0 0 0 / 56%);
-    margin-top: 30px;
+    font-size: 25px;
+    /* margin-top: 30px; */
 }
 
 .chamber {
     margin-top: -10px;
-    font-size: 14px;
-    text-align: center;
+    font-size: 16px;
+    text-align: left;
 }
 
 #date {
@@ -154,7 +180,7 @@ main {
     display: block;
     margin: auto;
     font-family: var(--lato);
-    box-sizing: border-box;
+    
     padding: 5px;
     /* border: 2px solid #184d71bb; */
 }
@@ -163,35 +189,31 @@ main {
 }
 .hero img {
     max-width: 100%;
-    /* max-height: 90vh; */
     border: 5px solid var(--color1);
-    /* margin: auto; */
-    /* box-shadow: 2px 2px 1px rgba(78, 77, 77, 0.738); */
-    /* margin: -10px;*/
     margin-left: -4px;
-   
-    
+    height: auto;
 
 }
 
 .herodiv {
     position: relative;
 
-
 }
 
 .image-container h2 {
     position: absolute;
-    top: -15px;
+    top: -5px;
     right: 10px;
     color: white;
     text-shadow: 2px 2px 2px var(--color1);
     margin-left: 15px;
     padding: 5px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     background-color: #34a0a48d;
 
-
+}
+.image-container p:hover {
+    transform: scale(1.1);
 
 }
 
@@ -204,7 +226,7 @@ main {
     margin-right: 5px;
     border-radius: 15px;
     font-weight: bolder;
-    background-color: #34a0a4a7;
+    background-color: #34a0a4ce;
     color: white;
     text-shadow: 2px 2px 2px var(--color1);
     box-shadow: 2px 2px 5px black;
@@ -212,9 +234,7 @@ main {
     
 
 }
-.only-bigscreen {
-    display: none;
-}
+.only-bigscreen {display: none;}
 
 .event {
     border: 5px solid var(--color1);
@@ -228,14 +248,15 @@ main {
     color: var(--color3);
     text-decoration: none;
 }
-.more-info:hover, .spotOne a:hover,  .join a:hover {
+.more-info:hover, .spotOne a:hover, .join a:hover {
     background-color: var(--color1);
     color: white;
     text-decoration: underline;
 
 }
+
 .join-today a:hover {
-    color: white;
+    color:var(--color3);
     text-decoration: underline;
 }
 .join-today a {
@@ -277,17 +298,13 @@ main {
     margin-bottom: 5px;
     
 }
-div.spotOne {
-    height: auto;
-}
-.spotOne p {
-    margin-bottom: -2px;
-}
+
+
 .line {
     border-bottom: 2px solid var(--color3);
     display: block;
     width: 130px ;
-    margin: 7px auto;
+    margin: 10px auto;
 }
 .spotOne a {
     text-decoration: none;
@@ -308,7 +325,6 @@ div.spotOne {
     width: 190px;
     padding: 5px;
     border: 5px solid var(--color1);
-   
     margin: 5px auto;
 }
 
@@ -374,6 +390,49 @@ footer .siteName {
     margin-top: -4px;
     text-shadow: 3px 2px 0 rgb(0 0 0 / 60%);
     font-family: var(--nunito);
+}
+main.source {
+    height: 400px;
+    background-color: var(--color2);
+}
+.source {
+    padding: 5px;
+    margin: 10px auto;
+    max-width: 500px;
+    /* border: 2px dotted var(--color1); */
+    box-shadow: 2px 2px 6px black;
+    
+    
+}
+.source h1{
+    font-family: var(--nunito);
+    text-align: center;
+    color: var(--color3);
+    text-shadow: 1px 1px 1px black;
+}
+.source ul {
+    list-style: inside;
+    list-style-type: none;
+   
+    
+}
+.source ul li a::before {
+    content: "\2022";
+    color: whitesmoke;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.source ul li a{
+    text-decoration: none;
+    font-family: var(--lato);
+    color: whitesmoke;
+    line-height: 2rem;
+
+}
+.source ul li a:hover {
+    text-decoration: underline;
 }
 
 

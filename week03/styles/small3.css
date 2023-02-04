@@ -41,6 +41,9 @@ p {
     margin: 5px auto;
 
 }
+.logo {
+    background-color: var(--color1);
+}
 
 th {
     font-family: var(--lato);

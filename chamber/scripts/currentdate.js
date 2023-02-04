@@ -13,6 +13,29 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 datefield.innerHTML =  fulldate;
 
+//Display a banner on Mondays or Tuesdays only at the very top of the page that says "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. 
+// Sunday = 0
+// Monday = 1
+// Tuesday = 2
+// Wednesday = 3
+// Thursday = 4
+// Friday = 5
+// Saturday = 6
+
+const date = new Date();
+const week = date.getDay()
+let message = document.querySelector('#message')
+
+if (week === 1 || week === 6) {
+    message.style.display = 'flex'
+
+}
+else {
+    message.style.display = 'none'
+}
+
+
+// Hamburger menu
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");

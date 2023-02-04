@@ -1,19 +1,20 @@
-@media only screen and (min-width: 37.5rem) {
+@media only screen and (min-width: 39em) {
     .site-name {
         font-size: 40px;
     }
     .chamber {
         margin-top: -20px;
         font-size: 16px;
+        text-align: center;
     }
 
     .logo-img img {
-        width: 250px;
+        width: 200px;
     }
     
     .main-grid {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(1, auto);
         grid-template-rows: auto auto auto auto auto;
         margin-left: auto;
         margin-right: auto;
@@ -21,10 +22,6 @@
 
     .herodiv {
         display: grid;
-        /* max-width: 100vw; */
-        /* margin-top: 5px;
-        margin-bottom: 5px; */
-        /* margin: 5px ; */
     }
 
    
@@ -40,6 +37,10 @@
         max-width: 90vw;
         margin: 0 auto;
         margin-left: 20px;
+        
+    }
+    .pressBtn {
+        display: block;
     }
     
     .image-container p {
@@ -59,18 +60,19 @@
         column-gap: 5px;
         margin-bottom: 5px;
     }
+    .spotOne p{
+        margin-bottom: 10px;
+    }
    
     .join {
-        display: grid;
+        display: block;
         grid-column: span 2;
         grid-row: 4/5;
         height: auto;
         background-color: var(--color2);
         border: 5px solid var(--color1);
-        
-        
-        
     }
+    
     .join h2 {
         background-color: var(--color1);
         text-align: center;
@@ -94,13 +96,13 @@
     .event {
         grid-column: 1/2;
         grid-row: 5/6;
-        max-width: 590px;
+        max-width: 510px;
     }
     
 
     .weather {
-        display: grid;
-        grid-column: 1/3;
+        /* display: grid; */
+        grid-column: 1/2;
         grid-row: 5/6;
         margin-right: 2px;
         
