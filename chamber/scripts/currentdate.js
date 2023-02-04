@@ -33,6 +33,12 @@ if (week === 1 || week === 2) {
 else {
     message.style.display = 'none'
 }
+const closeBtn = document.querySelector('.closeBtn')
+closeBtn.addEventListener('click', () => {
+    message.remove(message)
+})
+
+
 
 
 // Hamburger menu
