@@ -212,12 +212,12 @@ main {
     background-color: #34a0a48d;
 
 }
-.image-container p:hover {
+.image-container h3:hover {
     transform: scale(1.1);
 
 }
 
-.image-container p {
+.image-container h3 {
     position: absolute;
     padding: 10px;
     right: 5px;
@@ -245,8 +245,8 @@ main {
     
 }
 .more-info {
-    color: var(--color3);
     text-decoration: none;
+    color: whitesmoke;
 }
 .more-info:hover, .spotOne a:hover, .join a:hover {
     background-color: var(--color1);
@@ -308,13 +308,16 @@ main {
 }
 .spotOne a {
     text-decoration: none;
-    color: var(--color3);
+    color: whitesmoke;
     font-weight: bold;
+    text-shadow: 1px 1px 1px black;
 
 }
 .spottwo .phone {
-    color: var(--color3);
+    color: whitesmoke;
     font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: -5px;
 }
 .spotthree {
     display: none;
