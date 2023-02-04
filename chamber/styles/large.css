@@ -50,9 +50,9 @@
         grid-row: 2/3;
         font-size: 18px;
         background-image: linear-gradient(to left, var(--color1), var(--color2));
-        padding: 15px;
+        padding: 8px;
         border-radius: 10px 0 10px 0;
-        align-self: flex-start;
+        align-self: flex-end;
         justify-self: start;
         box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.559);
     }
