@@ -1,8 +1,9 @@
 @media only screen and (min-width: 65em) {
-    
+
     nav button {
         display: none;
     }
+
     nav {
         margin-top: 0px;
         border-top: 5px solid var(--color1);
@@ -13,19 +14,23 @@
         align-self: flex-end;
 
     }
+
     nav ul {
         display: flex;
         list-style: none;
 
     }
+
     nav ul li {
         flex: 1 1 auto;
         text-align: center;
 
     }
+
     nav ul li a {
         font-size: 18px;
     }
+
     .name-chamber {
         align-self: center;
         justify-self: center;
@@ -35,13 +40,14 @@
         font-size: 50px;
         margin-bottom: 20px;
     }
+
     header {
         padding: 10px;
     }
 
     .chamber {
         font-size: 20px;
-        
+
     }
 
     #date {
@@ -56,13 +62,15 @@
         justify-self: start;
         box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.559);
     }
+
     .social {
         display: flex;
     }
+
     .social img {
         width: 100%;
-        
     }
+
     .social a {
         margin-right: 5px;
     }
@@ -70,80 +78,61 @@
     .active {
         border-left: 5px solid var(--color1);
     }
-   
+
     .main-grid {
         gap: 5px;
         grid-template-columns: repeat(3, auto);
-        grid-template-rows: auto auto ;
-
+        grid-template-rows: auto auto;
     }
-    .hero {
+
+    .herodiv {
         display: grid;
-        justify-self: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
-  
 
-    .hero img {
-        display: block;
-        max-width: 100vw;
-        grid-column: 2/4;
-        grid-row: 1/3;
-        margin: 0 auto auto auto;
-       
-    }
     .image-container h2 {
         display: none;
     }
-    .only-bigscreen > p{
-        font-style: italic;
-        margin-top: -10px;
-        font-size: 20px;
-        right: 5px
-    }
-    .only-bigscreen h2 {
-        font-size: 24px;
-        margin-top: 5px;
-    }
-    .only-bigscreen {
-        display: grid;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background-color: #184d717f;
-        width: 200px;
-        text-align: center;
-        color: white;
-        text-shadow: 2px 2px 2px var(--color1);
-        margin: 5px;
-        
-    }
-    .image-container h3 {
-        right: 10px;
-        bottom: 1px;
-        background-color: #184d71c5;
-        text-shadow: 2px 2px 2px var(--color1);
 
+    .image-container h3 {
+        display: none;
     }
+
+    section.imagem {
+        width: 60vw;
+        margin: auto;
+    }
+
+    section.imagem>h2 {
+        right: 20px;
+    }
+
+    section.imagem>p {
+        width: 190px;
+        right: 20px;
+        top: 70px;
+        margin-bottom: 40px;
+    }
+
+    section#img03 {
+        background-size: contain;
+    }
+
     .event {
         grid-column: 1/2;
         grid-row: 1/2;
         height: 300px;
         margin-top: -1px;
         width: 258px;
-        
-       
-        
-        
     }
-    
+
     .spot1-2-3 {
         grid-template-columns: auto;
         grid-column: 3/5;
         grid-row: 1/4;
-        
-        
-        
     }
+
     .weather {
         grid-column: 1/2;
         grid-row: 1/3;
@@ -151,19 +140,23 @@
         margin: 5px auto;
         margin-top: 325px;
     }
+
     .join {
         grid-column: 1/2;
         grid-row: 2/3;
         height: auto;
         padding: 10px;
-       
     }
+
     .join h2 {
         margin-top: 15px;
     }
-    .join h2:hover, .join-today p:hover {
+
+    .join h2:hover,
+    .join-today p:hover {
         transform: scale(1.1);
     }
+
     .news {
         grid-column: 2/3;
         grid-row: 2/3;
@@ -171,38 +164,44 @@
         width: fit-content;
         margin-top: 0;
     }
+
     .spotthree {
         display: block;
         grid-row: 2/3;
-       
-        
     }
+
     .spot1-2-3 {
         gap: 5px;
         margin-top: -2px;
         grid-column: 3/4;
-        
     }
-    .spotthree, .spottwo, .spotOne {
+
+    .spotthree,
+    .spottwo,
+    .spotOne {
         margin: 7px;
         height: auto;
         padding-top: 2px;
         margin-bottom: 2px;
         justify-self: center;
     }
+
     .spottwo img {
         display: none;
     }
 
 }
+
 @media only screen and (min-width: 1600px) {
-    .hero img {
-        width: 65vw;
+    section.imagem > h3 {
+        bottom: 0;
+        right: 50px;
+
     }
-    .only-bigscreen {
-        right: 40px;
-    }
-    .image-container p {
-        right: 40px;
+
+    section.imagem > h2,
+    section.imagem > h3,
+    section.imagem > p {
+        right: 10px;
     }
 }
