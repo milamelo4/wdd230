@@ -322,13 +322,25 @@ main {
 
 }
 
-.line {
-    border-bottom: 2px solid var(--color3);
+.spotOne p:after {
+    background: linear-gradient(90deg, transparent 15%, var(--color3) 30%, var(--color3) 70%, transparent 85%);
+    content: "";
     display: block;
-    width: 130px;
-    margin: 10px auto;
+    height: 1px;
+    margin-bottom: 3px;
+    width: 100%;
+    margin-top: 10px;
+    
 }
-
+.spottwo .phone:before {
+    background: linear-gradient(90deg, transparent 15%, var(--color3) 30%, var(--color3) 70%, transparent 85%);
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 3px;
+    width: 100%;
+    margin-bottom: 15px;
+}
 .spotOne a {
     text-decoration: none;
     color: whitesmoke;
