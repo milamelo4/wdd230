@@ -255,6 +255,7 @@ main {
     text-align: center;
     background-color: var(--color2);
     margin-top: 5px;
+    color: white;
 
 }
 
@@ -294,7 +295,7 @@ main {
 
 .event p,
 .news p {
-    color: var(--body);
+    color: white;
 
 }
 
