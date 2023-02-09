@@ -28,7 +28,7 @@ body {
     font-family: var(--nunito);
     padding: 10px;
     justify-content: center;
-    background-color: lightgray;
+    background-color: white;
     color: var(--color1);
     font-weight: bold;
 }
