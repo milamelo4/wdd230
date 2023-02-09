@@ -27,7 +27,8 @@
         Wednesday at
         7:00 p.m <span title="Close" class="closeBtn"> ❌</span></div>
 
-    <header>
+    <header class="clearfix">
+
         <div class="logo-img">
             <a title="Home" href="index.html"><img src="images/logo.png"
                     alt="slc chamber logo"></a>
@@ -64,6 +65,7 @@
             <div class="herodiv">
                 <div class="hero">
                     <picture>
+                        <div class="imagem" id="img03"></div>
                         <source media="(max-width: 300px)" srcset="images-week06/wdd230-small.jpg">
                         <source media="(max-width: 600px)" srcset="images-week06/wdd230-medium.jpg">
                         <source media="(max-width: 900px)" srcset="images-week06/wdd230-large.jpg">
@@ -91,7 +93,14 @@
                         href="https://www.visitutah.com/things-to-do/Events/Craft-Lake-City-DIY-Festival"
                         target="_blank" class="more-info">More info...</a></p>
             </div>
-            <div class="weather">Weather</div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <img src="images/cloudy.png" alt="Weather image" width="100">
+                
+                <p>Temperature: <span id="temperature">33</span>°F</p><br>
+                <p>Wind Speed: <span id="windSpeed">5 </span>miles per hour</p><br>
+                <span id="windChill"></span>
+            </div>
             <div class="news">
                 <h2>News Release</h2>
                 <p>Utah’s energy and mining industries contributed over 10% to
@@ -144,7 +153,7 @@
 
     </main>
     <footer>
-        <img src="images/logo.png" alt="slc chamber logo">
+        <img src="images/logo.webp" alt="slc chamber logo">
         <h3 class="siteName"><strong>Salt Lake City Chamber of Commerce</strong>
         </h3>
         <address>9000 S and Redwood Rd Salt Lake City, Utah 84088</address>
@@ -162,6 +171,7 @@
         </p>
     </footer>
     <script defer src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 

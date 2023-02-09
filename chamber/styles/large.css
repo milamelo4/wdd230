@@ -101,7 +101,7 @@
         max-width: 60vw;
         grid-column: 2/4;
         grid-row: 1/3;
-        margin: 0 auto auto auto;
+        margin: 0 auto auto -8px;
 
     }
 
@@ -146,13 +146,10 @@
     .event {
         grid-column: 1/2;
         grid-row: 1/2;
-        height: 300px;
+        height: 310px;
         margin-top: -1px;
-        width: 258px;
-
-
-
-
+        width: 18rem;
+        
     }
 
     .spot1-2-3 {
@@ -167,21 +164,27 @@
     .weather {
         grid-column: 1/2;
         grid-row: 1/3;
-        height: 200px;
-        margin: 5px auto;
-        margin-top: 325px;
+        height: 300px;
+        margin: auto;
+        margin-top: 315px;
+        width: 18rem;
+        margin-left: -1px;
+
     }
 
     .join {
         grid-column: 1/2;
         grid-row: 2/3;
-        height: auto;
+        height: 300px;
         padding: 10px;
+        margin-top: 5px;
+        
+        /* align-self: end; */
 
     }
 
     .join h2 {
-        margin-top: 15px;
+        margin-top: 85px;
     }
 
     .join h2:hover,
@@ -192,9 +195,11 @@
     .news {
         grid-column: 2/3;
         grid-row: 2/3;
-        height: auto;
-        width: fit-content;
-        margin-top: 0;
+        height: 300px;
+        
+    }
+    .news h2 {
+        margin-top: 70px;
     }
 
     .spotthree {
