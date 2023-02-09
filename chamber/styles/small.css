@@ -28,19 +28,18 @@ body {
     font-family: var(--nunito);
     padding: 10px;
     justify-content: center;
-    background-color: white;
+    background-color: lightgray;
     color: var(--color1);
     font-weight: bold;
+
 }
 
 .closeBtn {
     margin-left: 10px;
-    
     text-decoration: none;
 }
 
 .closeBtn:hover {
-    /* color: #b5e48c; */
     text-decoration: underline;
     cursor: pointer;
 
