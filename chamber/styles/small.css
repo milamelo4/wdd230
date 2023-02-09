@@ -40,7 +40,7 @@ body {
 }
 
 .closeBtn:hover {
-    color: #b5e48c;
+    /* color: #b5e48c; */
     text-decoration: underline;
     cursor: pointer;
 
