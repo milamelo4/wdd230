@@ -5,7 +5,6 @@
 
     .chamber {
         margin-top: -20px;
-        font-size: 16px;
         text-align: center;
     }
 
@@ -16,9 +15,9 @@
     .main-grid {
         display: grid;
         grid-template-columns: repeat(1, auto);
-        grid-template-rows: auto auto auto auto auto;
-        /* margin-left: auto;
-        margin-right: auto; */
+        grid-template-rows: auto auto auto auto 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 
@@ -27,30 +26,26 @@
         grid-column: span 2;
         grid-row: 1/2;
         margin-left: 5px;
-       
 
     }
 
     .hero img {
         max-width: 94vw;
         display: block;
-        
         border: none;
         margin: 0 auto;
         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.279);
         border-radius: 10px;
     }
 
-    .pressBtn {
-        display: block;
-    }
+    .pressBtn {display: block;}
 
     .image-container p {
         bottom: -10px;
         right: 10px;
         padding: 10px;
     }
-
+   
     .news {
         grid-column: 1/3;
         grid-row: 2/3;
@@ -65,67 +60,41 @@
         margin-bottom: 5px;
     }
 
-    .spotOne p {
-        margin-bottom: 10px;
-    }
-
     .join {
-        display: block;
+        display: grid;
         grid-column: span 2;
         grid-row: 4/5;
         height: auto;
         background-color: var(--color2);
         border: 5px solid var(--color1);
+        padding: 10px;
     }
 
     .join h2 {
         background-color: var(--color1);
-        text-align: center;
         padding: 10px;
         border-radius: 10px;
         margin: 10px;
         box-shadow: 2px 2px 5px white;
-        padding-top: 5px;
+        padding-top: 10px;
 
     }
 
-    .join p {
-        color: white;
-        text-align: center;
-
-    }
 
     .join a {
         color: var(--color3);
         text-decoration: none;
     }
-
-    .event {
-        grid-column: 1/2;
+    .event-weather {
+        display: grid;
+        grid-template-columns: auto 300px;
+        grid-column: 1/3;
         grid-row: 5/6;
-        max-width: 650px;
-        /* max-width: 510px; */
-    }
-    
+        gap: 5px;
 
-
-    .weather {
-        /* display: grid; */
-        grid-column: 1/2;
-        grid-row: 5/6;
-        margin-right: -25px;
-        justify-self: right;
-        width: 26vw;
-        padding: 10px;
     }
-   
-    #temperature {
-        right: 20px;
-    }
-    
     .spotthree {
         grid-row: 4/5;
-
     }
 
 

@@ -13,6 +13,7 @@
 
 * {
     box-sizing: border-box;
+    
 }
 
 body {
@@ -74,19 +75,19 @@ header {
 }
 
 .site-name {
-    text-shadow: 2px 4px 0px rgb(0 0 0 / 56%);
+    text-shadow: -8px 3px 10px rgb(0 0 0 / 56%);
     font-size: 25px;
-    /* margin-top: 30px; */
 }
 
 .chamber {
     margin-top: -10px;
     font-size: 16px;
     text-align: left;
+    text-shadow: 1px 1px 1px black;
 }
 
 #date {
-    display: block;
+    display: grid;
     font-family: var(--nunito);
     color: var(--color3);
     grid-column: 2/4;
@@ -95,6 +96,7 @@ header {
     margin-left: -7px;
     margin-top: 1px;
     text-shadow: 1px 1px 1px black;
+    align-self: flex-end;
 
 }
 
@@ -104,8 +106,6 @@ header {
     grid-row: 1/2;
     justify-self: end;
     align-self: center;
-
-    /* margin-top: 5px; */
 }
 
 .social img {
@@ -131,7 +131,6 @@ nav {
 }
 
 nav ul {
-    list-style: none;
     padding: 0;
     margin: 0;
     display: none;
@@ -149,7 +148,6 @@ nav ul li a {
     color: var(--body);
     border: 1px solid;
     font-family: var(--lato);
-
 }
 
 nav ul li.active a {
@@ -190,12 +188,7 @@ main {
     margin: auto;
     font-family: var(--lato);
     padding: 5px;
-    /* border: 2px solid #184d71bb; */
 }
-
-/* .hero {
-    max-width: 100%;
-} */
 
 .hero img {
     max-width: 100%;
@@ -218,7 +211,6 @@ main {
     text-shadow: 2px 2px 2px var(--color1);
     margin-left: 15px;
     padding: 5px;
-    /* border-radius: 15px; */
     background-color: #34a0a48d;
 
 }
@@ -242,12 +234,9 @@ main {
     text-shadow: 2px 2px 2px var(--color1);
     box-shadow: 2px 2px 5px black;
 
-
 }
 
-.only-bigscreen {
-    display: none;
-}
+.only-bigscreen {display: none;}
 
 .event {
     border: 5px solid var(--color1);
@@ -294,8 +283,10 @@ main {
 }
 
 .event p,
-.news p {
+.news p,
+.join p {
     color: white;
+    text-align: center;
 
 }
 
@@ -305,6 +296,8 @@ main {
     margin-top: 5px;
     text-align: center;
     background-color: var(--color2);
+    height: auto;
+    width: fit-content;
 }
 
 .spot1-2-3 {
@@ -321,7 +314,6 @@ main {
 .spottwo,
 .spotthree {
     background-color: var(--color2);
-    /* height: 200px; */
     padding-top: 1px;
     color: white;
     padding: 10px;
@@ -342,19 +334,16 @@ main {
     color: whitesmoke;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
-
 }
 
 .spottwo .phone {
     color: whitesmoke;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
-    margin-bottom: -5px;
+    margin-bottom: 5px;
 }
 
-.spotthree {
-    display: none;
-}
+.spotthree {display: none;}
 
 .weather {
     height: auto;
@@ -376,14 +365,9 @@ main {
 }
 
 
-.join {
-    display: none;
+.join {display: none;}
 
-}
-
-.only-bigscreen {
-    display: none;
-}
+.only-bigscreen {display: none;}
 
 /* Footer info */
 footer {
@@ -442,7 +426,6 @@ main.source {
     padding: 5px;
     margin: 10px auto;
     max-width: 500px;
-    /* border: 2px dotted var(--color1); */
     box-shadow: 2px 2px 6px black;
 
 }
@@ -457,7 +440,6 @@ main.source {
 .source ul {
     list-style: inside;
     list-style-type: none;
-
 }
 
 .source ul li a::before {
@@ -474,7 +456,6 @@ main.source {
     font-family: var(--lato);
     color: whitesmoke;
     line-height: 2rem;
-
 }
 
 .source ul li a:hover {
