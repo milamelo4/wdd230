@@ -28,6 +28,9 @@ body {
     font-family: var(--nunito);
     padding: 10px;
     justify-content: center;
+    background-color: lightgray;
+    color: var(--color1);
+    font-weight: bold;
 }
 
 .closeBtn {
