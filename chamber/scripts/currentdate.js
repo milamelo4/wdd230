@@ -26,7 +26,7 @@ const date = new Date();
 const week = date.getDay()
 let message = document.querySelector('#message')
 
-if (week === 1 || week === 4) {
+if (week === 1 || week === 2) {
     message.style.display = 'flex'
 
 }
