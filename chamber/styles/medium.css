@@ -20,12 +20,9 @@
         margin-right: auto;
     }
 
-
+    
     .hero {
-        display: grid;
-        grid-column: span 2;
-        grid-row: 1/2;
-        margin-left: 5px;
+        margin-left: 10px;
 
     }
 
@@ -33,7 +30,6 @@
         max-width: 94vw;
         display: block;
         border: none;
-        margin: 0 auto;
         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.279);
         border-radius: 10px;
     }

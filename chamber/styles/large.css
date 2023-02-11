@@ -93,7 +93,7 @@
         display: grid;
         max-width: 60vw;
         margin: 2px auto auto -8px;
-        box-shadow:  5px 5px 20px rgba(0, 0, 0, 0.577);
+        box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.653);
 
     }
 
@@ -175,6 +175,17 @@
         grid-column: 2/3;
         grid-row: 3/4;
         margin-top: 0;
+        border-top: none;
+        border-right: none;
+    }
+    .news:before {
+        background: linear-gradient(70deg, transparent 15%, var(--color3) 30%, var(--color3) 70%, transparent 85%);
+        content: "";
+        display: block;
+        height: 2px;
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 15px;
     }
 
     .spotthree {
