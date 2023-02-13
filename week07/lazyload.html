@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Progressive Loading Image</h1>
+
+    <picture>
+        <img src="https://via.placeholder.com/300/400" data-src="http://placekitten.com/300/400" alt="cat">
+    </picture>
+    <picture>
+        <img src="https://via.placeholder.com/300/400" data-src="https://loremflickr.com/300/400" alt="Random image">
+    </picture>
+    <picture>
+        <img src="https://via.placeholder.com/300/400" data-src="https://loremflickr.com//300/400/dog" alt="Random dog">
+    </picture>
+    <picture>
+        <img src="https://via.placeholder.com/300/400" data-src="https://loremflickr.com//300/400/bird" alt="Random bird">
+    </picture>
+    <picture>
+        <img src="https://via.placeholder.com/300/400" data-src="https://loremflickr.com//300/400/" alt="Random animal">
+    </picture>
+
+    <script defer src="scripts/app.js"></script>
+    
+</body>
+</html>
