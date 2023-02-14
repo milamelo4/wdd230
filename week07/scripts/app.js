@@ -1,9 +1,9 @@
-// Get all images with data-src attribute
+// Get all images with data-src attribute. The 'img[data-src]' will look at ever img that has the data-src attribute. Anything inside a bracket means is looking for a attribute.
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 //Optional parameter for IntersectionalObserver
 const imgOptions = {
-    threshold: 0.5,
+    threshold: 0,
     rootMargin: "0px 0px 50px 0px"
 };
 
@@ -23,7 +23,8 @@ if ("IntersectionObserver" in window) {
                 observer.unobserve(item.target);
             }
         });
-    });
+    }, imgOptions);
+
     imagesToLoad.forEach((img) => {
         observer.observe(img)
     });
