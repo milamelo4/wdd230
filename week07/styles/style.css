@@ -12,5 +12,5 @@ picture img {
     margin: 10px auto;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.581);
     filter: blur(0em);
-    transition: filter 10s;
+    transition: filter 0.5s;
 }
