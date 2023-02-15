@@ -377,7 +377,7 @@ main {
     display: block;
     margin: 15px auto;
 }
-.weather span, .weather p{
+.weather p{
     color: whitesmoke;
     margin: 0;
     margin-left: 10px;
