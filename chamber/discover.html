@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <meta name="description" content="Assignment week 04. Chamber Home Page Build">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <div id="message">💚 Come join us for the chamber meet and greet
+        Wednesday at
+        7:00 p.m <span title="Close" class="closeBtn"> ❌</span></div>
+    
+    <header class="clearfix">
+    
+        <div class="logo-img">
+            <a title="Home" href="index.html"><img src="images/logo.webp"
+                    alt="slc chamber logo"></a>
+        </div>
+        <div class="name-chamber">
+            <h1 class="site-name">Salt Lake City</h1>
+            <h2 class="chamber">Chamber of Commerce</h2>
+        </div>
+        <p id="date"></p>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img
+                    src="images/facebook.png" alt="facebook-link"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img
+                    src="images/insta.png" alt="instagram-link"></a>
+            <a href="https://twitter.com/" target="_blank"><img
+                    src="images/twitter.png" alt="twitter-link"></a>
+        </div>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    <main class="discover-main">
+        <h1 class="discover-heading">Facts and Statics About Salt Lake City</h1>
+        <div>
+            <section class="population">
+                <div class="wrapper-one">
+                    <h2>Population in Salt Lake City</h2>
+                    <p>Salt Lake City is the capital of Utah and the most populous city statewide, with
+                        over 1.25 million residents.</p>
+                </div>
+                <picture>
+                    <source media="(max-width: 300px)" srcset="images/slc-300.jpg" data-src="images/slc-300.jpg">
+                    <source media="(max-width: 600px)" srcset="images/slc-600.jpg" data-src="images/slc-600.jpg">
+                    <img src="images/slc-1000.jpg" alt="Placeholder" data-src="images/slc-1000.jpg"></picture>
+                    
+            
+            </section>
+            <section class="great-lake">
+                <div class="wrapper-two">
+                    <h2>The Great Salt Lake</h2>
+                    <p>
+                        The Great Salt Lake is the largest lake in North America without an outlet to
+                        the ocean resulting the high salt concentration.
+                    </p>
+                </div>
+                <picture>
+                    <img src="images/great-salt-lake.jpg" alt="The Great Salt Lake" data-src="images/great-salt-lake.jpg">
+                </picture>
+                
+            </section>
+            <section class="elevation">
+                <div class="wrapper-three">
+                    <h2>Elevation</h2>
+                    <p>Salt Lake City has an elevation of about 4,226 feet above sea level, which is
+                    much higher than most cities in the United States. The higher elevation means
+                    that the air pressure is lower, and as a result, there is less oxygen in the
+                    air.</p>
+                </div>
+                <picture>
+                    <img src="images/elevation.jpg" alt="SLC mountain" data-src="images/elevation.jpg">
+                </picture>
+                
+            </section>
+            <section class="temple">
+                <div class="wrapper-four">
+                    <h2>Temple Square</h2>
+                    <p>Historic Temple Square and the headquarters of the Church of Jesus Christ of
+                        Latter-day Saints. The Salt Lake Temple took 40 years to build and its
+                        located in the heart of downtown Salt Lake City.</p>
+                </div>
+                <picture>
+                    <img src="images/temple-square.jpg" alt="Temple Square" data-src="images/temple-square.jpg">
+                </picture>
+                
+            </section>
+            <section class="transport">
+                <div class="wrapper-five">
+                    <h2>Public Transportation</h2>
+                    <p>Utah Transit Authority, or UTA, provides more than 100 bus routes in and
+                        around
+                        Salt Lake, covering 1,800 square miles.</p>
+                </div>
+                <picture>
+                    <img src="images/train.jpg" alt="UTA train" data-src="images/train.jpg">
+            
+                </picture>
+                
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <img src="images/logo.webp" alt="slc chamber logo">
+        <h3 class="siteName"><strong>Salt Lake City Chamber of Commerce</strong>
+        </h3>
+        <address>9000 S and Redwood Rd Salt Lake City, Utah 84088</address>
+        <div class="email-phone-map">
+            <a class="email" href="">slc@chamber.org</a>
+            <p class="phone">+(801) 972-2400</p>
+            <map name="google"><a href="https://goo.gl/maps/2XHUS4HbUK9P8kvp6"
+                    target="_blank">📍Location Map</a></map>
+        </div>
+    
+        <p class="info">&copy; <span id="date1"></span> | Salt Lake City Chamber
+            | <strong>Camila Melo</strong> | WDD 230 Project | Last updated:
+            <span id="date2"></span> | <a href="sources.html"
+                class="sources">Sources</a> |
+        </p>
+    </footer>
+    <script defer src="scripts/currentdate.js"></script>
+    
+    
+</body>
+</html>
