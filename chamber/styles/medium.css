@@ -11,7 +11,9 @@
     .logo-img img {
         width: 200px;
     }
-
+    .visits {
+        grid-column: 3/4;
+    }
     .main-grid {
         display: grid;
         grid-template-columns: repeat(1, auto);
@@ -20,18 +22,13 @@
         margin-right: auto;
     }
 
-    
-    .hero {
-        margin-left: 10px;
-
-    }
-
     .hero img {
         max-width: 94vw;
         display: block;
         border: none;
         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.279);
         border-radius: 10px;
+        margin-left: 10px;
     }
 
     .pressBtn {display: block;}
@@ -91,6 +88,71 @@
     }
     .spotthree {
         grid-row: 4/5;
+    }
+
+    .discover-heading {
+        font-size: 32px;
+    }
+
+    .discover-main img {
+        display: flex;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .landscape {
+        padding: 10px 30px;
+        margin: 30px auto;
+        max-width: 911px;
+        font-weight: bold;
+        margin-top: -25px;
+        border-radius: 0 0 10px 10px;
+        border: none;
+    }
+
+    .portrait {
+        padding: 10px 30px;
+        border: none;
+        margin: 30px auto;
+        max-width: 674px;
+        font-weight: bold;
+        margin-top: -25px;
+        border-radius: 0 0 10px 10px;
+
+
+    }
+
+    .gallery {
+        position: relative;
+        background-color: var(--color2);
+        padding: 15px;
+    }
+
+    .gallery h2 { 
+        left: 350px;
+        font-size: 1.8em;
+        padding: 5px;
+        
+    }
+
+    .temple h2,
+    .transport h2 {
+        left: 500px;
+    }
+
+    .fadein img {
+        opacity: 0.1;
+        transition: 1s ease;
+        
+    }
+
+    .fadein img:hover {
+        opacity: 1;
+        transition: opacity 1s ease;
+        box-shadow: 0 0 0 5px whitesmoke;
+        transform: 1s ease;
     }
 
 

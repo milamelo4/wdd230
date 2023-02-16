@@ -35,13 +35,17 @@
             <h2 class="chamber">Chamber of Commerce</h2>
         </div>
         <p id="date"></p>
+        <div class="visits">
+        <p><span class="label">Number of Visits: </span> <span id="visits"> </span>
+        </p>
+        </div>
         <div class="social">
             <a href="https://www.facebook.com" target="_blank"><img
-                    src="images/facebook.png" alt="facebook-link"></a>
+                    src="images/facebook.webp" alt="facebook-link"></a>
             <a href="https://www.instagram.com/" target="_blank"><img
-                    src="images/insta.png" alt="instagram-link"></a>
+                    src="images/insta.webp" alt="instagram-link"></a>
             <a href="https://twitter.com/" target="_blank"><img
-                    src="images/twitter.png" alt="twitter-link"></a>
+                    src="images/twitter.webp" alt="twitter-link"></a>
         </div>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -56,71 +60,56 @@
     
     </header>
     <main class="discover-main">
-        <h1 class="discover-heading">Facts and Statics About Salt Lake City</h1>
-        <div>
+        <h1 class="discover-heading">Facts and Statistics About Salt Lake City</h1>
+        <div class="gallery">
             <section class="population">
-                <div class="wrapper-one">
-                    <h2>Population in Salt Lake City</h2>
-                    <p>Salt Lake City is the capital of Utah and the most populous city statewide, with
-                        over 1.25 million residents.</p>
-                </div>
-                <picture>
+                <h2>Population in Salt Lake City</h2>
+                <figure class="fadein">
                     <source media="(max-width: 300px)" srcset="images/slc-300.jpg" data-src="images/slc-300.jpg">
                     <source media="(max-width: 600px)" srcset="images/slc-600.jpg" data-src="images/slc-600.jpg">
-                    <img src="images/slc-1000.jpg" alt="Placeholder" data-src="images/slc-1000.jpg"></picture>
-                    
+                    <img src="https://via.placeholder.com/900/431" alt="Placeholder" data-src="images/slc-1000.jpg"></figure>
+                    <figcaption class="landscape">Salt Lake City is the capital of Utah
+                        and the most populous city statewide, with
+                        over 1.25 million residents.</figcaption>
             
             </section>
-            <section class="great-lake">
-                <div class="wrapper-two">
+             <section class="great-lake">
                     <h2>The Great Salt Lake</h2>
-                    <p>
-                        The Great Salt Lake is the largest lake in North America without an outlet to
-                        the ocean resulting the high salt concentration.
-                    </p>
-                </div>
-                <picture>
-                    <img src="images/great-salt-lake.jpg" alt="The Great Salt Lake" data-src="images/great-salt-lake.jpg">
-                </picture>
+                <figure class="fadein">
+                    <img src="https://via.placeholder.com/900/431" alt="The Great Salt Lake" data-src="images/great-salt-lake.jpg">
+                </figure>
+                <figcaption class="landscape">The Great Salt Lake is the largest lake in North America without an outlet to
+                the ocean resulting the high salt concentration.</figcaption>
                 
             </section>
             <section class="elevation">
-                <div class="wrapper-three">
-                    <h2>Elevation</h2>
-                    <p>Salt Lake City has an elevation of about 4,226 feet above sea level, which is
-                    much higher than most cities in the United States. The higher elevation means
-                    that the air pressure is lower, and as a result, there is less oxygen in the
-                    air.</p>
-                </div>
-                <picture>
-                    <img src="images/elevation.jpg" alt="SLC mountain" data-src="images/elevation.jpg">
-                </picture>
+                <h2>Elevation</h2>
+                <figure class="fadein">
+                    <img src="https://via.placeholder.com/900/431" alt="SLC mountain" data-src="images/elevation.jpg">
+                </figure>
+                <figcaption class="landscape">Salt Lake City has an elevation of about 4,226 feet above sea level, which is
+                much higher than most cities in the United States. Higher elevation causes a lower air pressure resulting less oxygen in the
+                air.</figcaption>
                 
             </section>
             <section class="temple">
-                <div class="wrapper-four">
-                    <h2>Temple Square</h2>
-                    <p>Historic Temple Square and the headquarters of the Church of Jesus Christ of
-                        Latter-day Saints. The Salt Lake Temple took 40 years to build and its
-                        located in the heart of downtown Salt Lake City.</p>
-                </div>
-                <picture>
-                    <img src="images/temple-square.jpg" alt="Temple Square" data-src="images/temple-square.jpg">
-                </picture>
+                <h2>Temple Square</h2>
+                <figure class="fadein">
+                    <img src="https://via.placeholder.com/900/431" alt="Temple Square" data-src="images/temple-square.jpg">
+                </figure>
+                <figcaption class="portrait">Temple Square and the headquarters of the Church of Jesus Christ of
+                Latter-day Saints. The Salt Lake Temple took 40 years to build and its
+                located in the heart of downtown Salt Lake City.</figcaption>
                 
             </section>
             <section class="transport">
-                <div class="wrapper-five">
-                    <h2>Public Transportation</h2>
-                    <p>Utah Transit Authority, or UTA, provides more than 100 bus routes in and
-                        around
-                        Salt Lake, covering 1,800 square miles.</p>
-                </div>
-                <picture>
-                    <img src="images/train.jpg" alt="UTA train" data-src="images/train.jpg">
-            
-                </picture>
-                
+                <h2>Public Transportation</h2>
+                <figure class="fadein">
+                    <img src="https://via.placeholder.com/900/431" alt="UTA train" data-src="images/train.jpg">
+                </figure>
+                <figcaption class="portrait">Utah Transit Authority, or UTA, provides more than 100 bus routes in and
+                around
+                Salt Lake, covering 1,800 square miles.</figcaption>
             </section>
         </div>
 
@@ -144,6 +133,7 @@
         </p>
     </footer>
     <script defer src="scripts/currentdate.js"></script>
+    <script src="../week07/scripts/app.js"></script>
     
     
 </body>

@@ -38,6 +38,20 @@ closeBtn.addEventListener('click', () => {
     message.remove(message)
 })
 
+//Number of visits
+
+const visitDisplay = document.getElementById('visits');
+let numVisits = Number(window.localStorage.getItem('visits-ls'));
+
+if (numVisits !== 0) {
+    visitDisplay.textContent = numVisits;
+
+}else {
+    visitDisplay.textContent = `This is your first visit!`
+}
+numVisits++;
+localStorage.setItem('visits-ls', numVisits);
+
 
 
 
