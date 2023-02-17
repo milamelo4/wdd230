@@ -17,7 +17,7 @@
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
     background-color: lightgray;
 
 }
@@ -197,9 +197,9 @@ nav a:hover {
     transform: scale(1.2);
 }
 
-main {
+/* main {
     margin: 2px auto;
-}
+} */
 
 .main-grid {
     display: block;
@@ -413,18 +413,17 @@ main {
 
 
 .gallery img {
-    display: block;
+    display: flex;
     max-width: 95vw;
-    margin-left: -40px;
+    margin-left: -36px;
     margin-bottom: -16px;
     background-color: var(--color2); 
+    border-left: 3px solid #184e71;
    
 }
 
 .gallery {
     position: relative;
-    margin: 5px;
-
     
 }
 .gallery h2 {
@@ -440,10 +439,11 @@ main {
 figcaption {
     font-family: var(--lato);
     background-color: whitesmoke;
+    margin: 16px auto 20px -36px;
     padding: 5px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #184e71;
-    border-left: 2px solid #184e71;;
+    border-bottom: 3px solid #184e71;
+    border-left: 3px solid #184e71;
+    width: 95vw;
 }
 
 
@@ -506,16 +506,15 @@ footer .siteName {
 .source {
     padding: 5px;
     margin: 10px auto;
-    max-width: 600px;
+    max-width: 100%;
     box-shadow: 2px 2px 6px black;
-    height: 50vh;
+    height: auto;
     background-color: var(--color2);
 
 }
 
 .source h1 {
     font-family: var(--nunito);
-    text-align: center;
     color: var(--color3);
     text-shadow: 1px 1px 1px black;
 }
@@ -523,6 +522,7 @@ footer .siteName {
 .source ul {
     list-style: inside;
     list-style-type: none;
+    
 }
 
 .source ul li a::before {

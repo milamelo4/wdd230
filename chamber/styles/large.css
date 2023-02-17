@@ -218,6 +218,11 @@
 
     .spottwo img {display: none;}
 
+    .landscape {
+        max-width: 909px;
+        margin-left: 250px;
+    }
+
    
 
 }
@@ -234,4 +239,14 @@
     .image-container p {
         right: 40px;
     }
+
+    .landscape {
+        margin-left: 442px;
+        max-width: 910px;
+    }
+
+    .gallery h2 {
+        left: 800px;
+    }
+
 }

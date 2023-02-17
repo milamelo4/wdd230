@@ -94,47 +94,21 @@
         font-size: 32px;
     }
 
-    .discover-main img {
-        display: flex;
+    .gallery img {
         max-width: 100%;
-        margin: 0 auto;
-        margin-bottom: 25px;
+        margin: 30px auto;
         border-radius: 10px 10px 0 0;
-    }
-
-    .landscape {
-        padding: 10px 30px;
-        margin: 30px auto;
-        max-width: 911px;
-        font-weight: bold;
-        margin-top: -25px;
-        border-radius: 0 0 10px 10px;
-        border: none;
-    }
-
-    .portrait {
-        padding: 10px 30px;
-        border: none;
-        margin: 30px auto;
-        max-width: 674px;
-        font-weight: bold;
-        margin-top: -25px;
-        border-radius: 0 0 10px 10px;
-
-
+        border-left: none;
     }
 
     .gallery {
-        position: relative;
         background-color: var(--color2);
         padding: 15px;
     }
 
-    .gallery h2 { 
+    .gallery h2 {
         left: 350px;
         font-size: 1.8em;
-        padding: 5px;
-        
     }
 
     .temple h2,
@@ -142,15 +116,34 @@
         left: 500px;
     }
 
+    figcaption {
+        padding: 10px 30px;
+        margin-top: -27px;
+        border-radius: 0 0 10px 10px;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+    .landscape {
+        max-width: 905px;
+    }
+
+    .portrait {
+        max-width: 674px;
+    }
+
     .fadein img {
         opacity: 0.1;
         transition: 1s ease;
-        
     }
 
     .fadein img:hover {
         opacity: 1;
-        transition: opacity 1s ease;
+        transition: 1s ease;
         box-shadow: 0 0 0 5px whitesmoke;
     }
 

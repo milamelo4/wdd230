@@ -1,5 +1,5 @@
 // Get all images with data-src attribute. The 'img[data-src]' will look at ever img that has the data-src attribute. Anything inside a bracket means is looking for a attribute.
-const imagesToLoad = document.querySelectorAll("img[data-src]");
+const imagesToLoad = document.querySelectorAll("[data-src]");
 
 //Optional parameter for IntersectionalObserver
 const imgOptions = {

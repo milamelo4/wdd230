@@ -20,9 +20,11 @@
     <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
+    <div id="message">💚 Come join us for the chamber meet and greet
+        Wednesday at
+        7:00 p.m <span title="Close" class="closeBtn"> ❌</span></div>
     <header>
-        <!-- <div id="message">🤍 Come join us for the chamber meet and greet Wednesday
-            at 7:00 p.m <span title="Close" class="closeBtn"> X</span></div> -->
+        
         <div class="logo-img">
             <a title="Home" href="index.html"><img src="images/logo.webp"
                     alt="slc chamber logo"></a>
@@ -31,7 +33,11 @@
             <h1 class="site-name">Salt Lake City</h1>
             <h2 class="chamber">Chamber of Commerce</h2>
         </div>
-        <!-- <p id="date"></p> -->
+        <p id="date"></p>
+        <div class="visits">
+            <p><span class="label">Number of Visits: </span> <span id="visits"> </span>
+            </p>
+        </div>
         <div class="social">
             <a href="https://www.facebook.com" target="_blank"><img
                     src="images/facebook.png" alt="facebook-link"></a>
@@ -44,7 +50,7 @@
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
@@ -82,6 +88,7 @@
                 class="sources">Sources</a> |
         </p>
     </footer>
+    <script defer src="scripts/currentdate.js"></script>
     
 </body>
 </html>
