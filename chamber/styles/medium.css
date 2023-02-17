@@ -92,6 +92,7 @@
 
     .discover-heading {
         font-size: 32px;
+        margin-bottom: 10px;
     }
 
     .gallery img {
@@ -103,7 +104,6 @@
 
     .gallery {
         background-color: var(--color2);
-        
         padding: 15px;
     }
 
