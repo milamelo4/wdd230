@@ -204,7 +204,6 @@
         grid-row: 2/3;
     }
 
-    
 
     .spotthree,
     .spottwo,
@@ -218,9 +217,18 @@
 
     .spottwo img {display: none;}
 
+    .gallery img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .landscape {
         max-width: 909px;
-        margin-left: 250px;
+    }
+
+    .temple h2,
+    .transport h2 {
+        left: 500px;
     }
 
    

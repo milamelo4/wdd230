@@ -407,7 +407,7 @@ nav a:hover {
     margin-top: 5px;
     font-family: var(--nunito);
     box-shadow: 2px 2px 5px black;
-    margin-bottom: 10px;
+    margin-bottom: -11px;
     font-size: 20px;
 }
 
@@ -424,6 +424,8 @@ nav a:hover {
 
 .gallery {
     position: relative;
+    margin: 0 auto;
+
     
 }
 .gallery h2 {

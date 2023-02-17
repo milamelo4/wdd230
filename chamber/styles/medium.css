@@ -96,13 +96,14 @@
 
     .gallery img {
         max-width: 100%;
-        margin: 30px auto;
+        margin: 30px 5px;
         border-radius: 10px 10px 0 0;
         border-left: none;
     }
 
     .gallery {
         background-color: var(--color2);
+        
         padding: 15px;
     }
 
@@ -113,27 +114,30 @@
 
     .temple h2,
     .transport h2 {
-        left: 500px;
+        left: 400px;
     }
 
+
     figcaption {
-        padding: 10px 30px;
+        padding: 10px 5px;
         margin-top: -27px;
         border-radius: 0 0 10px 10px;
         border: none;
-        margin-left: auto;
-        margin-right: auto;
         text-align: center;
         font-weight: bold;
 
-    }
+    } 
 
     .landscape {
-        max-width: 905px;
+        max-width: 101%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .portrait {
         max-width: 674px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .fadein img {
