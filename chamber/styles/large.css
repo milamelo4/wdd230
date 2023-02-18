@@ -55,20 +55,15 @@
         background-color: var(--color1);
         padding: 8px;
         border-radius: 10px 0 10px 0;
-        justify-self: start;
         box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.559);
     }
 
-    div.visits {
-        margin-bottom: -20px;
-    }
-
     .visits {
-        grid-column: 3/4;
         grid-row: 3/4;
         font-size: 18px;
         justify-self: end;
         margin-right: 5px;
+        margin-bottom: -20px;
     }
 
     .social {
@@ -102,7 +97,6 @@
 
     .hero img {
         display: grid;
-        height: auto;
         max-width: 60vw;
         margin: 2px;
         box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.653);
@@ -111,16 +105,10 @@
 
     .image-container h2 {display: none;}
 
-    .only-bigscreen > p {
-        font-style: italic;
-        margin-top: -10px;
-        font-size: 20px;
-        right: 5px
-    }
-
     .only-bigscreen h2 {
         font-size: 24px;
         margin-top: 5px;
+        margin-bottom: -10px;
     }
 
     .only-bigscreen {
@@ -134,14 +122,8 @@
         color: white;
         text-shadow: 2px 2px 2px var(--color1);
         margin: 5px;
-
-    }
-
-    .image-container h3 {
-        right: 10px;
-        bottom: 1px;
-        background-color: #184d71c5;
-        text-shadow: 2px 2px 2px var(--color1);
+        font-style: italic;
+        font-size: 20px;
 
     }
     .event-weather {
@@ -171,12 +153,6 @@
 
     }
 
-    .join h2 {
-        padding-top: 10px;
-        align-self: center;
-        
-    }
-
     .join h2:hover,
     .join-today p:hover {
         transform: scale(1.1);
@@ -200,8 +176,7 @@
     }
 
     .spotthree {
-        display: block;
-        grid-row: 2/3;
+        display: grid;
     }
 
 
@@ -217,13 +192,14 @@
 
     .spottwo img {display: none;}
 
-    .gallery img{
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     .landscape {
-        max-width: 909px;
+        max-width: 64.5%;
+        margin-left: auto;
+    }
+
+    .portrait {
+        max-width: 47.9%;
     }
 
     .temple h2,

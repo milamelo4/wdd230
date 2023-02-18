@@ -59,7 +59,6 @@ header {
 
 .logo-img img {
     width: 160px;
-    margin: 5px;
     margin-top: 10px;
     margin-left: -25px;
 
@@ -113,9 +112,6 @@ header {
     font-weight: bold;
 }
 
-.social a img{
-    border-radius: 50%;
-}
 
 .social {
     display: grid;
@@ -129,8 +125,11 @@ header {
     display: block;
     margin: 2px;
     margin-right: 5px;
-    
+    border-radius: 50%;
+}
 
+.social a:hover {
+    transform: scale(1.2);
 }
 
 nav button {
@@ -177,25 +176,21 @@ nav a:hover {
     background-color: var(--color1);
 }
 
-#hamburgerBtn span:nth-child(1) {
-    display: block;
-}
+#hamburgerBtn span:nth-child(1),
+#hamburgerBtn.open span:nth-child(2) {display: block;}
 
-#hamburgerBtn span:nth-child(2) {
+#hamburgerBtn span:nth-child(2),
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+
+/* #hamburgerBtn.open span:nth-child(1) {
     display: none;
-}
+} */
 
-#hamburgerBtn.open span:nth-child(1) {
-    display: none;
-}
-
-#hamburgerBtn.open span:nth-child(2) {
+/* #hamburgerBtn.open span:nth-child(2) {
     display: block;
-}
+} */
 
-.social a:hover {
-    transform: scale(1.2);
-}
+
 
 /* main {
     margin: 2px auto;
@@ -208,17 +203,17 @@ nav a:hover {
     padding: 5px;
 }
 
-.hero img {
-    max-width: 100%;
-    border: 5px solid var(--color1);
-    height: auto;
-
-}
-
 .herodiv {
     position: relative;
 
 }
+
+.hero img {
+    max-width: 100%;
+    border: 5px solid var(--color1);
+}
+
+
 
 .image-container h2 {
     position: absolute;
@@ -227,7 +222,7 @@ nav a:hover {
     color: white;
     text-shadow: 2px 2px 2px var(--color1);
     padding: 5px;
-    background-color: #34a0a48d;
+    background-color: #184d717f;
 
 }
 
@@ -239,13 +234,12 @@ nav a:hover {
 .image-container h3 {
     position: absolute;
     padding: 10px;
-    right: 5px;
+    right: 15px;
     bottom: 0;
     font-size: 20px;
-    margin-right: 5px;
     border-radius: 15px;
     font-weight: bolder;
-    background-color: #34a0a4ce;
+    background-color: #184d71c5;
     color: white;
     text-shadow: 2px 2px 2px var(--color1);
     box-shadow: 2px 2px 5px black;
@@ -264,7 +258,8 @@ nav a:hover {
 
 }
 
-.more-info {
+.more-info,
+.join-today a {
     text-decoration: none;
     color: whitesmoke;
 }
@@ -283,10 +278,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.join-today a {
+/* .join-today a {
     color: white;
     text-decoration: none;
-}
+} */
 
 .event h2,
 .news h2,
@@ -312,8 +307,6 @@ nav a:hover {
     margin-top: 5px;
     text-align: center;
     background-color: var(--color2);
-    height: auto;
-    width: fit-content;
 }
 
 .spot1-2-3 {
@@ -338,45 +331,26 @@ nav a:hover {
 
 }
 
-.spotOne p:after {
+.line:after {
     background: linear-gradient(90deg, transparent 15%, var(--color3) 30%, var(--color3) 70%, transparent 85%);
     content: "";
     display: block;
     height: 1px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     width: 100%;
     margin-top: 10px;
     
 }
-.spottwo .phone:before {
-    background: linear-gradient(90deg, transparent 15%, var(--color3) 30%, var(--color3) 70%, transparent 85%);
-    content: "";
-    display: block;
-    height: 1px;
-    margin-top: 3px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.spotOne a {
+.spotOne a,
+.spottwo .phone {
     text-decoration: none;
     color: whitesmoke;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
 }
 
-.spottwo .phone {
-    color: whitesmoke;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-    margin-bottom: 5px;
-}
-
-.spotthree {display: none;}
 
 .weather {
-    height: auto;
-    width: auto;
-    padding: 5px;
     border: 5px solid var(--color1);
     margin-top: 5px;
     background-color: var(--color2);
@@ -389,14 +363,15 @@ nav a:hover {
 }
 .weather p{
     color: whitesmoke;
-    margin: 0;
-    margin-left: 10px;
+    text-align: center;
+    margin: 1px;
 }
 
 
-.join {display: none;}
-
+.join,
+.spotthree,
 .only-bigscreen {display: none;}
+
 
 .discover-heading {
     color: whitesmoke;
@@ -413,7 +388,7 @@ nav a:hover {
 
 
 .gallery img {
-    display: flex;
+    display: block;
     max-width: 95vw;
     margin-left: -36px;
     margin-bottom: -16px;
