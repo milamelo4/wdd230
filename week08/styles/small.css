@@ -7,33 +7,35 @@ body {
     margin: 10px auto;
     padding: 0;
     max-width: 500px;
-    
 }
+
 table {
     border-collapse: collapse;
     margin: 0 auto;
-    
 }
 
-
-h1 {
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 1rem;
+}
+th[scope='col'] {
     background-color: black;
-    color: whitesmoke;
-    padding: 40px;
-    text-align: center;
-    margin-bottom: 2px;
-    
+    font-size: 25px;
+    padding: 30px;
 }
-td{
+thead th{
     border: 2px solid rgb(68, 67, 67);
-    font-size: 18px;
-    padding: 5px;
-    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.598);
+    color: whitesmoke;
+    font-size: large;
 }
+
 tr:nth-child(even) {
     background-color: lightgray;
-
 }
+
 th[scope='row'] {
     border: 2px solid rgb(68, 67, 67);
     font-size: 18px;
@@ -41,14 +43,11 @@ th[scope='row'] {
     text-align: center;
 }
 
-thead th{
+td{
     border: 2px solid rgb(68, 67, 67);
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.598);
-    color: whitesmoke;
-    font-size: large;
-    
-    
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
 }
 
 .bold {
@@ -57,11 +56,6 @@ thead th{
 }
 
 
-caption {
-    padding: 10px;
-    caption-side: bottom;
-    font-size: 1rem;
-}
 
 
 
