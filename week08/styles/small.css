@@ -9,6 +9,14 @@ body {
     max-width: 500px;
 }
 
+h1 {
+    background-color: black;
+    color: whitesmoke;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
 table {
     border-collapse: collapse;
     margin: 0 auto;
@@ -19,11 +27,7 @@ caption {
     caption-side: bottom;
     font-size: 1rem;
 }
-th[scope='col'] {
-    background-color: black;
-    font-size: 25px;
-    padding: 30px;
-}
+
 thead th{
     border: 2px solid rgb(68, 67, 67);
     padding: 20px;
@@ -54,6 +58,7 @@ td{
     font-weight: bold;
     padding: 10px;
 }
+
 
 
 
