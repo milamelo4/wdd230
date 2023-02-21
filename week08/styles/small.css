@@ -1,0 +1,71 @@
+* {
+    
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    margin: 10px auto;
+    padding: 0;
+    max-width: 500px;
+    
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    
+}
+
+
+h1 {
+    background-color: black;
+    color: whitesmoke;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 2px;
+    
+}
+td{
+    border: 2px solid rgb(68, 67, 67);
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: lightgray;
+
+}
+th[scope='row'] {
+    border: 2px solid rgb(68, 67, 67);
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+thead th{
+    border: 2px solid rgb(68, 67, 67);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.598);
+    color: whitesmoke;
+    font-size: large;
+    
+    
+}
+
+.bold {
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
