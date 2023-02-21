@@ -28,7 +28,7 @@ caption {
     font-size: 1rem;
 }
 
-thead th{
+th[scope='col']{
     border: 2px solid rgb(68, 67, 67);
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.598);
