@@ -43,7 +43,7 @@ tbody > tr:nth-child(even) {
 th[scope='row'] {
     border: 2px solid rgb(68, 67, 67);
     font-size: 18px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
