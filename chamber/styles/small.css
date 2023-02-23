@@ -624,9 +624,14 @@ main.thankyou {
    
 }
 
-.sign, .dateTime {
+.sign {
     font-style: italic;
     font-weight: bold;
+}
+.dateTime {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 
