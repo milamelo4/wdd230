@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you Page</title>
+    <meta name="description" content="Thank you page week08. Join page">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <!-- <div id="message">💚 Come join us for the chamber meet and greet
+        Wednesday at
+        7:00 p.m <span title="Close" class="closeBtn"> ❌</span></div> -->
+    
+    <header class="clearfix">
+    
+        <div class="logo-img">
+            <a title="Home" href="index.html"><img src="images/logo.webp"
+                    alt="slc chamber logo"></a>
+        </div>
+        <div class="name-chamber">
+            <h1 class="site-name">Salt Lake City</h1>
+            <h2 class="chamber">Chamber of Commerce</h2>
+        </div>
+    
+        <!--<p id="date"></p>
+         <div class="visits">
+            <p><span class="label">Number of Visits: </span> <span id="visits">
+                </span></p>
+        </div> -->
+    
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img
+                    src="images/facebook.webp" alt="facebook-link"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img
+                    src="images/insta.webp" alt="instagram-link"></a>
+            <a href="https://twitter.com/" target="_blank"><img
+                    src="images/twitter.webp" alt="twitter-link"></a>
+        </div>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li class="home"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="thankyou">
+        <img src="images/logo.webp" alt="slc chamber logo">
+        <h1>Your form has been successfully submitted</h1> 
+        <p class="dateTime">Your application was received on: <span id="dateTime"></span> </p>
+        <p>Thank you for becoming a member of the Salt Lake City Chamber of Commerce! We
+        are thrilled to have you as a part of our growing community of business
+        professionals, entrepreneurs, and innovators.</p>
+        
+        <p>As a member of the Chamber, you will have access to a variety of resources and
+        benefits designed to help you and your business succeed. We are
+        dedicated to supporting your growth and success in the Salt Lake City business
+        community.</p>
+
+        <p> We can't wait to see all the
+        great things you'll accomplish as a part of the Salt Lake City Chamber of
+        Commerce.</p>
+        
+        <p class="sign">
+            Best regards,<br>
+            Director of the Salt Lake City Chamber of Commerce.
+        </p>
+
+    </main>
+    <footer>
+        <img src="images/logo.webp" alt="slc chamber logo">
+        <h3 class="siteName"><strong>Salt Lake City Chamber of Commerce</strong>
+        </h3>
+        <address>9000 S and Redwood Rd Salt Lake City, Utah 84088</address>
+        <div class="email-phone-map">
+            <a class="email" href="">slc@chamber.org</a>
+            <p class="phone">+(801) 972-2400</p>
+            <map name="google"><a href="https://goo.gl/maps/2XHUS4HbUK9P8kvp6"
+                    target="_blank">📍Location Map</a></map>
+        </div>
+    
+        <p class="info">&copy; <span id="date1"></span> | Salt Lake City Chamber
+            | <strong>Camila Melo</strong> | WDD 230 Project | Last updated:
+            <span id="date2"></span> | <a href="sources.html"
+                class="sources">Sources</a> |
+        </p>
+    </footer>
+    <script>
+        //Thank you time
+            let date = new Date()
+            let subTime = document.getElementById('dateTime');
+            subTime.innerHTML = date.toLocaleString();
+    </script>
+    
+</body>
+</html>

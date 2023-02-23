@@ -427,10 +427,16 @@ figcaption {
 
 /* ----- Join Page------- */
 form {
-    /* margin-left: 20px; */
     padding: 10px;
     display: block;
 
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 1rem;
+    font-family: var(--lato);
 }
 .join-page {
     display: block;
@@ -439,7 +445,37 @@ form {
     box-sizing: border-box;
 }
 
-.large-view, .form-title{display: none;}
+label span {
+    color: red;
+    font-weight: bold;
+}
+
+.large-view, 
+.form-title {display: none;}
+
+table.benefits{
+    max-width: 95%;
+    display: block;
+    margin: 2rem auto;
+    padding: .5rem 2%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.354);
+}
+
+.table-title {
+    color: var(--color1);
+    font-family: var(--nunito);
+    text-shadow: 1px 0 2px var(--color5);
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    margin: 0;
+    table-layout: fixed;
+    background-color: white;
+    border: 5px solid var(--color5);
+
+}
 
 
 .small-view {
@@ -450,15 +486,45 @@ form {
     font-size: 25px;
 }
 
+th[scope='col'] {
+    border: 2px solid var(--color5);
+    padding: 5px;
+    background-color: var(--color1);
+    color: whitesmoke;
+    font-size: normal;
+    
+}
+
+th[scope='row'] {
+    border: 2px solid var(--color1);
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+}
+td {
+    border: 2px solid var(--color1);
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    
+    height: 30px;
+
+       
+        
+}
+tbody > tr:nth-child(even) {
+        background-color: #c6e8f89a 
+    }
+
+
+
 form fieldset {
     margin: 2rem auto;
     border: 2px solid  var(--color2);
     background-color: #c6e8f89a ;
     border-radius: 10px;
     padding: .5rem 2%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.354);
-    
-
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.361);
 }
 
 form legend {
@@ -524,8 +590,6 @@ textarea {
     padding: .75rem;
 }
 
-table.benefits, 
-.table-title{display: none;}
 
 form label.top input:required {
     border: rgb(246, 100, 100) solid 2px;
@@ -535,6 +599,39 @@ form label.top input:required:valid {
     border: var(--color4) solid 2px;
 
 }
+
+form label.top input:valid,
+form label.top textarea:valid {
+    border: var(--color4) solid 2px;
+
+}
+
+/* Thank you page */
+
+main.thankyou {
+    display: block;
+    max-width: 100%;
+    background-color: #34a0a48f;
+    font-family: var(--lato);
+    padding: 15px;
+    margin: 5px;
+}
+
+.thankyou img{display: none;}
+
+.thankyou h1 {
+    color: var(--color1);
+   
+}
+
+.sign, .dateTime {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+
 
 
 
