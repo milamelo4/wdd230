@@ -89,12 +89,12 @@
                 <fieldset>
                     <legend>Describe your Business</legend>
                    
-                    <label class="top" hidden>text-area<textarea name="bus-description" cols="30" rows="5" placeholder="Briefly describe your business" minlength="10"></textarea></label>
+                    <label class="top"><textarea name="bus-description" cols="30" rows="5" placeholder="Briefly describe your business" minlength="10"></textarea></label>
                 </fieldset>
              
-            <label hidden>local-time<input type="datetime-local" name="loaded_at" value="2023-02-23T14:30:00" hidden> <!--<input type="hidden" name="form-loaded-at" value="<?php echo date('Y-m-d H:i:s'); ?>">--></label>
+            <label for="testing"><input type="datetime-local" name="loaded_at" value="2023-02-23T14:30:00" hidden id="testing"> <!--<input type="hidden" name="form-loaded-at" value="<?php echo date('Y-m-d H:i:s'); ?>">--></label>
 
-            <label class="submitBtn" hidden>Submit<input type="submit" value="Become a Member"></label>
+            <input type="submit" value="Become a Member" class="submitBtn">
         </form>
 
             <h2 class="table-title">Membership Benefits</h2>
