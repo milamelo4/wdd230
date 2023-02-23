@@ -565,7 +565,7 @@ form label.sbs {
     font-weight: bold;
 }
 
-form label.submitBtn input{
+input.submitBtn {
     border: none;
     background-color: var(--color1);
     color: white;
@@ -578,7 +578,7 @@ form label.submitBtn input{
     cursor: pointer;
     
 }
-.submitBtn input:hover {
+.submitBtn:hover {
     color: var(--color3);
     transform: scale(1.04);
 }
