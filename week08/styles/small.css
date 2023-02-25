@@ -9,17 +9,25 @@ body {
     max-width: 500px;
 }
 
-h1 {
+.header {
+    width: 10%;
+    height: 70px;
     background-color: black;
-    color: whitesmoke;
-    padding: 40px;
-    text-align: center;
-    margin-bottom: 2px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom-color: black;
+
+}
+
+td.black {
+    background-color: black;
 }
 
 table {
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: -2px auto;
+    
 }
 
 caption {
@@ -34,6 +42,7 @@ th[scope='col']{
     background-color: rgba(0, 0, 0, 0.598);
     color: whitesmoke;
     font-size: large;
+    
 }
 
 tbody > tr:nth-child(even) {
@@ -45,6 +54,10 @@ th[scope='row'] {
     font-size: 18px;
     padding: 5px;
     text-align: center;
+    width: 10%;
+    height: 30px;
+    
+    
 }
 
 td{
@@ -52,6 +65,8 @@ td{
     font-size: 18px;
     padding: 5px;
     text-align: center;
+    width: 10%;
+    height: 30px;
 }
 
 
