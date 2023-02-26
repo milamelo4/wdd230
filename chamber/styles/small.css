@@ -568,9 +568,6 @@ main.thankyou {
 
 .thankyou img{display: none;}
 
-.thankyou h1 {
-    color: var(--color1);
-}
 
 .sign {
     font-style: italic;
