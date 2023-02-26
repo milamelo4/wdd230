@@ -567,7 +567,6 @@ main.thankyou {
     background-color: #34a0a48f;
     font-family: var(--lato);
     padding: 15px;
-    margin: 5px;
 }
 
 .thankyou img{display: none;}
@@ -579,11 +578,6 @@ main.thankyou {
 .sign {
     font-style: italic;
     font-weight: bold;
-}
-.dateTime {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 18px;
 }
 
 

@@ -165,7 +165,7 @@
         border-top: none;
         border-right: none;
     }
-    .news:before {
+    .thick-line:before {
         background: linear-gradient(70deg, transparent 15%, var(--color3) 30%, var(--color3) 70%, transparent 85%);
         content: "";
         display: block;
