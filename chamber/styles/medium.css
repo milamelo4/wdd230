@@ -218,7 +218,7 @@
 
     main.thankyou {
         margin: 15px auto;
-        width: 770px;
+        width: 785px;
         padding: 20px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.361);
         border-radius: 15px;
@@ -229,7 +229,7 @@
         max-width: 30%;
         float: right;
         background-color: var(--color1);
-        margin: 10px;
+        margin: 5px;
     }
 
 
