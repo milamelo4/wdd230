@@ -289,12 +289,12 @@ nav a:hover {
     margin-bottom: 5px;
 }
 
-.line:after {
+.line:after, .sign:before {
     background: linear-gradient(90deg, transparent 15%, var(--color3) 30%, var(--color3) 70%, transparent 85%);
     content: "";
     display: block;
     height: 1px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     width: 100%;
     margin-top: 10px;
 }
