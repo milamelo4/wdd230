@@ -52,9 +52,6 @@ if (numVisits !== 0) {
 numVisits++;
 localStorage.setItem('visits-ls', numVisits);
 
-
-
-
 // Hamburger menu
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
@@ -64,4 +61,7 @@ const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
 
+//Date and Time form
+let subDate = document.getElementById('subDate')
+subDate.value = date
 
