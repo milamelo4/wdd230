@@ -61,7 +61,4 @@ const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
 
-//Date and Time form
-let subDate = document.getElementById('subDate')
-subDate.value = date
 

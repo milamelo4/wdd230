@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank you Page</title>
-    <meta name="description" content="Thank you page week08. Join page">
+    <title>Directory Page</title>
+    <meta name="description" content="Assignment week 09. Directory Page Build">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
-
 <body>
     <div id="message">💚 Come join us for the chamber meet and greet
         Wednesday at
@@ -40,7 +39,7 @@
         <div class="visits">
             <p><span class="label">Number of Visits: </span> <span id="visits">
                 </span></p>
-        </div> 
+        </div>
     
         <div class="social">
             <a href="https://www.facebook.com" target="_blank"><img
@@ -53,37 +52,15 @@
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
-                <li class="home"><a href="index.html">Home</a></li>
+                <li class="active home"><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="thankyou">
-        <img src="images/logo.webp" alt="slc chamber logo">
-        <h2>Your form has been successfully submitted.</h2> 
-        <strong><span id="fname"></span></strong> 
-        <p class="dateTime">Your application was received on: <span id="dateTime"></span> </p>
-        <p>You have selected a: <strong><em><span id="member"></span></em></strong></p>
-        <p>Thank you for becoming a member of the Salt Lake City Chamber of Commerce! We
-        are thrilled to have you as a part of our growing community of business
-        professionals, entrepreneurs, and innovators.</p>
-        
-        <p>As a member of the Chamber, you will have access to a variety of resources and
-        benefits designed to help you and your business succeed. We are
-        dedicated to supporting your growth and success in the Salt Lake City business
-        community.</p>
-
-        <p> We can't wait to see all the
-        great things you'll accomplish as a part of the Salt Lake City Chamber of
-        Commerce.</p>
-        
-        <p class="sign thick-line">
-            Best regards,<br>
-            Director of the Salt Lake City Chamber of Commerce.
-        </p>
+    <main>
 
     </main>
     <footer>
@@ -104,9 +81,8 @@
                 class="sources">Sources</a> |
         </p>
     </footer>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/thankyou.js"></script>
-    <script src="scripts/formdate.js"></script>
+    <script defer src="scripts/currentdate.js"></script>
+    
     
 </body>
 </html>
