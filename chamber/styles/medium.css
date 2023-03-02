@@ -199,7 +199,6 @@
         width: 100%;
         margin: .5rem auto;
         grid-column: 2/3;
-        grid-row: span 3;
         align-self: start;
     }
    
@@ -231,6 +230,26 @@
         background-color: var(--color1);
         margin: 5px;
     }
+
+    .list section {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        align-items: center;
+    }
+
+    .list p, .list a, .list h3{
+        flex: 1;
+    }
+
+    .list section:nth-child(even) {
+        background-color: white;
+    }
+
+    .list section:nth-child(odd) {
+        background-color: #d0f3e9;
+    }
+    
 
 
     /* -----footer info -----*/
