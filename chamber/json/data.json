@@ -1,22 +1,22 @@
 {
   "business": [
     { 
-      "image": " https://cdn.glitch.global/41f18a3c-47b8-478e-bb43-1f7358e52421/ring.png?v=1677705021688", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/ring.png", 
       "name": "Made by Mary",      
       "info": "Customized handmade jewelry",
       "address": "753 W Honda Park Dr Salt Lake City, UT 84060",
       "contact": "info@madebymary.com",
-      "website": "https://madebymary.com",
+      "website": "https://www.madebymary.com/",
       "membership": "Gold"      
       
     },
     {
-      "image": " https://cdn.glitch.global/41f18a3c-47b8-478e-bb43-1f7358e52421/museum.png?v=1677705013324", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/museum.png", 
       "name": "Leonardo Arts",
       "info": "Science and art museum",
       "address": "209 E 500 S Salt Lake City, UT 84111",
       "contact": "(801) 531-9800",
-      "website": "https://theleonardo.org",
+      "website": "https://theleonardo.org/",
       "membership": "Non-Profit"      
       
     },
