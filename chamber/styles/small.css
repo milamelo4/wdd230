@@ -84,8 +84,6 @@ header {
     text-shadow: 1px 1px 1px black;
 }
 
-
-
 #date{
     display: grid;
     font-family: var(--nunito);
@@ -94,7 +92,6 @@ header {
     grid-row: 1/1;
     align-self: flex-end;
     justify-self: start;
-    
 }
 
 .visits {
@@ -105,7 +102,6 @@ header {
     color: var(--color3);
     margin-left: 5px;
 }
-
 
 .social {
     display: grid;
@@ -184,7 +180,8 @@ nav a:hover {
     padding: 5px;
 }
 
-.herodiv {
+.herodiv,
+.gallery {
     position: relative;
 }
 
@@ -225,7 +222,9 @@ nav a:hover {
     box-shadow: 2px 2px 5px black; */
 }
 
-.event {
+.event,
+.news,
+.weather {
     border: 5px solid var(--color1);
     padding: 5px;
     text-align: center;
@@ -233,6 +232,13 @@ nav a:hover {
     margin-top: 5px;
     color: white;
 }
+/* .news {
+    border: 5px solid var(--color1);
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: var(--color2);
+} */
 
 .more-info,
 .join-today a {
@@ -273,20 +279,12 @@ nav a:hover {
     text-align: center;
 }
 
-.news {
-    border: 5px solid var(--color1);
-    padding: 5px;
-    margin-top: 5px;
-    text-align: center;
-    background-color: var(--color2);
-}
-
 .spot1-2-3 {
     padding: 5px;
     border: 5px solid var(--color1);
     margin-top: 5px;
     background-color: var(--color5);
-    justify-self: center;
+    /* justify-self: center; */
     align-self: stretch;
 }
 
@@ -294,7 +292,6 @@ nav a:hover {
 .spottwo,
 .spotthree {
     background-color: var(--color2);
-    padding-top: 1px;
     color: white;
     padding: 10px;
     text-align: center;
@@ -319,12 +316,6 @@ nav a:hover {
     text-shadow: 1px 1px 1px black;
 }
 
-.weather {
-    border: 5px solid var(--color1);
-    margin-top: 5px;
-    background-color: var(--color2);
-}
-
 .weather img {
     display: block;
     margin: 0 auto;
@@ -340,7 +331,9 @@ nav a:hover {
 .spotthree,
 .only-bigscreen,
 .join-large-view,
-.form-title {display: none;}
+.form-title,
+.list section img,
+.thankyou img {display: none;}
 
 
 /*------- Discover page------- */
@@ -368,11 +361,6 @@ nav a:hover {
     border-left: 3px solid #184e71;
 }
 
-.gallery {
-    position: relative;
-    margin: 0 auto;
-}
-
 .gallery h2 {
     position: absolute;
     background-color: #1a759f72;
@@ -396,18 +384,13 @@ figcaption {
 /* ----- Join Page------- */
 
 .join-page {
-    display: block;
     margin: auto;
     font-family: var(--lato);
-    
 }
-
 
 form {
     padding: 10px;
-    display: block;
     margin-top: 10px;
-    
 }
 
 form fieldset {
@@ -419,8 +402,7 @@ form fieldset {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.361);
 }
 
-form legend
- {
+form legend {
     color: white;
     margin: 0 1rem;
     padding: 0.2rem .5rem;
@@ -428,8 +410,6 @@ form legend
     background-color: var(--color2);
     border-radius: 10px;
 }
-
-
 
 form label span {
     color: red;
@@ -445,15 +425,10 @@ form label.top {
     padding-bottom: 10px;
 }
 
-form .beni-bellow em {
-    font-size: 15px;
-}
-
 form label.top input {
     /* -webkit-appearance: none; */
     display: block;
     font-size: 1rem;
-    border: solid 2px darkgrey;
     border-radius: 4px;
     padding: .75rem;
     color: #555;
@@ -512,14 +487,12 @@ form label.top textarea:valid {
     font-family: var(--nunito);
     text-shadow: 1px 0 2px var(--color5);
     text-align: left;
-    margin: -10px auto;
+    margin: -30px auto;
     padding: .5rem 3.4%;
-    margin-bottom: -29px;
 }
 
 table {
     border-collapse: collapse;
-    margin: 0;
     table-layout: fixed;
     background-color: white;
     border: 5px solid var(--color5);
@@ -538,7 +511,6 @@ table caption {
     padding: 10px;
     caption-side: bottom;
     font-size: 1rem;
-    font-family: var(--lato);
 }
 
 table th[scope='col'] {
@@ -565,34 +537,21 @@ table td {
     width: 10%;
 }
 
-table tbody > tr:nth-child(even)
- {
+table tbody > tr:nth-child(even) {
     background-color: #c6e8f89a 
 }
 
 /*------- Thank you page------- */
 
 main.thankyou {
-    display: block;
-    max-width: 100%;
     background-color: #34a0a48f;
     font-family: var(--lato);
     padding: 15px;
 }
 
-.thankyou img{display: none;}
-
-
-.sign {
-    font-style: italic;
-    font-weight: bold;
-}
-
-
-
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
 }
 
 .grid section,
@@ -606,7 +565,6 @@ main.thankyou {
     flex-direction: column;
     align-items: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.503);
-
 }
 
 .grid section h3,
@@ -617,9 +575,10 @@ main.thankyou {
     font-weight: bold;
     background-color: var(--color2);
 }
+
 .grid section > p ,
-.list section > p{
-    margin: 0.5rem;
+.list section > p {
+    margin: 0.2rem;
     color: black;
 }
 
@@ -634,8 +593,6 @@ section.direc-page a {
     text-decoration: none;
     color: black;
     margin: 5px;
-    
-    
 }
 
 .direc-page p:nth-child(6){
@@ -646,23 +603,22 @@ div.menu {
     text-align: center;
     padding: 10px;
     margin-top: 10px;
-    
 }
+
 .botao {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.529);
     border: none;
     background-color: #184d71b3;
     margin: 5px;
 }
+
 .botao:focus,
 .botao:active {
     background-color: var(--color1);
     border: 1px solid whitesmoke;
 }
 
-.list section img{
-    display: none;
-}
+
 
 
 
