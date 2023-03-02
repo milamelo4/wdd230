@@ -1,7 +1,7 @@
 {
   "business": [
     { 
-      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/ring.png", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/ring.webp", 
       "name": "Made by Mary",      
       "info": "Customized handmade jewelry",
       "address": "753 W Honda Park Dr Salt Lake City, UT 84060",
@@ -11,7 +11,7 @@
       
     },
     {
-      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/museum.png", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/museum.webp", 
       "name": "Leonardo Arts",
       "info": "Science and art museum",
       "address": "209 E 500 S Salt Lake City, UT 84111",
@@ -21,7 +21,7 @@
       
     },
     { 
-      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/books.png", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/books.webp", 
       "name": "King’s English Bookshop",      
       "info": "An independent bookstore",
       "address": "1511 S 1500 E Salt Lake City, UT 84105",
@@ -31,7 +31,7 @@
       
     },
     {
-      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/cleaning.png", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/cleaning.webp", 
       "name": "Z’s Cleaning",
       "info": "Home and business professional cleaning",
       "address": "1722 Fremont Dr Salt Lake City, UT 84104",
@@ -41,7 +41,7 @@
       
     },
     { 
-      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/bank.png", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/bank.webp", 
       "name": "Zions Bank",      
       "info": "Full-service bank",
       "address": "9432 S 1860 W Salt Lake City, UT 84095",
@@ -51,7 +51,7 @@
       
     },
     {
-      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/farm.png", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/farm.webp", 
       "name": "Wasatch Front Farmers",
       "info": "Locally grown produce, food, and crafts",
       "address": "6351 900 E Salt Lake City, UT 84121",
@@ -62,7 +62,7 @@
       
     },
     { 
-      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/newspaper.png", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/newspaper.webp", 
       "name": "Salt Lake Tribune",      
       "info": "Daily local and national news",
       "address": "90 S 400 W Salt Lake City, UT 84101",
@@ -72,7 +72,7 @@
       
     },
     {
-      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/art.png", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/art.webp", 
       "name": "Paint Mixer",
       "info": "Painting classes for all skill levels",
       "address": "1327 E 2100 S Salt Lake City, UT 84105",
@@ -83,7 +83,7 @@
       
     },
     { 
-      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/symphony.png", 
+      "image": "https://milamelo4.github.io/wdd230/chamber/images/buslogs/symphony.webp", 
       "name": "Utah Symphony",      
       "info": "Variety of classical music",
       "address": "123 W South Temple Salt Lake City, UT 84101",
