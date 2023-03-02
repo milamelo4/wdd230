@@ -76,18 +76,25 @@ header {
 .chamber {
     margin-top: -10px;
     font-size: 16px;
+}
+
+#date,
+.chamber,
+.visits {
     text-shadow: 1px 1px 1px black;
 }
+
+
 
 #date{
     display: grid;
     font-family: var(--nunito);
     color: var(--color3);
     grid-column: 2/4;
-    grid-row: 1/2;
-    justify-self: start;
-    text-shadow: 1px 1px 1px black;
+    grid-row: 1/1;
     align-self: flex-end;
+    justify-self: start;
+    
 }
 
 .visits {
@@ -96,13 +103,9 @@ header {
     grid-row: 2/3;
     font-family: var(--nunito);
     color: var(--color3);
-    text-shadow: 1px 1px 1px black;
     margin-left: 5px;
 }
 
-#visits{
-    font-weight: bold;
-}
 
 .social {
     display: grid;
@@ -119,8 +122,9 @@ header {
     border-radius: 50%;
 }
 
-.social a:hover {
-    transform: scale(1.2);
+.social a:hover,
+.image-container h3:hover {
+    transform: scale(1.1);
 }
 
 nav button {
@@ -187,32 +191,36 @@ nav a:hover {
     border: 5px solid var(--color1);
 }
 
-.image-container h2 {
+.image-container h2,
+.image-container h3 {
     position: absolute;
-    top: -5px;
-    right: 10px;
+    font-weight: bolder;
     color: white;
     text-shadow: 2px 2px 2px var(--color1);
     padding: 5px;
-    background-color: #184d717f;
+    background-color: #184d71c5;
+    border-radius: 15px;
+}
+.image-container h2 {
+    top: -5px;
+    right: 10px;
 }
 
-.image-container h3:hover {
+/* .image-container h3:hover {
     transform: scale(1.1);
-}
+} */
 
 .image-container h3 {
-    position: absolute;
     padding: 10px;
     right: 15px;
     bottom: 0;
-    font-size: 20px;
+    /* font-size: 20px;
     border-radius: 15px;
     font-weight: bolder;
-    background-color: #184d71c5;
-    color: white;
+    background-color: #184d71c5; */
+    /* color: white;
     text-shadow: 2px 2px 2px var(--color1);
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px black; */
 }
 
 .event {
@@ -232,16 +240,17 @@ nav a:hover {
 
 .more-info:hover,
 .spotOne a:hover,
-.join a:hover {
+.join a:hover,
+.join-today a:hover {
     background-color: var(--color1);
     color: white;
     text-decoration: underline;
 }
 
-.join-today a:hover {
+/* .join-today a:hover {
     color: var(--color3);
     text-decoration: underline;
-}
+} */
 
 .event h2,
 .news h2,
@@ -256,7 +265,8 @@ nav a:hover {
 
 .event p,
 .news p,
-.join p {
+.join p,
+.weather p {
     color: white;
     text-align: center;
 }
@@ -315,14 +325,14 @@ nav a:hover {
 
 .weather img {
     display: block;
-    margin: 15px auto;
+    margin: 0 auto;
 }
 
-.weather p{
+/* .weather p{
     color: whitesmoke;
     text-align: center;
     margin: 1px;
-}
+} */
 
 .join,
 .spotthree,
@@ -385,7 +395,6 @@ figcaption {
     display: block;
     margin: auto;
     font-family: var(--lato);
-    box-sizing: border-box;
     
 }
 
@@ -409,7 +418,8 @@ form fieldset {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.361);
 }
 
-form legend {
+form legend,
+section h3 {
     color: white;
     margin: 0 1rem;
     padding: 0.2rem .5rem;
@@ -574,6 +584,68 @@ main.thankyou {
     font-weight: bold;
 }
 
+/*-------Directory page--------*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    font-family: var(--lato);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--color4);
+    border: 1px solid var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.503);
+
+}
+section > p {
+    margin: 0.25rem;
+    color: black;
+}
+
+section img {
+    margin: 15px;
+    width: auto;
+    max-width: 64px;
+    box-shadow: 0 0 10px white;
+    border: 1px solid #144a5a;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+section p:nth-child(6){
+    font-weight: bold;
+}
+
+div.menu {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+.botao {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.529);
+    border: none;
+    background-color: var(--color1);
+}
+#list {
+    margin-left: 10px;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    
+}
+
 
 
 
@@ -619,7 +691,8 @@ footer a {
 
 }
 
-footer a:hover {
+footer a:hover,
+section a:hover {
     color: var(--body);
     background-color: var(--color1);
 
