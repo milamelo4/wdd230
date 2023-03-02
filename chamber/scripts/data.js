@@ -16,7 +16,7 @@ function showList() {
 }
 
 // API
-const url = "https://run.mocky.io/v3/7ad91e81-ae96-4a7a-8ced-3741dfaf705a";
+const url = "https://milamelo4.github.io/wdd230/chamber/json/data.json";
 
 async function getBusiness() {
     const response = await fetch(url)
