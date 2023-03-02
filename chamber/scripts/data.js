@@ -45,7 +45,7 @@ const displayInfo = (information) => {
 
         site.setAttribute('href', element.site)
         picture.setAttribute('src', element.image);
-        picture.setAttribute('alt', `Logo of ${element.name}`);
+        picture.setAttribute('alt', `Business picture ${element.name}`);
         picture.setAttribute('loading', 'lazy');
         picture.setAttribute('width', '64')
 
