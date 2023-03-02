@@ -16,7 +16,7 @@
       "info": "Science and art museum",
       "address": "209 E 500 S Salt Lake City, UT 84111",
       "contact": "(801) 531-9800",
-      "website": "https://theleonardo.org/",
+      "website": "https://www.theleonardo.org/",
       "membership": "Non-Profit"      
       
     },
@@ -26,7 +26,7 @@
       "info": "An independent bookstore",
       "address": "1511 S 1500 E Salt Lake City, UT 84105",
       "contact": "(801) 484-9100",
-      "website": "https://kingsenglish.com",
+      "website": "https://www.kingsenglish.com/",
       "membership": "Bronze"      
       
     },
@@ -36,7 +36,7 @@
       "info": "Home and business professional cleaning",
       "address": "1722 Fremont Dr Salt Lake City, UT 84104",
       "contact": "(801) 467-0909",
-      "website": "https://zcleaning.com",
+      "website": "https://www.zcleaning.com/",
       "membership": "Silver"      
       
     },
@@ -46,7 +46,7 @@
       "info": "Full-service bank",
       "address": "9432 S 1860 W Salt Lake City, UT 84095",
       "contact": "(800) 974-8800",
-      "website": "https://zionsbank.com",
+      "website": "https://www.zionsbank.com/",
       "membership": "Gold"            
       
     },
@@ -56,7 +56,7 @@
       "info": "Locally grown produce, food, and crafts",
       "address": "6351 900 E Salt Lake City, UT 84121",
       "contact": "(801) 893-8762",
-      "website": "https://wasatchfrontfarmers.com",
+      "website": "https://www.wasatchfrontfarmers.com/",
       "membership": "Bronze"            
       
       
@@ -67,7 +67,7 @@
       "info": "Daily local and national news",
       "address": "90 S 400 W Salt Lake City, UT 84101",
       "contact": "(801) 204-6100",
-      "website": "https://sltrib.com", 
+      "website": "https://www.sltrib.com/", 
       "membership": "Gold"                 
       
     },
@@ -77,7 +77,7 @@
       "info": "Painting classes for all skill levels",
       "address": "1327 E 2100 S Salt Lake City, UT 84105",
       "contact": "(801) 484-0282",
-      "website": "https://thepaintmixer.com",
+      "website": "https://www.thepaintmixer.com/",
       "membership": "Non-Profit"                 
 
       
@@ -88,7 +88,7 @@
       "info": "Variety of classical music",
       "address": "123 W South Temple Salt Lake City, UT 84101",
       "contact": "(801) 533-6683",
-      "website": "https://utahsymphony.org", 
+      "website": "https://www.utahsymphony.org/", 
       "membership": "Silver"                      
       
     }
