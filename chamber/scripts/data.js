@@ -43,7 +43,8 @@ const displayInfo = (information) => {
         site.textContent = `${element.website}`;
         member.textContent = `Membership Level: ${element.membership}`
 
-        site.setAttribute('href', element.site)
+        card.classList.add('direc-page')
+        site.setAttribute('href', element.website)
         picture.setAttribute('src', element.image);
         picture.setAttribute('alt', `Business picture ${element.name}`);
         picture.setAttribute('loading', 'lazy');

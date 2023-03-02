@@ -584,7 +584,7 @@ main.thankyou {
     font-weight: bold;
 }
 
-/*-------Directory page--------*/
+
 
 .grid {
     display: grid;
@@ -608,7 +608,7 @@ main.thankyou {
     color: black;
 }
 
-.grid section img {
+section.direc-page img {
     margin: 15px;
     width: auto;
     max-width: 64px;
@@ -616,14 +616,14 @@ main.thankyou {
     border: 1px solid #144a5a;
 }
 
-.grid section a {
+section.direc-page a {
     text-decoration: none;
     color: black;
     
     
 }
 
-section p:nth-child(6){
+.direc-page p:nth-child(6){
     font-weight: bold;
 }
 
@@ -643,8 +643,20 @@ div.menu {
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    
    
 }
+.list section {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 500px;
+}
+.list section img {
+    display: none;
+}
+
+
 
 
 
