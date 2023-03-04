@@ -205,21 +205,10 @@ nav a:hover {
     right: 10px;
 }
 
-/* .image-container h3:hover {
-    transform: scale(1.1);
-} */
-
 .image-container h3 {
     padding: 10px;
     right: 15px;
     bottom: 0;
-    /* font-size: 20px;
-    border-radius: 15px;
-    font-weight: bolder;
-    background-color: #184d71c5; */
-    /* color: white;
-    text-shadow: 2px 2px 2px var(--color1);
-    box-shadow: 2px 2px 5px black; */
 }
 
 .event,
@@ -232,13 +221,6 @@ nav a:hover {
     margin-top: 5px;
     color: white;
 }
-/* .news {
-    border: 5px solid var(--color1);
-    padding: 5px;
-    margin-top: 5px;
-    text-align: center;
-    background-color: var(--color2);
-} */
 
 .more-info,
 .join-today a {
@@ -254,11 +236,6 @@ nav a:hover {
     color: white;
     text-decoration: underline;
 }
-
-/* .join-today a:hover {
-    color: var(--color3);
-    text-decoration: underline;
-} */
 
 .event h2,
 .news h2,
@@ -284,7 +261,6 @@ nav a:hover {
     border: 5px solid var(--color1);
     margin-top: 5px;
     background-color: var(--color5);
-    /* justify-self: center; */
     align-self: stretch;
 }
 
@@ -322,8 +298,6 @@ nav a:hover {
 }
 
 .weather p{
-    /* color: whitesmoke;
-    text-align: center; */
     margin: 1px;
 }
 

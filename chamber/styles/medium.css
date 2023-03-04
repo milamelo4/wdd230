@@ -153,7 +153,8 @@
     }
 
     .join-small-view,
-    .beni-bellow em {display: none;}
+    .beni-bellow em,
+    .direc-page p:nth-child(3) {display: none;}
 
     form {
         grid-column: 1/2;
@@ -249,8 +250,6 @@
     .list section:nth-child(odd) {
         background-color: #d0f3e9;
     }
-    
-
 
     /* -----footer info -----*/
     footer {

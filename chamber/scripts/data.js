@@ -21,7 +21,7 @@ const url = "https://milamelo4.github.io/wdd230/chamber/json/data.json";
 async function getBusiness() {
     const response = await fetch(url)
     const data = await response.json()
-    console.log(data.business)
+    //console.log(data.business)
     displayInfo(data.business)
 };
 getBusiness() 
