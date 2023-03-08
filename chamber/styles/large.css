@@ -38,9 +38,6 @@
         margin-bottom: 20px;
     }
 
-    header {
-        padding: 10px;
-    }
 
     #date {
         margin: 5px 0 2px 5px;
@@ -79,18 +76,19 @@
     }
 
     .main-grid {
-        gap: 5px;
+        gap: 2px;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: auto auto auto;
     }
 
     .hero img {
         display: grid;
-        max-width: 60vw;
-        margin: 2px;
-        box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.653);
+        max-width: 100vw;
+        max-height: 88vh;
+        margin: 9px 0 0 0;
         grid-column: 2/3;
         grid-row: 1/3;
+        box-shadow: none;
     }
 
     .image-container h2,
@@ -124,11 +122,13 @@
         width: 270px;
         grid-column: 1/2;
         grid-row: 1/2;
-        flex-direction: column;
         align-self: stretch;
         background-color: var(--color5);
         padding: 5px;
+        margin-top: 5px;
+        gap: 10px;
     }
+
 
     .spot1-2-3 {
         grid-template-columns: auto;

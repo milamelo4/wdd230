@@ -20,7 +20,7 @@ body {
 }
 
 #message {
-    display: flex;
+    /* display: flex; */
     margin: 5px;
     font-family: var(--nunito);
     padding: 10px;
@@ -290,15 +290,6 @@ nav a:hover {
     color: whitesmoke;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
-}
-
-.weather img {
-    display: block;
-    margin: 0 auto;
-}
-
-.weather p{
-    margin: 1px;
 }
 
 .join,
@@ -591,6 +582,11 @@ div.menu {
     background-color: var(--color1);
     border: 1px solid whitesmoke;
 }
+
+.weather h2, #weather-icon {
+    margin-bottom: -5px;
+}
+
 
 
 
