@@ -20,8 +20,7 @@ const url = "https://milamelo4.github.io/wdd230/chamber/json/data.json";
 
 async function getBusiness() {
     const response = await fetch(url)
-    const data = await response.json()
-    //console.log(data.business)
+    const data = await response.json()    
     displayInfo(data.business)
 };
 getBusiness() 
@@ -33,6 +32,7 @@ const displayInfo = (information) => {
         let picture = document.createElement('img');
         let h3 = document.createElement('h3');
         let info = document.createElement('p');
+        let addrs = document.createElement('p')
         let contact = document.createElement('p');
         let site = document.createElement('a');
         let member = document.createElement('p')
@@ -42,6 +42,7 @@ const displayInfo = (information) => {
         contact.textContent = `${element.contact}`;
         site.textContent = `${element.website}`;
         member.textContent = `Membership Level: ${element.membership}`
+        addrs.textContent = `${element.address}`
 
         card.classList.add('direc-page')
 
@@ -56,6 +57,7 @@ const displayInfo = (information) => {
         card.appendChild(picture)
         card.appendChild(h3);
         card.appendChild(info);
+        card.appendChild(addrs)
         card.appendChild(contact);
         card.appendChild(site)
         card.appendChild(member)
@@ -63,3 +65,4 @@ const displayInfo = (information) => {
         cards.appendChild(card)
     })
 }
+

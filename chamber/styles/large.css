@@ -58,9 +58,12 @@
         margin-bottom: -20px;
     }
 
-    .social,
-    .direc-page p:nth-child(3) {
+    .social{
         display: flex;
+    }
+    
+    .direc-page p:nth-child(3) {
+        display: block;
     }
 
     .social img {
@@ -96,9 +99,9 @@
     nav button {display: none;}
 
     .only-bigscreen h2 {
-        font-size: 24px;
-        margin-top: 5px;
         margin-bottom: -10px;
+        
+        font-size: 22px;
     }
 
     .only-bigscreen {
@@ -114,6 +117,7 @@
         margin: 5px;
         font-style: italic;
         font-size: 20px;
+        
     }
 
     .event-weather {
@@ -129,8 +133,7 @@
         gap: 10px;
     }
 
-
-    .spot1-2-3 {
+    .spots {
         grid-template-columns: auto;
         grid-column: 3/5;
         grid-row: 1/4;
@@ -163,20 +166,14 @@
         width: 100%;
         margin-bottom: 15px;
     }
+    .spots p {
+        margin: 1px;
+    }
 
-    .spotthree {
+    .spots section:nth-child(3) {
         display: grid;
     }
 
-    .spotthree,
-    .spottwo,
-    .spotOne {
-        margin: 7px;
-        height: auto;
-        padding-top: 2px;
-        margin-bottom: 2px;
-        justify-self: center;
-    }
 
     .landscape {
         max-width: 64.5%;
@@ -194,6 +191,10 @@
 
     .join-large-view {
         font-size: 32px;
+    }
+    .weather h2,
+    #weather-icon {
+        margin-bottom: 0;
     }
 
 }
