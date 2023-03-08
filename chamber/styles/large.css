@@ -61,7 +61,7 @@
     .social{
         display: flex;
     }
-    
+
     .direc-page p:nth-child(3) {
         display: block;
     }
@@ -95,12 +95,10 @@
     }
 
     .image-container h2,
-    .spottwo img,
     nav button {display: none;}
 
     .only-bigscreen h2 {
         margin-bottom: -10px;
-        
         font-size: 22px;
     }
 
