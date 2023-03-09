@@ -621,10 +621,11 @@ main.contact-page {
     display: block;
 }
 .frame {
-    max-width: 650px;
+    display: block;
+    /* max-width: 650px;
     margin-top: 10px;
     grid-column: 1/2;
-    grid-row: 2/span 2;
+    grid-row: 2/span 2; */
     background-color: var(--color5);
     padding: 20px;
     margin-left: auto;
