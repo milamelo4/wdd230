@@ -26,7 +26,7 @@ function capitalize(str) {
 }
 
 function displayWeather(weatherData) {
-    currTemp.innerHTML = weatherData.main.temp.toFixed(0)
+    currTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}°F`
 
     let icon = weatherData.weather[0].description
 

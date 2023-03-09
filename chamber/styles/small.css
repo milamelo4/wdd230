@@ -225,8 +225,15 @@ nav a:hover {
 .spots {
     background-color: var(--color4);
     
-    
 }
+
+
+#temperature {
+    font-size: larger;
+    font-weight: bold;
+    
+    
+} 
 
 .more-info,
 .join-today a,
@@ -517,7 +524,7 @@ main.thankyou {
     text-align: center;
 }
 .spots section{
-    display: grid;
+    display: block;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 5px;
     font-family: var(--lato);
