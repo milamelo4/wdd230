@@ -224,7 +224,6 @@ nav a:hover {
 }
 .spots {
     background-color: var(--color4);
-    
 }
 
 
@@ -269,8 +268,9 @@ nav a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -5px;
-    margin-top: 10px;
+    /* margin-bottom: -5px; */
+   
+    
     
 }
 
@@ -526,17 +526,16 @@ main.thankyou {
 .spots section{
     display: block;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 5px;
+    padding: 5px 15px;
     font-family: var(--lato);
     border: 5px solid var(--color1);
     margin: 0.2rem;
+    margin-bottom: 10px;
     background-color: var(--color2);
     text-align: center;
 }
 
-.spots p {
-    margin: 10px;
-}
+
 
 .spots section:nth-child(3) {
     display: none;

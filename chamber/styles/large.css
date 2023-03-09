@@ -95,9 +95,6 @@
         align-self: stretch;
         border: 5px solid var(--color1);
         padding: 1px;
-        
-        
-        
     }
 
     .image-container h2,
@@ -135,18 +132,23 @@
         background-color: var(--color5);
         padding: 5px;
         margin-top: -4px;
-        gap: 5px;
+        gap: 2px;
        
     }
 
     .spots {
+        display: grid;
         grid-template-columns: auto;
         grid-column: 3/5;
         grid-row: 1/4;
         margin-bottom: -1px;
-        margin-top: -4px;
-    }
-
+     }    
+    /*.spots p {
+       line-height: 1.9rem;
+        margin-bottom: -1px; 
+        margin-top: -4px; 
+   
+    }*/
     .join {
         grid-column: 1/2;
         grid-row: 3/4;
@@ -174,7 +176,7 @@
         margin-bottom: 15px;
     }
     .spots p {
-        margin: 1px;
+        margin: 5px;
     }
 
     .spots section:nth-child(3) {
