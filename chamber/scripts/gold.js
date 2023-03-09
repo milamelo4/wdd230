@@ -41,7 +41,7 @@ const display = (data) => {
             member.textContent = `Membership Level: ${special[randomIndex].membership}`
             addr.textContent = special[randomIndex].address
             list.add('spots')
-            member.classList.add('mem')
+            
 
             icon.setAttribute('src',special[randomIndex].image)
             icon.setAttribute('alt',`${special[randomIndex].image}'s icon`)

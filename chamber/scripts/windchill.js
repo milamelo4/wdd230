@@ -41,6 +41,10 @@ function displayWeather(weatherData) {
         iconsrc = './images/snow.webp'
     } else if (icon == 'thunderstorm' || icon == 'storm') {
         iconsrc = './images/thunderstorm.webp'
+
+    } else if (icon == 'mist') {
+         iconsrc = './images/mist.webp'
+       
     } else {
         iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`
     }
@@ -53,6 +57,8 @@ function displayWeather(weatherData) {
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc)
+    weatherIcon.setAttribute('loading', 'lazy')
+    weatherIcon.setAttribute('width', '60')
     condition.textContent = desc
 
     let temp = parseFloat(currTemp.textContent);

@@ -88,7 +88,7 @@
         display: grid;
         max-width: 100vw;
         max-height: 88vh;
-        margin: 9px 0 0 0;
+        margin: 2px 0 0 0;
         /* grid-column: 2/3;
         grid-row: 1/3; */
         box-shadow: none;
@@ -122,13 +122,14 @@
         display: flex;
         flex-direction: column;
         width: 270px;
+        height: auto;
         grid-column: 1/2;
         grid-row: 1/2;
         align-self: stretch;
         background-color: var(--color5);
         padding: 5px;
         margin-top: 5px;
-        /* gap: 10px; */
+        gap: 20px;
     }
 
     .spots {
@@ -190,10 +191,10 @@
     /* .join-large-view {
         font-size: 32px;
     } */
-    .weather h2,
+    /* .weather h2,
     #weather-icon {
         margin-bottom: 1px;
-    }
+    } */
 
 }
 
