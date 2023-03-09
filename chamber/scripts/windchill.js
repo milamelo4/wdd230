@@ -58,7 +58,7 @@ function displayWeather(weatherData) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc)
     weatherIcon.setAttribute('loading', 'lazy')
-    weatherIcon.setAttribute('width', '60')
+    weatherIcon.setAttribute('width', '64')
     condition.textContent = desc
 
     let temp = parseFloat(currTemp.textContent);

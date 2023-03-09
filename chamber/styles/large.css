@@ -87,11 +87,17 @@
     .hero img {
         display: grid;
         max-width: 100vw;
-        max-height: 89vh;
-        margin: 2px 0 0 0;
-        /* grid-column: 2/3;
-        grid-row: 1/3; */
+        height: 650px;
+        margin: -4px 0 0 0;
+        /* grid-column: 2/3;*/
+        grid-row: 1/3; 
         box-shadow: none;
+        align-self: stretch;
+        border: 5px solid var(--color1);
+        padding: 1px;
+        
+        
+        
     }
 
     .image-container h2,
@@ -128,8 +134,9 @@
         align-self: stretch;
         background-color: var(--color5);
         padding: 5px;
-        margin-top: 5px;
-        gap: 20px;
+        margin-top: -4px;
+        gap: 5px;
+       
     }
 
     .spots {
@@ -137,6 +144,7 @@
         grid-column: 3/5;
         grid-row: 1/4;
         margin-bottom: -1px;
+        margin-top: -4px;
     }
 
     .join {

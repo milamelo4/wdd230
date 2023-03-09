@@ -24,7 +24,7 @@
         max-width: 95vw;
         display: block;
         border: none;
-        box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.279);
+        box-shadow: 0 3px 3px 5px rgba(0, 0, 0, 0.279);
         /* border-radius: 10px; */
         margin-left: 10px;
         
