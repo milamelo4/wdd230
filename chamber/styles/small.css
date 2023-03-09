@@ -237,7 +237,8 @@ nav a:hover {
 
 .more-info:hover,
 .spots a:hover,
-.join a:hover{
+.join a:hover,
+.frame a:hover{
     background-color: var(--color1);
     color: white;
     text-decoration: underline;
@@ -342,7 +343,8 @@ figcaption {
 
 /* ----- Join Page------- */
 
-.join-page {
+.join-page,
+.contact-page {
     margin: auto;
     font-family: var(--lato);
 }
@@ -554,7 +556,8 @@ main.thankyou {
 }
 
 .grid section  p ,
-.list section  p {
+.list section  p ,
+.frame a{
     margin: 0.2rem;
     color: black;
 }
@@ -601,6 +604,73 @@ div.menu {
 .botao:active {
     background-color: var(--color1);
     border: 1px solid whitesmoke;
+}
+
+main.contact-page {
+    display: block;
+    
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    
+}
+.contact-page h1{
+    grid-column: span 2;
+}
+
+.contact-page form{
+    display: block;
+}
+.frame {
+    max-width: 650px;
+    margin-top: 10px;
+    grid-column: 1/2;
+    grid-row: 2/span 2;
+    background-color: var(--color5);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-family: var(--lato);
+    
+}
+
+.question {
+    padding: 0.75rem 0;
+    color: var(--color1);
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+iframe, .contact-information,
+div.operation{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center
+}
+
+form.contact-form {
+    margin-top: -30px;
+}
+
+.frame h2 {
+    background-color: var(--color2);
+    color: white;
+    padding: 5px;
+    border-radius: 10px 0;
+    text-shadow: 1px 1px 1px  black;
+}
+/* div.operation {
+    text-align: center;
+    
+} */
+
+.add-border {
+    border: thin solid white;
+    padding: 10px;
+    text-align: left;
 }
 
 
