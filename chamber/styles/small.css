@@ -242,13 +242,12 @@ nav a:hover {
     color: white;
     text-decoration: underline;
 }
-
+/* .join-small-view */
 .event h2,
 .news h2,
 .spots h2,
 .join h2,
-.weather h2,
-.join-small-view {
+.weather h2 {
     color: var(--color3);
     text-shadow: 1px 1px 1px black;
     text-align: center;
@@ -288,24 +287,22 @@ nav a:hover {
     margin-top: 10px;
 }
 
-
+/* .join-large-view, */
 .join,
 .spotthree,
 .only-bigscreen,
-.join-large-view,
 .form-title,
 .list section img,
 .thankyou img {display: none;}
 
 
 /*------- Discover page------- */
-
-.discover-heading,
-.join-small-view {
+/* .join-small-view */
+.discover-heading {
     color: whitesmoke;
     text-shadow: 1px 1px 1px black;
     text-align: center;
-    background-color: #184d71b3;
+    background-color: #060707b3;
     padding: 10px;
     margin-top: 5px;
     font-family: var(--nunito);
@@ -606,9 +603,7 @@ div.menu {
     border: 1px solid whitesmoke;
 }
 
-.weather h2, #weather-icon {
-    margin-bottom: -5px;
-}
+
 
 
 

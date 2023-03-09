@@ -89,8 +89,8 @@
         max-width: 100vw;
         max-height: 88vh;
         margin: 9px 0 0 0;
-        grid-column: 2/3;
-        grid-row: 1/3;
+        /* grid-column: 2/3;
+        grid-row: 1/3; */
         box-shadow: none;
     }
 
@@ -128,7 +128,7 @@
         background-color: var(--color5);
         padding: 5px;
         margin-top: 5px;
-        gap: 10px;
+        /* gap: 10px; */
     }
 
     .spots {
@@ -187,36 +187,13 @@
         left: 500px;
     }
 
-    .join-large-view {
+    /* .join-large-view {
         font-size: 32px;
-    }
+    } */
     .weather h2,
     #weather-icon {
-        margin-bottom: 0;
+        margin-bottom: 1px;
     }
 
 }
 
-@media only screen and (min-width: 1600px) {
-    .hero img {
-        max-width: 100vw;
-    }
-
-    .only-bigscreen {
-        right: 40px;
-    }
-
-    .image-container p {
-        right: 40px;
-    }
-
-    .landscape {
-        margin-left: 442px;
-        max-width: 910px;
-    }
-
-    .gallery h2 {
-        left: 800px;
-    }
-
-}
