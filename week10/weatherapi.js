@@ -41,5 +41,7 @@ function displayResults(weatherData) {
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc)
+    weatherIcon.setAttribute('loading', 'lazy')
+    weatherIcon.setAttribute('width', '64')
     captionDesc.textContent = desc;
 }
