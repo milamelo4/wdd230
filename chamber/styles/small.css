@@ -377,7 +377,8 @@ form label span {
     font-weight: bold;
 }
 
-form label.top {
+form label.top,
+p.top {
     display: block;
     padding-top: 1rem;
     color: var(--color1);
@@ -639,8 +640,14 @@ main.contact-page {
     padding: 0.75rem 0;
     color: var(--color1);
     font-weight: bold;
-    display: inline-block;
+    display: inline;
     margin-right: 15px;
+    
+    
+}
+
+.question input{
+    margin-right: 5px;
 }
 
 iframe, .contact-information,
