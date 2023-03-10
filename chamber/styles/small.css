@@ -46,8 +46,16 @@ body {
     clear: both;
 }
 
-header {
+header,
+.name-chamber,
+#date,
+.visits,
+.social {
     display: grid;
+}
+
+header {
+    /* display: grid; */
     grid-template-columns: auto auto auto;
     background-image: linear-gradient(to right, var(--color1), var(--color2), var(--color4));
 }
@@ -59,7 +67,7 @@ header {
 }
 
 .name-chamber {
-    display: grid;
+    /* display: grid; */
     font-family: var(--nunito);
     color: var(--color3);
     grid-column: 2/3;
@@ -85,7 +93,7 @@ header {
 }
 
 #date{
-    display: grid;
+    /* display: grid; */
     font-family: var(--nunito);
     color: var(--color3);
     grid-column: 2/4;
@@ -95,7 +103,7 @@ header {
 }
 
 .visits {
-    display: grid;
+    /* display: grid; */
     grid-column: 2/4;
     grid-row: 2/3;
     font-family: var(--nunito);
@@ -104,7 +112,7 @@ header {
 }
 
 .social {
-    display: grid;
+    /* display: grid; */
     grid-column: 3/4;
     grid-row: 1/2;
     justify-self: end;
@@ -147,7 +155,7 @@ nav ul {
 nav ul.open,
 main.contact-page,
 .main-grid,
-.spots section img,
+/* .spots section img, */
 .gallery img,
 form label.top,
 p.top,
@@ -165,13 +173,24 @@ table.benefits,
     display: block;
 }
 
+nav ul li a,
+.main-grid,
+figcaption,
+.join-page,
+.contact-page,
+main.thankyou,
+.spots section,
+.frame {
+    font-family: var(--lato);
+}
+
 nav ul li a {
     /* display: block; */
     padding: .8rem 2vw;
     text-decoration: none;
     color: var(--body);
     border: 1px solid;
-    font-family: var(--lato);
+    /* font-family: var(--lato); */
 }
 
 nav ul li.active a {
@@ -191,7 +210,7 @@ nav a:hover {
 
 .main-grid {
     margin: auto;
-    font-family: var(--lato);
+    /* font-family: var(--lato); */
     padding: 5px;
 }
 
@@ -307,7 +326,6 @@ nav a:hover {
 .spotthree,
 .only-bigscreen,
 .form-title,
-.list section img,
 .thankyou img,
 .spots section:nth-child(3),
 .list section.direc-page img {display: none;}
@@ -348,7 +366,7 @@ nav a:hover {
 }
 
 figcaption {
-    font-family: var(--lato);
+    /* font-family: var(--lato); */
     background-color: whitesmoke;
     margin: 16px auto 20px -36px;
     padding: 5px;
@@ -362,7 +380,7 @@ figcaption {
 .join-page,
 .contact-page {
     margin: auto;
-    font-family: var(--lato);
+    /* font-family: var(--lato); */
 }
 
 form {
@@ -523,7 +541,7 @@ table tbody > tr:nth-child(even) {
 
 main.thankyou {
     background-color: #34a0a48f;
-    font-family: var(--lato);
+    /* font-family: var(--lato); */
     padding: 15px;
 }
 
@@ -536,7 +554,7 @@ main.thankyou {
     /* display: block; */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 5px 15px;
-    font-family: var(--lato);
+    /* font-family: var(--lato); */
     border: 5px solid var(--color1);
     margin: 0.2rem;
     margin-bottom: 10px;
@@ -628,7 +646,7 @@ div.menu {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    font-family: var(--lato);
+    /* font-family: var(--lato); */
     margin-top: 20px;
 }
 
