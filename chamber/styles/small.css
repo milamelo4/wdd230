@@ -144,12 +144,29 @@ nav ul {
     display: none;
 }
 
-nav ul.open {
+nav ul.open,
+main.contact-page,
+.main-grid,
+.spots section img,
+.gallery img,
+form label.top,
+p.top,
+nav ul li a,
+form label.top input,
+form label.sbs,
+form textarea,
+table.benefits,
+.spots section,
+.grid section.direc-page img,
+.spots img,
+.contact-page form,
+.frame,
+.contact-information {
     display: block;
 }
 
 nav ul li a {
-    display: block;
+    /* display: block; */
     padding: .8rem 2vw;
     text-decoration: none;
     color: var(--body);
@@ -173,7 +190,6 @@ nav a:hover {
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 
 .main-grid {
-    display: block;
     margin: auto;
     font-family: var(--lato);
     padding: 5px;
@@ -259,14 +275,12 @@ nav a:hover {
 
 .spots h2 {
     margin-bottom: 2px;
-
 }
 .spots section img {
-    display: block;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     /* margin-bottom: -5px; */
-    
 }
 
 .event p,
@@ -277,8 +291,6 @@ nav a:hover {
     color: white;
     text-align: center;
 }
-
-
 
 .line:after, .sign:before {
     background: linear-gradient(90deg, transparent 15%, var(--color3) 30%, var(--color3) 70%, transparent 85%);
@@ -296,7 +308,9 @@ nav a:hover {
 .only-bigscreen,
 .form-title,
 .list section img,
-.thankyou img {display: none;}
+.thankyou img,
+.spots section:nth-child(3),
+.list section.direc-page img {display: none;}
 
 
 /*------- Discover page------- */
@@ -315,7 +329,7 @@ nav a:hover {
 }
 
 .gallery img {
-    display: block;
+    /* display: block; */
     max-width: 95vw;
     margin-left: -36px;
     margin-bottom: -16px;
@@ -381,7 +395,7 @@ form label span {
 
 form label.top,
 p.top {
-    display: block;
+    /* display: block; */
     padding-top: 1rem;
     color: var(--color1);
     font-size: 16px;
@@ -391,7 +405,7 @@ p.top {
 
 form label.top input {
     /* -webkit-appearance: none; */
-    display: block;
+    /* display: block; */
     font-size: 1rem;
     border-radius: 4px;
     padding: .75rem;
@@ -402,7 +416,7 @@ form label.top input {
 }
 
 form label.sbs {
-    display: block;
+    /* display: block; */
     padding: .75rem 0;
     color: var(--color1);
     font-weight: bold;
@@ -427,7 +441,7 @@ form .submitBtn:hover {
 }
 
 form textarea {
-    display: block;
+    /* display: block; */
     border: solid 2px darkgrey;
     background-color: rgba(0, 0, 0, 0.1);
     padding: .75rem;
@@ -464,7 +478,7 @@ table {
 
 table.benefits{
     max-width: 95%;
-    display: block;
+    /* display: block; */
     margin: 2rem auto;
     padding: .5rem 2%;
     border-radius: 10px;
@@ -519,7 +533,7 @@ main.thankyou {
     text-align: center;
 }
 .spots section{
-    display: block;
+    /* display: block; */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 5px 15px;
     font-family: var(--lato);
@@ -528,13 +542,6 @@ main.thankyou {
     margin-bottom: 10px;
     background-color: var(--color2);
     text-align: center;
-}
-
-
-
-.spots section:nth-child(3),
-.list section img {
-    display: none;
 }
 
 .grid section,
@@ -565,9 +572,9 @@ main.thankyou {
     color: black;
 }
 
-section.direc-page img,
+.grid section.direc-page img,
 .spots img {
-    display: block;
+    /* display: block; */
     margin: 7px;
     width: auto;
     margin-left: auto;
@@ -606,23 +613,16 @@ div.menu {
     border: 1px solid whitesmoke;
 }
 
-main.contact-page {
-    display: block;
-    
-}
+
 .contact-page h1{
     grid-column: span 2;
 }
 
-.contact-page form{
+/* .contact-page form{
     display: block;
-}
+} */
 .frame {
-    display: block;
-    /* max-width: 650px;
-    margin-top: 10px;
-    grid-column: 1/2;
-    grid-row: 2/span 2; */
+    /* display: block; */
     background-color: var(--color5);
     padding: 20px;
     margin-left: auto;
@@ -645,7 +645,7 @@ main.contact-page {
 }
 
 .contact-information {
-    display: block;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     text-align: center
@@ -666,9 +666,6 @@ main.contact-page {
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.422);
 }
 
-.operation h3 {
-    text-decoration: underline;
-}
 
 
 iframe {
@@ -812,6 +809,7 @@ footer .siteName {
     line-height: 2rem;
 }
 
-.source ul li a:hover {
+.source ul li a:hover,
+.operation h3 {
     text-decoration: underline;
 }
