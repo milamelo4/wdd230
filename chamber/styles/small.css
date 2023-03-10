@@ -643,12 +643,7 @@ main.contact-page {
 .question input{
     margin-right: 5px;
 }
-/* 
-.parent {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-} */
+
 .contact-information {
     display: block;
     margin-left: auto;
@@ -669,6 +664,10 @@ main.contact-page {
     border: 10px solid peru;
     margin-top: 20px;
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.422);
+}
+
+.operation h3 {
+    text-decoration: underline;
 }
 
 
