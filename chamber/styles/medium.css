@@ -250,6 +250,11 @@
         margin-right: auto;
     }
 
+    .operation {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /* div.operation {
         bottom: 7%;
         left: 37%;
