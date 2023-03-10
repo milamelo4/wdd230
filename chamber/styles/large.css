@@ -137,7 +137,7 @@
     }
 
     .spots {
-        display: grid;
+        /* display: grid; */
         grid-template-columns: auto;
         grid-column: 3/5;
         grid-row: 1/4;
@@ -214,25 +214,16 @@
     .frame {
         display: grid;
         max-width: 650px;
+        max-height: 100%;
         margin-top: 10px;
         grid-column: 1/2;
         grid-row: 2/span 2;
-        /* background-color: var(--color5);
-        padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-        font-family: var(--lato); */
 
     }
+    div.operation {
+        left: 30%;
+    }
 
-    /* .join-large-view {
-        font-size: 32px;
-    } */
-    /* .weather h2,
-    #weather-icon {
-        margin-bottom: 1px;
-    } */
 
 }
 

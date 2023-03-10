@@ -21,7 +21,6 @@ body {
 }
 
 #message {
-    /* display: flex; */
     margin: 5px;
     font-family: var(--nunito);
     padding: 10px;
@@ -230,8 +229,6 @@ nav a:hover {
 #temperature {
     font-size: larger;
     font-weight: bold;
-    
-    
 } 
 
 .more-info,
@@ -535,7 +532,8 @@ main.thankyou {
 
 
 
-.spots section:nth-child(3) {
+.spots section:nth-child(3),
+.list section img {
     display: none;
 }
 
@@ -577,9 +575,6 @@ section.direc-page img,
     box-shadow: 0 0 10px white;
     border: 1px solid #144a5a;
 }
-.list section img {
-    display: none;
-}
 
 section.direc-page a {
     text-decoration: none;
@@ -614,9 +609,6 @@ div.menu {
 main.contact-page {
     display: block;
     
-    /* display: grid;
-    grid-template-columns: auto auto; */
-    
 }
 .contact-page h1{
     grid-column: span 2;
@@ -637,7 +629,7 @@ main.contact-page {
     margin-right: auto;
     margin-bottom: 10px;
     font-family: var(--lato);
-    
+    margin-top: 20px;
 }
 
 .question {
@@ -646,21 +638,53 @@ main.contact-page {
     font-weight: bold;
     display: inline;
     margin-right: 15px;
-    
-    
 }
 
 .question input{
     margin-right: 5px;
 }
 
-iframe, .contact-information,
-div.operation{
+.parent {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+.contact-information {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
     text-align: center
+}
+
+.parent {
+    position: relative;
+}
+
+.operation{
+    position: absolute;
+    bottom: 15px;
+    left: 20%;
+    color: white;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.parent img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+iframe {
+    /* margin-left: -12px; */
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 form.contact-form {
@@ -673,15 +697,12 @@ form.contact-form {
     padding: 5px;
     border-radius: 10px 0;
     text-shadow: 1px 1px 1px  black;
-}
-/* div.operation {
     text-align: center;
-    
-} */
+}
 
 .add-border {
     border: thin solid white;
-    padding: 10px;
+    padding: 5px;
     text-align: left;
 }
 

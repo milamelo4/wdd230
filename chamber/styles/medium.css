@@ -25,7 +25,6 @@
         display: block;
         border: none;
         box-shadow: 0 3px 3px 5px rgba(0, 0, 0, 0.279);
-        /* border-radius: 10px; */
         margin-left: 10px;
         
     }
@@ -36,7 +35,7 @@
         grid-row: 2/3;
     }
 
-    .spot1-2-3 {
+    .spots {
         display: grid;
         grid-template-columns: auto auto;
         grid-row: 3/4;
@@ -243,6 +242,18 @@
 
     .list section:nth-child(odd) {
         background-color: #d0f3e9;
+    }
+
+    iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.operation {
+        bottom: 7%;
+        left: 37%;
+        line-height: normal;
     }
 
 
