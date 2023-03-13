@@ -1,0 +1,70 @@
+:root {
+    --paragraph: 'Maven Pro', sans-serif;
+    --headings: 'Raleway', sans-serif;
+
+    --color1: #007F5F;
+    --color2: #2B9348;
+    --color3: #55A630;
+    --color4: #80B918;
+    --color5: #AACC00;
+    --color6: #BFD200;
+    --color7: #D4D700;
+    --color8: #EEEF20;
+    --color9: #FFFF3F;
+}
+
+body {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--headings);
+}
+
+p,
+a {
+    font-family: var(--paragraph);
+}
+.container {
+    /* width: 90%; */
+    width: 400px;
+    margin: 5px auto;
+    /* text-align: left; */
+    /* box-sizing: border-box; */
+}
+nav button {
+    margin-left: -2px;
+    background: var(--color7);
+    border: none;
+    color: var(--color2);
+    font-weight: bold;
+    font-size: 2rem;
+    padding-left: 4px;
+}
+nav {
+    background-color: var(--color8);
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul.open {
+    display: block;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: bold;
+}

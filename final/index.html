@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <meta name="description"
+        content="Assignment final project. Bountiful Foods Home Page Build">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="bountiful.html"><img src="images/logo-color.webp"
+                        alt="Bountiful Foods logo"></a></div>
+            <p id="date"></p>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><img
+                        src="images/facebook.webp" alt="facebook-link"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="images/instagram.webp" alt="instagram-link"></a>
+                <a href="https://youtube.com/" target="_blank"><img
+                        src="images/youtube.webp" alt="youtube-link"></a>
+            </div>
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li class="active home"><a href="bountiful.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div id="message"></div>
+        </div>
+
+    </header>
+    <main class="homePage">
+        <div class="banner">
+            <img src="images/banner.jpg" alt="Fruits Image" class="banner" loading="lazy">
+            <h1>Bountiful Foods</h1>
+            <p><strong>Welcome</strong> to Bountiful Foods site, where we are dedicated
+                to providing you with fresh and healthy food options straight from the
+                farm to your plate. We source our produce
+                directly from local farmers in the area, as well as from national and
+                international suppliers to offer you a wide variety of options.</p>
+        </div>
+        <div class="cards1">
+            <section class="local-store">
+                <h2>Come Visit our Local Store</h2>
+                <p>We warmly invite you to visit our local store in beautiful Carlsbad,
+                    California.
+                    Our store is a hub of fresh and healthy food options, including
+                    organic produce,
+                    made-to-order fruit drinks and fruit bags, and other delicious
+                    offerings.
+                    Located in one of the most vibrant and scenic areas of Southern
+                    California. We can't wait to welcome you to our store and share our
+                    passion for fresh, healthy food with you!</p>
+                <img src="images/store.jpg" alt="bountiful store" class="store-img"
+                    loading="lazy">
+            </section>
+            <section class="truck-deliver">
+                <h2>Food Truck</h2>
+                <p>While physically located in Carlsbad, California, the company has a
+                    fleet
+                    of food trucks that cover the coastal area from Los Angeles to San
+                    Diego,
+                    delivering fresh and healthy food options directly to customers.
+                    Customers can
+                    easily place orders for organic produce, made-to-order fruit drinks,
+                    fruit bags,
+                    and other delicious items over the phone or through the our website.
+                </p>
+                <img src="images/deliver.jpg" alt="truck deliver" class="truck-img"
+                    loading="lazy">
+            </section>
+        </div>
+        <div>
+            <hr class="line">
+            <h2 class="customize">Customize Your own Drink</h2>
+            <div class="image-container">
+                <img src="images/drink.jpg" alt="drink image" loading="lazy" width="300"
+                    class="image2">
+                <img src="images/drink2.jpg" alt="drink image" loading="lazy"
+                    width="300" class="image1">
+                <a href="fresh.html"><input type="button" value="Make your own drink"
+                        class="makedrink"></a>
+                <p>You have made: <span id="makedrink"></span>drinks.</p>
+            </div>
+        
+        </div>
+        <hr class="line">
+        <h2 class="coastal">Coastal areas in the southern California</h2>
+        <div class="articles cards1">
+        
+            <section class="jolla">
+                <h3>La Jolla Cove</h3>
+                <img src="images/jolla.jpg" alt="La Jolla Cove" class="jolla-img"
+                    loading="lazy" width="400">
+                <p>La Jolla Cove, located about 12 miles north of San Diego is a small,
+                    picturesque beach nestled between sandstone cliffs in the affluent
+                    community of La Jolla. The beach is a popular spot for swimming,
+                    snorkeling, and
+                    scuba diving, thanks to its clear waters and abundance of marine
+                    life, including
+                    colorful fish and even the occasional sea lion.</p>
+            </section>
+            <section class="monica">
+                <h3>Santa Monica</h3>
+                <img src="images/monica.jpg" alt="Santa Monica" class="monica-img"
+                    loading="lazy" width="400">
+                <p>Santa Monica is a popular beachfront city located just west of Los
+                    Angeles. The
+                    beach itself stretches for 3.5 miles and features a wide variety of
+                    activities,
+                    from swimming and sunbathing to volleyball and surfing. There is
+                    also a scenic
+                    boardwalk that runs along the beach, which is a great place to
+                    stroll, bike, or
+                    people-watch.</p>
+            </section>
+        
+            <section class="laguna">
+                <h3>Laguna Beach</h3>
+                <img src="images/laguna.jpg" alt="Laguna Beach" class="laguna-img"
+                    loading="lazy" width="400">
+                <p>Laguna Beach is a picturesque seaside town located about an hour
+                    south of Los
+                    Angeles. The town is known for its beautiful beaches, art galleries,
+                    and scenic
+                    hiking trails. One of the most popular beaches is Main Beach, which
+                    features
+                    white sand, crystal-clear waters, and stunning views of the rugged
+                    coastline.</p>
+            </section>
+        </div>
+        <div class="weather">
+            <div class="weatherOne">
+                <h3>Current Weather</h3>
+                <p>Carlsbad, CA</p>
+                <img src="#" alt="current weather" id="weather-icon" loading="lazy">
+                <p><strong><span id="temperature"></span></strong></p>
+                <p id="conditions"></p>
+                <p>Wind Speed: <span id="windSpeed"> </span></p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+            </div>
+            <div class="weatherTwo">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="header" colspan="3">3 Day Forecast</th>
+                        </tr>
+                        <tr>
+                            <th scope="col" id="day1-week"></th>
+                            <th scope="col" id="day2-week"></th>
+                            <th scope="col" id="day3-week"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="#" alt="" id="day1-icon"></td>
+                            <td><img src="#" alt="" id="day2-icon"></td>
+                            <td><img src="#" alt="" id="day3-icon"></td>
+                        </tr>
+                        <tr>
+                            <td id="day1-temp" class="bold"></td>
+                            <td id="day2-temp" class="bold"></td>
+                            <td id="day3-temp" class="bold"></td>
+                        </tr>
+                        <tr>
+                            <td id="day1-cond"></td>
+                            <td id="day2-cond"></td>
+                            <td id="day3-cond"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <img src="images/straw.jpg" alt="strawberries" class="footer-banner"
+                height="60">
+        </div>
+
+    </main>
+    
+    <footer class="container">
+        
+        <div class="foot">
+    
+            <img src="images/logo-color.webp" alt="Bountiful Foods Logo"
+                class="foot-logo">
+    
+            <div class="email-phone-map">
+                <address>2775 State St, Carlsbad, CA 92008</address>
+                <a class="email"
+                    href="bounttifulfoods@gmail.com">bounttifulfoods@gmail.com</a>
+                <p class="phone">+(800) 872-7245</p>
+                <map name="google"><a href="https://goo.gl/maps/PSBipCNtHXnYLnzR6"
+                        target="_blank">📍Location Map</a></map>
+            </div>
+            <p class="info">&copy;Bountiful Foods
+                | <strong>Camila Melo</strong> | WDD 230 Final Project | Last
+                updated:
+                <span id="date2"></span> | <a href="sources.html"
+                    class="sources">Sources</a> |
+            </p>
+        </div>
+    </footer>
+    <script defer src="scripts/app.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    
+</body>
+</html>

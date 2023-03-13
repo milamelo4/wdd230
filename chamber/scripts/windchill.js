@@ -30,7 +30,7 @@ function displayWeather(weatherData) {
 
     let icon = weatherData.weather[0].description
 
-    if (icon == 'light rain' || icon == 'rain' || icon == 'heavy rain' || icon == 'shower') {
+    if (icon == 'light rain' || icon == 'rain' || icon == 'heavy rain' || icon == 'shower' || icon == 'moderate rain') {
         iconsrc = './images/light-rain (1).webp'
     } else if (icon == 'clear sky' || icon == 'clear' || icon == 'sunny'){
         iconsrc = './images/sun.webp'
