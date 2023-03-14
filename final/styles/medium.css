@@ -1,0 +1,51 @@
+@media only screen and (min-width: 39em) {
+    body {
+        width: 100%;
+    }
+    main, .container {
+        width: 900px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .banner p {
+        border: thin solid white;
+        padding: 10px;
+        text-align: center;
+    }
+    header #message {
+
+        position: absolute;
+        font-size: 32px;
+        top: 15px;
+        left: 40%;
+    }
+    .weather {
+        display: grid;
+    }
+    .weatherTwo {
+       margin-top: 0.5rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        
+    }
+    .foot {
+        display: grid;
+    }
+    .foot img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-items: start;
+        margin: 5px;
+        margin-bottom: 20px;
+    }
+    .email-phone-map {
+        grid-column: 2/span 2;
+        grid-row: 1/2;
+        justify-self: right;
+    }
+   
+}
