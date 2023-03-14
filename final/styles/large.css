@@ -58,11 +58,8 @@
     .jolla-img {
         width: 400px;
     }
-    .cards1 {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-
-    }
+    
+    
 
 
 
