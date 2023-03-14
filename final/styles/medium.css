@@ -19,17 +19,10 @@
         top: 15px;
         left: 40%;
     }
-    .banner {
-        position: relative;
-    }
+    
     .banner h1 {
-        display: block;
-        position: absolute;
-        font-size: 60px;
-        color: white;
-        bottom: 40%;
-        left: 32%;
-        text-shadow: 2px 2px 2px black;
+        font-size: 40px;
+        border: none;
     }
     .weather {
         display: grid;

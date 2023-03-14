@@ -118,7 +118,13 @@ header #message {
 
 
 .banner h1 {
-    display: none;
+    display: block;
+    font-size: 32px;
+    color: var(--color1);
+    text-shadow: 1px 1px 2px white;
+    text-align: center;
+    border-bottom: 1px solid var(--color1);
+    
 }
 main {
     display: block;
@@ -306,7 +312,7 @@ td {
 }
 table {
     border-bottom: 10px solid #cce550;
-    background-color: none;
+    background-color: transparent;
     
 }
 th[scope='col'],
