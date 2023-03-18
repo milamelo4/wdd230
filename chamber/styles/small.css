@@ -55,7 +55,6 @@ header,
 }
 
 header {
-    /* display: grid; */
     grid-template-columns: auto auto auto;
     background-image: linear-gradient(to right, var(--color1), var(--color2), var(--color4));
 }
@@ -67,7 +66,6 @@ header {
 }
 
 .name-chamber {
-    /* display: grid; */
     font-family: var(--nunito);
     color: var(--color3);
     grid-column: 2/3;
@@ -93,7 +91,6 @@ header {
 }
 
 #date{
-    /* display: grid; */
     font-family: var(--nunito);
     color: var(--color3);
     grid-column: 2/4;
@@ -103,7 +100,6 @@ header {
 }
 
 .visits {
-    /* display: grid; */
     grid-column: 2/4;
     grid-row: 2/3;
     font-family: var(--nunito);
@@ -112,7 +108,6 @@ header {
 }
 
 .social {
-    /* display: grid; */
     grid-column: 3/4;
     grid-row: 1/2;
     justify-self: end;
@@ -155,7 +150,6 @@ nav ul {
 nav ul.open,
 main.contact-page,
 .main-grid,
-/* .spots section img, */
 .gallery img,
 form label.top,
 p.top,
@@ -185,12 +179,10 @@ main.thankyou,
 }
 
 nav ul li a {
-    /* display: block; */
     padding: .8rem 2vw;
     text-decoration: none;
     color: var(--body);
     border: 1px solid;
-    /* font-family: var(--lato); */
 }
 
 nav ul li.active a {
@@ -210,7 +202,6 @@ nav a:hover {
 
 .main-grid {
     margin: auto;
-    /* font-family: var(--lato); */
     padding: 5px;
 }
 
@@ -232,7 +223,6 @@ nav a:hover {
     text-shadow: 2px 2px 2px var(--color1);
     padding: 5px;
     background-color: #184d71c5;
-    /* border-radius: 15px; */
 }
 .image-container h2 {
     top: -5px;
@@ -296,10 +286,8 @@ nav a:hover {
     margin-bottom: 2px;
 }
 .spots section img {
-    /* display: block; */
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: -5px; */
 }
 
 .event p,
@@ -347,7 +335,6 @@ nav a:hover {
 }
 
 .gallery img {
-    /* display: block; */
     max-width: 95vw;
     margin-left: -36px;
     margin-bottom: -16px;
@@ -366,7 +353,6 @@ nav a:hover {
 }
 
 figcaption {
-    /* font-family: var(--lato); */
     background-color: whitesmoke;
     margin: 16px auto 20px -36px;
     padding: 5px;
@@ -380,7 +366,6 @@ figcaption {
 .join-page,
 .contact-page {
     margin: auto;
-    /* font-family: var(--lato); */
 }
 
 form {
@@ -413,7 +398,6 @@ form label span {
 
 form label.top,
 p.top {
-    /* display: block; */
     padding-top: 1rem;
     color: var(--color1);
     font-size: 16px;
@@ -422,8 +406,6 @@ p.top {
 }
 
 form label.top input {
-    /* -webkit-appearance: none; */
-    /* display: block; */
     font-size: 1rem;
     border-radius: 4px;
     padding: .75rem;
@@ -434,7 +416,6 @@ form label.top input {
 }
 
 form label.sbs {
-    /* display: block; */
     padding: .75rem 0;
     color: var(--color1);
     font-weight: bold;
@@ -459,7 +440,6 @@ form .submitBtn:hover {
 }
 
 form textarea {
-    /* display: block; */
     border: solid 2px darkgrey;
     background-color: rgba(0, 0, 0, 0.1);
     padding: .75rem;
@@ -496,7 +476,6 @@ table {
 
 table.benefits{
     max-width: 95%;
-    /* display: block; */
     margin: 2rem auto;
     padding: .5rem 2%;
     border-radius: 10px;
@@ -541,7 +520,6 @@ table tbody > tr:nth-child(even) {
 
 main.thankyou {
     background-color: #34a0a48f;
-    /* font-family: var(--lato); */
     padding: 15px;
 }
 
@@ -551,10 +529,8 @@ main.thankyou {
     text-align: center;
 }
 .spots section{
-    /* display: block; */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 5px 15px;
-    /* font-family: var(--lato); */
     border: 5px solid var(--color1);
     margin: 0.2rem;
     margin-bottom: 10px;
@@ -592,7 +568,6 @@ main.thankyou {
 
 .grid section.direc-page img,
 .spots img {
-    /* display: block; */
     margin: 7px;
     width: auto;
     margin-left: auto;
@@ -636,17 +611,12 @@ div.menu {
     grid-column: span 2;
 }
 
-/* .contact-page form{
-    display: block;
-} */
 .frame {
-    /* display: block; */
     background-color: var(--color5);
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    /* font-family: var(--lato); */
     margin-top: 20px;
 }
 
@@ -663,7 +633,6 @@ div.menu {
 }
 
 .contact-information {
-    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     text-align: center
@@ -687,7 +656,6 @@ div.menu {
 
 
 iframe {
-    /* margin-left: -12px; */
     width: 100%;
     max-width: 400px;
     margin-left: -5px;

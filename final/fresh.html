@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Page</title>
+    <meta name="description" content="Bountiful Foods Fresh Page Build">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="images/logo-color.webp"
+                        alt="Bountiful Foods logo"></a></div>
+            <p id="date"></p>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><img
+                        src="images/facebook.webp" alt="facebook-link"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="images/instagram.webp" alt="instagram-link"></a>
+                <a href="https://youtube.com/" target="_blank"><img
+                        src="images/youtube.webp" alt="youtube-link"></a>
+            </div>
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active home"><a href="fresh.html">Fresh</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div id="message"></div>
+        </div>
+    </header>
+    <main class="fresh-main">
+        <div class="banner">
+            <img src="images/fresh_banner.jpg" alt="Lemons oranges and kiwi" class="banner"
+                loading="lazy">
+                <h1>Build your Drink</h1>
+                <hr>
+                <div >
+                    <form id="myForm" method="get">
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <label class="top" for="fname">First Name<span>*</span> <input type="text" name="fname"
+                                    required placeholder="First Name" id="fname" autofocus></label>
+                            <label class="top" for="iemail">Email<span>*</span> <input type="email" name="email" required
+                                    placeholder="joedoe@gmail.com" id="iemail"></label>
+                            <label class="top" for="iphone">Cell Phone<span>*</span> <input type="tel" name="phone" id="iphone"></label>
+                        </fieldset>
+                        <img src="images/alldrink.jpg" alt="Four smoothies" class="alldrink">
+                        <fieldset>
+                            <legend>Select Fruits</legend>
+                            
+                            <select id="fruit1">  
+                                <option selected>---Select 1st fruit---</option>
+                            </select>
+                            
+                            <select id="fruit2">
+                                <option selected>---Select 2nd fruit---</option>
+                            </select>
+                            
+                            <select id="fruit3">
+                                <option selected>---Select 3rd fruit---</option>
+                            </select>
+                            <label for="sinstructions">Special Instructions:</label>
+                            <textarea id="instructions" name="instructions"></textarea>
+                            
+                            <button type="submit" id="submit">Get Your Drink</button>
+                            <button type="reset" id="clear">Reset</button>
+                        </fieldset>
+
+                        <div>
+                            <fieldset class="theOrder">
+                                <legend>Order Details</legend>
+                                <h2 id="thankYou"></h2>
+                                <p id="orderDate"></p>
+                                <p id="firstName"></p>
+                                <p id="email"></p>
+                                <p id="phone"></p>
+                                <p id="instr"></p>
+
+                                <p id="selectFruit1"></p>
+                            </fieldset>
+                        </div>
+                        <fieldset class="nutrition">
+                            <legend>Nutrition Information</legend>
+                            <h2 id="nutritionH2"></h2>
+                            <div id="result"></div>
+                        </fieldset>
+                        
+                    </form>
+                </div>
+                
+            
+            
+        </div>
+        <div class="banner">
+            <img src="images/straw.jpg" alt="strawberries" class="footer-banner"
+                height="60">
+        </div>
+    </main>
+    <footer class="container">
+        <div class="foot">
+            <img src="images/logo-color.webp" alt="Bountiful Foods Logo"
+                class="foot-logo">
+    
+            <div class="email-phone-map">
+                <address>2775 State St, Carlsbad, CA 92008</address>
+                <p class="phone">+(800) 872-7245</p>
+                <a class="email"
+                    href="mailto:bountifulfoods@gmail.com">bountifulfoods@gmail.com</a>
+    
+                <map name="google"><a href="https://goo.gl/maps/PSBipCNtHXnYLnzR6"
+                        target="_blank">📍Location Map</a></map>
+            </div>
+            <p class="info">&copy;Bountiful Foods
+                | <strong>Camila Melo</strong> | WDD 230 Final Project | Last
+                updated:
+                <span id="date2"></span> | <a href="sources.html"
+                    class="sources">Sources</a> |
+            </p>
+        </div>
+        
+    </footer>
+    <script defer src="scripts/app.js"></script>
+    <script defer src="scripts/fresh1.js"></script>
+    
+</body>
+</html>

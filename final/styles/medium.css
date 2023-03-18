@@ -28,7 +28,7 @@
         display: grid;
     }
     .weatherTwo {
-       margin-top: 0.5rem;
+       margin-top: -10px;
     }
 
     section {
@@ -41,6 +41,39 @@
         align-items: center;
 
     }
+    .alldrink {
+        box-shadow: 1px 1px  5px rgba(0, 0, 0, 0.598);
+        border: 1px solid white;
+    }
+    .back {
+        display: none;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    #clear{
+        display: block;
+    }
+    
+
+    
+
+    .theOrder,
+    .nutrition {
+        font-weight: normal;
+
+    }
+    .theOrder p{
+        border: none;
+        text-align: left;
+    }
+   
+
+    
 
     footer {
         display: grid;

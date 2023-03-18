@@ -31,7 +31,7 @@ function capitalize(str) {
 
 function displayWeather(weatherData) {
     currTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}°F`
-    humidity.innerHTML = weatherData.main.humidity
+    humidity.innerHTML = `${weatherData.main.humidity}%`
 
     let icon = weatherData.weather[0].description
 
@@ -65,83 +65,89 @@ function displayWeather(weatherData) {
     weatherIcon.setAttribute('width', '64')
     condition.textContent = desc
 
-    let temp = parseFloat(currTemp.textContent);
-    let speed = parseFloat(windSpeed.textContent);
-
-    if (temp <= 50 && speed > 3) {
-        let windChill = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
-        
-        document.querySelector('#windChill').innerHTML = `${windChill.toFixed(2)}°F`;
-    
-    }
-    else {
-        document.querySelector('#windChill').innerHTML = `N/A`;
-    }   
+       
 
 
 }
-
-async function getForecast () {
-    const response = await fetch(forecast);
-    if (response.ok) {
-        const data = await response.json();
-        console.log(data)
-        let dayCount = 1;
-        let currentDay = "day" + String(dayCount) + "-";
-        for(i = 0; i < 24; i++) {
-
-            getList = data.list[i]
-            console.log(getList)
-            if (getList.dt_txt.slice(-8) == "18:00:00" ) {
-                let forecastDate = new Date(getList.dt * 1000);
-                console.log(`test${forecastDate}`)
-                let weekDays = formatDate(forecastDate);
-                console.log(weekDays)
-                let weekDay = (weekDays[forecastDate])
-                console.log(weekDay)
-                let forecastTemp = Math.round(getList.main.temp);
-                console.log(forecastTemp)
-                let forecastDescription = getList.weather[0].description;
-                console.log(forecastDescription)
-                let forecastIcon = getList.weather[0].icon;
-                
-                document.getElementById(currentDay + "week").innerText = weekDays;
-                document.getElementById(currentDay + "temp").innerText = `${forecastTemp}°F`;
-                document.getElementById(currentDay + "cond").innerText = `${capitalize(forecastDescription)}`;
-                // let icon = `https://openweathermap.org/img/wn/${forecastIcon}.png`;
-                
-                
-                if (forecastDescription == 'light rain' || forecastDescription == 'rain' || forecastDescription == 'heavy rain' || forecastDescription == 'shower' || forecastDescription == 'moderate rain') {
-        iconsrc = './images/light-rain (1).webp'
-                } else if (forecastDescription == 'clear sky' || forecastDescription == 'clear' || forecastDescription == 'sunny'){
-                    iconsrc = './images/sun.webp'
-
-                } else if (forecastDescription == 'cloudy' || forecastDescription == 'few clouds' || forecastDescription == 'scattered clouds' || forecastDescription == 'overcast clouds' || forecastDescription == 'broken clouds') {
-                    iconsrc = './images/cloudy.webp'
-                } else if (forecastDescription == 'snow' || forecastDescription == 'light snow' || forecastDescription == 'heavy snow' || forecastDescription == 'snow shower') {
-                    iconsrc = './images/snow.webp'
-                } else if (forecastDescription == 'thunderstorm' || forecastDescription == 'storm') {
-                    iconsrc = './images/thunderstorm.webp'
-
-                } else if (forecastDescription == 'mist') {
-                    iconsrc = './images/mist.webp'
-                
-                } else {
-                    iconsrc = `https://openweathermap.org/img/w/${forecastIcon}.png`
-                }
-
-                document.getElementById(currentDay + "icon").src = iconsrc;
-                document.getElementById(currentDay + "icon").alt = forecastDescription;
-                dayCount++;
-                currentDay = "day" + String(dayCount) + "-";
-                
-            }
+async function forecastApi() {
+    try {
+        const response = await fetch(forecast)
+        if (response.ok) {
+            const data = await response.json()
+            displayForecast(data)
+            //console.log(data)
+        } else {
+            throw Error (await response.text())
         }
+    } catch (error) {
+        console.log(error)
     }
-
+    
 }
+forecastApi()
 
-getForecast()
+const displayForecast = (forecastData) => {
+    const cards = document.querySelector('div.cards');
+        if (typeof forecastData.list === 'object' && forecastData.list !== null && Array.isArray(forecastData.list)) {
+                for (i = 0; i < 24; i++) {
+                    let getList = forecastData.list[i]
+                    //console.log(getList)
+                    if (getList.dt_txt.slice(-8) == "18:00:00") {
+                        let card = document.createElement('ul')
+                        let theDate = document.createElement('li')
+                        let temperature = document.createElement('li')
+                        let condition = document.createElement('li')
+                        let icons = document.createElement('img')
+                        let myIcon = getList.weather[0].description
+
+                        if (myIcon == 'light rain' || myIcon == 'rain' || myIcon == 'heavy rain' || myIcon == 'shower' || myIcon == 'moderate rain') {
+                            iconsrc = './images/light-rain (1).webp'
+                        } else if (myIcon == 'clear sky' || myIcon == 'clear' || myIcon == 'sunny'){
+                            iconsrc = './images/sun.webp'
+
+                        } else if (myIcon == 'cloudy' || myIcon == 'few clouds' || myIcon == 'scattered clouds' || myIcon == 'overcast clouds' || myIcon == 'broken clouds') {
+                            iconsrc = './images/cloudy.webp'
+                        } else if (myIcon == 'snow' || myIcon == 'light snow' || myIcon == 'heavy snow' || myIcon == 'snow shower') {
+                            iconsrc = './images/snow.webp'
+                        } else if (myIcon == 'thunderstorm' || myIcon == 'storm') {
+                            iconsrc = './images/thunderstorm.webp'
+
+                        } else if (myIcon == 'mist') {
+                            iconsrc = './images/mist.webp'
+                        
+                        } else {
+                            iconsrc = `https://openweathermap.org/img/wn/${getList.weather[0].icon}.png`
+                        }
+
+                        let forecastDate = new Date(getList.dt * 1000);
+                        theDate.textContent = formatDate(forecastDate)
+                        
+
+                        temperature.textContent = `${(getList.main.temp).toFixed(0)}°F`
+                        condition.textContent = capitalize(getList.weather[0].description)
+                        icons.setAttribute('src', iconsrc);
+                        icons.setAttribute('alt', condition)
+                        icons.setAttribute('width', '50')
+                        icons.setAttribute('loading', 'lazy')
+                        
+                        
+                        card.appendChild(theDate)
+                        card.appendChild(icons)
+                        card.appendChild(temperature)
+                        card.appendChild(condition)
+                        cards.appendChild(card)
+                    }
+                }
+    }
+}
+   
+
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${month}/${day}`;
+}
 
 
 function formatDate(dateString) {
@@ -150,5 +156,39 @@ function formatDate(dateString) {
   const day = String(date.getDate()).padStart(2, '0');
   return `${month}/${day}`;
 }
+
+
+// const drinkAmount = document.getElementById('makedrink')
+// let numDrink = Number(localStorage.getItem('makedrink'))
+// if (numDrink !== 0) {
+//     drinkAmount.textContent = `You have made ${numDrink} drinks`
+
+// } else {
+//     drinkAmount.textContent = `You have made 0 drink`
+// }
+    
+// numDrink++
+// localStorage.setItem('makedrink', numDrink)
+  
+
+
+
+
+// const numDrinksDisplay = document.getElementById("makedrink");
+
+// // get the stored value in localStorage
+// let numDrinks = localStorage.numDrinks
+
+// // determine if this is the first visit or display the number of visits.
+// if (numDrinks !== 0) {
+//     numDrinksDisplay.textContent = numDrinks;
+    
+// } else {
+//     numDrinksDisplay.innerText = `You have made 0 drink`;
+//     localStorage.numDrinks = numDrinks;
+// }
+// numDrinks++
+
+
 
 

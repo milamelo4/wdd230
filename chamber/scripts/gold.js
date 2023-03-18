@@ -22,7 +22,6 @@ const display = (data) => {
         //console.log(special)
         for (let i = 0; i < 3; i++) {
             const randomIndex = Math.floor(Math.random() * special.length);  
-            //const randomCompany = special[randomIndex];
             
             let icon = document.createElement("img"); 
 			let card = document.createElement("section");
@@ -51,7 +50,6 @@ const display = (data) => {
             
             card.appendChild(icon)
             card.appendChild(name)
-            //card.appendChild(info)
             card.appendChild(addr)
             card.appendChild(contact)
             card.appendChild(website)

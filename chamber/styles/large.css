@@ -38,7 +38,6 @@
         margin-bottom: 20px;
     }
 
-
     #date {
         margin: 5px 0 2px 5px;
         grid-column: 1/2;
@@ -93,11 +92,9 @@
     }
 
     .hero img {
-        /* display: grid; */
         max-width: 100vw;
         height: 650px;
         margin: -4px 0 0 0;
-        /* grid-column: 2/3;*/
         grid-row: 1/3; 
         box-shadow: none;
         align-self: stretch;
@@ -114,7 +111,6 @@
     }
 
     .only-bigscreen {
-        /* display: grid; */
         position: absolute;
         top: 10px;
         right: 10px;
@@ -126,7 +122,6 @@
         margin: 5px;
         font-style: italic;
         font-size: 20px;
-        
     }
 
     .event-weather {
@@ -141,22 +136,15 @@
         padding: 5px;
         margin-top: -4px;
         gap: 2px;
-       
     }
 
     .spots {
-        /* display: grid; */
         grid-template-columns: auto;
         grid-column: 3/5;
         grid-row: 1/4;
         margin-bottom: -1px;
-     }    
-    /*.spots p {
-       line-height: 1.9rem;
-        margin-bottom: -1px; 
-        margin-top: -4px; 
-   
-    }*/
+    }    
+
     .join {
         grid-column: 1/2;
         grid-row: 3/4;
@@ -183,14 +171,10 @@
         width: 100%;
         margin-bottom: 15px;
     }
+
     .spots p {
         margin: 5px;
     }
-
-    /* .spots section:nth-child(3) {
-        display: grid;
-    } */
-
 
     .landscape {
         max-width: 64.5%;
@@ -207,10 +191,9 @@
     }
 
     main.contact-page {
-        /* display: grid; */
         grid-template-columns: auto auto;
-
     }
+
     .contact-page form {
         width: 650px;
         margin-top: 5px;
@@ -220,16 +203,11 @@
         margin-top: -30px;
     }
     .frame {
-        /* display: grid; */
         max-width: 650px;
         max-height: 100%;
         margin-top: 10px;
         grid-column: 1/2;
         grid-row: 2/span 2;
-
     }
-    
-
-
 }
 
