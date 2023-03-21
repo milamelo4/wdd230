@@ -341,6 +341,14 @@ form fieldset {
     font-weight: normal;
     
 }
+/* .nutrition {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(307px, 2fr));
+    gap: 0;
+} */
+#nutritionH2 {
+    text-align: center;
+}
 
 form legend {
     color: white;
@@ -401,6 +409,7 @@ form label.top input , select, textarea{
     font-weight: bold;
     border-radius: 54%;
 }
+
 
 
 

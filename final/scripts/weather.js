@@ -36,7 +36,7 @@ function displayWeather(weatherData) {
     let icon = weatherData.weather[0].description
 
     if (icon == 'light rain' || icon == 'rain' || icon == 'heavy rain' || icon == 'shower' || icon == 'moderate rain') {
-        iconsrc = './images/light-rain (1).webp'
+        iconsrc = './images/rain.webp'
     } else if (icon == 'clear sky' || icon == 'clear' || icon == 'sunny'){
         iconsrc = './images/sun.webp'
 
@@ -99,9 +99,10 @@ const displayForecast = (forecastData) => {
                         let condition = document.createElement('li')
                         let icons = document.createElement('img')
                         let myIcon = getList.weather[0].description
+                        let iconsrc;
 
                         if (myIcon == 'light rain' || myIcon == 'rain' || myIcon == 'heavy rain' || myIcon == 'shower' || myIcon == 'moderate rain') {
-                            iconsrc = './images/light-rain (1).webp'
+                            iconsrc = './images/rain.webp'
                         } else if (myIcon == 'clear sky' || myIcon == 'clear' || myIcon == 'sunny'){
                             iconsrc = './images/sun.webp'
 
@@ -126,7 +127,7 @@ const displayForecast = (forecastData) => {
                         temperature.textContent = `${(getList.main.temp).toFixed(0)}°F`
                         condition.textContent = capitalize(getList.weather[0].description)
                         icons.setAttribute('src', iconsrc);
-                        icons.setAttribute('alt', condition)
+                        icons.setAttribute('alt', myIcon)
                         icons.setAttribute('width', '50')
                         icons.setAttribute('loading', 'lazy')
                         
@@ -150,12 +151,7 @@ function formatDate(dateString) {
 }
 
 
-function formatDate(dateString) {
-  const date = new Date(dateString);
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  return `${month}/${day}`;
-}
+
 
 
 // const drinkAmount = document.getElementById('makedrink')
