@@ -5,7 +5,7 @@ async function getApi() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data)
+            //console.log(data)
             displayInfo(data)
         } else {
             throw Error (await response.text());
@@ -90,7 +90,7 @@ const updateInfo = (information) => {
 };
 const displaySelectedFruits = (selectedOptions, information) => {
     const h2 = document.getElementById('nutritionH2')
-    h2.innerHTML = `Nutrition per fruit`
+    h2.innerHTML = `Nutrition per fruit selected`
 
     const selectedFruits = [];
     const selecCarbs = []

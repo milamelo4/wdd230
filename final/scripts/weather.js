@@ -127,7 +127,7 @@ const displayForecast = (forecastData) => {
                         temperature.textContent = `${(getList.main.temp).toFixed(0)}°F`
                         condition.textContent = capitalize(getList.weather[0].description)
                         icons.setAttribute('src', iconsrc);
-                        icons.setAttribute('alt', myIcon)
+                        icons.setAttribute('alt', `${myIcon} for day ${forecastDate}`)
                         icons.setAttribute('width', '50')
                         icons.setAttribute('loading', 'lazy')
                         

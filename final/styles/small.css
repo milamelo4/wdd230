@@ -346,8 +346,13 @@ form fieldset {
     grid-template-columns: repeat(auto-fit, minmax(307px, 2fr));
     gap: 0;
 } */
-#nutritionH2 {
+#nutritionH2,
+#thankYou,
+#drinkName {
     text-align: center;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 form legend {
@@ -355,7 +360,7 @@ form legend {
     margin: 0 auto;
     padding: 0.2rem .5rem;
     font-weight: bold;
-    background-color: var(--color2);
+    background-color: var(--color1);
     border-radius: 10px;
 }
 form label span {
@@ -408,6 +413,10 @@ form label.top input , select, textarea{
     padding: 10px;
     font-weight: bold;
     border-radius: 54%;
+}
+.totalp{
+    border: none;
+    text-align: left;
 }
 
 
