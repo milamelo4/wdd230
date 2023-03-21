@@ -79,7 +79,7 @@ const updateInfo = (information) => {
     const theDate = document.getElementById('orderDate');
 
     const now = Date.now();
-    const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now)
+    const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 
     thankYou.innerHTML = `Thank you for your order`
     theDate.innerHTML = `<strong>Order placed on:</strong> ${fulldate}`
@@ -106,7 +106,7 @@ const displaySelectedFruits = (selectedOptions, information) => {
         selectedFruits.push(selectedFruit);
     };
     
-    const cartao = document.createElement('ul');
+    const myList = document.createElement('ul');
     for (let j = 0; j < selectedFruits.length; j++) {
         const selectedFruit = selectedFruits[j];
         const nutrition = selectedFruit.nutritions;
@@ -147,15 +147,15 @@ const displaySelectedFruits = (selectedOptions, information) => {
         selecProtein.push(protein)
         selecSugar.push(sugar)
 
-        cartao.appendChild(theFruit)
-        cartao.appendChild(theCarb);
-        cartao.appendChild(theFat);
-        cartao.appendChild(theProtein);
-        cartao.appendChild(theCalorie);
-        cartao.appendChild(theSugar);
+        myList.appendChild(theFruit)
+        myList.appendChild(theCarb);
+        myList.appendChild(theFat);
+        myList.appendChild(theProtein);
+        myList.appendChild(theCalorie);
+        myList.appendChild(theSugar);
         
     }
-result.appendChild(cartao);     
+result.appendChild(myList);     
 const totalCarbs = document.getElementById('totalCarb');   
 const totalFat = document.getElementById('totalFat');
 const totalProtein = document.getElementById('totalProtein');
@@ -174,17 +174,11 @@ totalFat.innerHTML = `<strong>Total fat:</strong> ${sumFat}g`
 totalProtein.innerHTML = `<strong>Total protein:</strong> ${sumProtein}g`
 totalCalories.innerHTML = `<strong>Total calories:</strong> ${sumCalories}kcal`
 totalSugar.innerHTML = `<strong>Total sugar:</strong> ${sumSugar}g`            
-
-
-   
-    
-
-
     
 }
 const sum = function(selection) {
     const num = selection.reduce((acc, cur) => acc + cur, 0) 
-    return `${num.toFixed(2)}`
+    return `${num.toFixed(1)}`
 };
 
 const scrollToBottom = function() {

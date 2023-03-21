@@ -418,6 +418,13 @@ form label.top input , select, textarea{
     border: none;
     text-align: left;
 }
+#submit:hover,
+#clear:hover {
+    background-color: white;
+    color: var(--color1);
+    font-weight: bold;
+
+}
 
 
 
