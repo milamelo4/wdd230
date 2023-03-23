@@ -58,7 +58,7 @@
     .jolla-img {
         width: 400px;
     }
-    article {
+    div.imagem {
         padding-top: 10vh;
         padding-bottom: 10vw;
 
@@ -71,7 +71,7 @@
         display: flex;
 
     }
-    article.imagem {
+    div.imagem {
         background-attachment: fixed;
         background-color: white;
         color: white;
@@ -83,7 +83,7 @@
         display: none;
     }
 
-    article.imagem>p {
+    .imagem > p {
         background-color: #007f5f93;
         display: flex;
         line-height: 2em;
@@ -95,7 +95,7 @@
 
     }
 
-    article#img01 {
+    div#img01 {
         background-image: url(../images/para1.jpg);
         background-position: center;
         background-size: contain;
