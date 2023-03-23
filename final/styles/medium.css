@@ -71,7 +71,114 @@
         border: none;
         text-align: left;
     }
+    article {
+        padding-top: 10vh;
+        padding-bottom: 10vw;
+        
+        /*padding-left: 30px; */
+        font-family: var(--paragraph);
+        
+        width: 800px;
+        height: 600px;
+        margin: 20px auto;
+        display: flex;
 
+    }
+    
+    article.imagem {
+        background-attachment: fixed;
+        background-color: white;
+        color: white;
+        box-shadow: inset -7px -1px 23px 6px rgba(0, 0, 0, 0.473);
+
+    }
+    .imagem img {
+        display: none;
+    }
+
+    article.imagem>p {
+        background-color: #007f5f93;
+        display: flex;
+        line-height: 2em;
+        /* display: inline-block; */
+        text-shadow: 2px 2px 0px rgb(0, 0, 0);
+        width: 300px;
+        padding: 10px;
+        align-self: center;
+
+    }
+
+    article#img01 {
+        background-image: url(../images/para1.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 10px;
+
+    }
+    .images-about-us {
+        display: flex;
+        padding: 10px;
+    }
+    .images-about-us p {
+        position: static;
+        display: inline-block;
+        height: 180px;
+        margin: auto;
+        text-align: center;
+        line-height: 1.5em;
+        background-color: var(--color1);
+    }
+    .images-about-us img {
+        display: flex;
+        margin: auto;
+        box-shadow: 0 0 5px black;
+    }
+    .images-about-us h2{
+        text-align: center;
+        margin-left: 80px;
+        margin-right: auto;
+    }
+    .contact-container {
+        display: grid;
+        grid-template-columns: 500px auto;
+        gap: 5px;
+        margin: 0 auto;
+    }
+    .contact-container form{
+        display: grid;
+        grid-column: 1/2;
+       
+    }
+    .contact-container.hours {
+        display: grid;
+        grid-column: 2/3;
+        
+    }
+    .contact-container form fieldset{
+        width: 380px;
+    }
+    .contact-container h2 {
+        grid-column: span 3;
+    }
+    .hours-info {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    }
+    .hours{
+        background-color: var(--color8);
+        
+        text-align: center;
+        height: 230px;
+        margin-top: 30px;
+    }
+       
+       
+       
+        
+        
+
+
+    
     
    
 

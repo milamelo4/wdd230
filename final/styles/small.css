@@ -117,7 +117,8 @@ header #message, form {
 }
 
 
-.banner h1 {
+.banner h1,
+.about-page h1 {
     display: block;
     font-size: 32px;
     color: var(--color1);
@@ -126,12 +127,19 @@ header #message, form {
     
     
 }
+.about-page h1 {
+    margin-top: -5px;
+    padding-top: 10px;
+}
 main {
     display: block;
     background-color: #cce550;
     /* width: fit-content;*/
     margin: 0 auto;
     width: 400px;
+    overflow: auto;
+    margin-bottom: -5px;
+    
 }
 p {
     margin: 0.5rem;
@@ -141,7 +149,9 @@ p {
 .customize,
 .coastal,
 .cards1 h3,
-.weather h3 {
+.weather h3,
+.youmatter,
+.contact-container h2 {
     margin: 30px 0.5rem 10px 0.5rem;
     text-align: center;
 }
@@ -162,6 +172,7 @@ p {
     margin-right: auto;
     /* box-shadow: 0 0 10px white; */
     border: 1px solid var(--color1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.588);
 }
 .cards1 {
     display: grid;
@@ -171,32 +182,20 @@ p {
 .coastalp p {
     display: block;
     /* object-fit: contain;*/
-    width: 365px; 
+    width: 364px; 
     /* width: 400px; */
     background-color: rgb(246, 246, 146);
     margin-top: 0;
     /* margin-left: 0; */
-    padding: 0.2rem 0.5rem;
+    padding: 15px 0.5rem 0.2rem 0.5rem;
     margin-left: auto;
     margin-right: auto;
-
-    /* padding: 10px; */
-    /* margin-left: -1px; */
-    /* margin: 0 auto; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.588);
     border-left: 1px solid var(--color1);
     border-right: 1px solid var(--color1);
     border-bottom: 1px solid var(--color1);
-    /* box-shadow: 0 0 10px white; */
-    
 
 }
-/* section {
-    width: 390px;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-
 
 .image-container {
     position: relative;
@@ -244,8 +243,6 @@ p {
     margin: auto;
     font-size: 1.05rem;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.257);
-    /* z-index: 3; */
-
 }
 
 .makedrink:hover {
@@ -258,7 +255,6 @@ p {
 
 .customize {
     text-align: center;
-    /* margin-top: 40px; */
     padding: 5px;
 }
 .line {
@@ -319,17 +315,12 @@ p {
     background-color: rgb(246, 246, 146);
     
 } 
-.weatherTwo {
-    padding: 10px;
-}
-
-
+.weatherTwo,
 form {
     padding: 10px;
-    
 }
+
 form fieldset {
-    
     margin: 2rem auto;
     border: 2px solid var(--color2);
     background-color: #c6e8f89a;
@@ -341,11 +332,7 @@ form fieldset {
     font-weight: normal;
     
 }
-/* .nutrition {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(307px, 2fr));
-    gap: 0;
-} */
+
 #nutritionH2,
 #thankYou,
 #drinkName {
@@ -381,7 +368,7 @@ select {
     font-size: 16px;
     font-weight: bold;
 }
-form label.top input , select, textarea{
+form label.top input , select, textarea {
     /* -webkit-appearance: none; */
     display: block;
     font-size: 1rem;
@@ -393,7 +380,8 @@ form label.top input , select, textarea{
     max-width: 20rem;
     background-color: rgba(0, 0, 0, 0.1);
 }
-#submit, #clear {
+#submit, #clear,
+#button {
     border: none;
     background-color: var(--color1);
     color: white;
@@ -419,12 +407,48 @@ form label.top input , select, textarea{
     text-align: left;
 }
 #submit:hover,
-#clear:hover {
+#clear:hover,
+#button:hover {
     background-color: white;
     color: var(--color1);
     font-weight: bold;
 
 }
+.images-about-us {
+    display: block;
+}
+
+.images-about-us img{
+    margin-right: auto;
+    margin-left: 80px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 50px;
+}
+.images-about-us p{
+    position: absolute;
+    margin-top: -100px;
+    z-index: 2;
+}
+.hours,
+.our-info {
+    background-color: var(--color8);
+    padding: 10px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.679);
+    /* margin-top: -10px; */
+    width: 300px;
+    margin-bottom: 10px;
+    height: auto;
+    overflow: hidden;
+}
+
+.pin {
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.811);
+}
+
 
 
 
@@ -438,11 +462,20 @@ form label.top input , select, textarea{
    
     
 }
+.middle {
+    width: 200px;
+    height: auto;
+    background-color: #007f5fb7;
+    color: white;
+    padding: 10px;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0)
+}
 
 .foot-logo {
     width: 200px;
     padding: 5px;
     margin-top: 5px;
+    margin-left: 45px;
     box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.501)
 }
 
@@ -463,10 +496,10 @@ footer {
     display: block;
     width: 400px;
     text-align: center;
-    margin: 0 auto;
     background-color: rgb(246, 246, 146);
     padding-bottom: 10px;
     height: auto;
+    font-family: var(--paragraph);
 }
 .email:hover,
 map a:hover {
@@ -474,4 +507,5 @@ map a:hover {
     color: white;
     padding: 5px;
     margin-top: 5px;
+    
 }

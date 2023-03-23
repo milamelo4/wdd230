@@ -150,40 +150,11 @@ function formatDate(dateString) {
   return `${month}/${day}`;
 }
 
+let count = parseInt(localStorage.getItem('specialtyDrinksCount')) || 0;
 
-
-
-
-// const drinkAmount = document.getElementById('makedrink')
-// let numDrink = Number(localStorage.getItem('makedrink'))
-// if (numDrink !== 0) {
-//     drinkAmount.textContent = `You have made ${numDrink} drinks`
-
-// } else {
-//     drinkAmount.textContent = `You have made 0 drink`
-// }
-    
-// numDrink++
-// localStorage.setItem('makedrink', numDrink)
-  
-
-
-
-
-// const numDrinksDisplay = document.getElementById("makedrink");
-
-// // get the stored value in localStorage
-// let numDrinks = localStorage.numDrinks
-
-// // determine if this is the first visit or display the number of visits.
-// if (numDrinks !== 0) {
-//     numDrinksDisplay.textContent = numDrinks;
-    
-// } else {
-//     numDrinksDisplay.innerText = `You have made 0 drink`;
-//     localStorage.numDrinks = numDrinks;
-// }
-// numDrinks++
+// Update the count display on the page
+const countDisplay = document.getElementById('specialty-drinks-count');
+countDisplay.textContent = `You have made ${count} specialty drinks`;
 
 
 

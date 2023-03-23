@@ -191,3 +191,11 @@ const scrollToBottom = function() {
     return position
 
 }
+
+const form = document.getElementById('myForm');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  let count = parseInt(localStorage.getItem('specialtyDrinksCount')) || 0;
+  count++;
+  localStorage.setItem('specialtyDrinksCount', count);
+});
