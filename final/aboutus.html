@@ -50,8 +50,13 @@
         <h1>About Us</h1>
         <article class="imagem" id="img01">
             
-            
-            <img src="images/fruit_basket.jpg" alt="Images of fruits in a basket" loading="lazy" width="400">
+            <h2 class="hideme">hide me</h2>
+            <picture>
+                <source media="(max-width: 300px)" srcset="images/fruit_basket.jpg">
+                <source media="(max-width: 900px)" srcset="images/para.jpg">
+                <img src="images/para.jpg" alt="Images of fruits in a basket" loading="lazy" width="900">
+            </picture>
+            <!-- <img src="images/fruit_basket.jpg" alt="Images of fruits in a basket" loading="lazy" width="400"> -->
             <p>We started out as a family-owned and operated business, with the mission to provide healthy and delicious food options to the local population and to tourists visiting the coastal areas. We take pride in our work and are
             committed to providing the best possible service to our customers. </p>
         </article>
@@ -74,10 +79,10 @@
                     <legend>Contact Information</legend>
                     <label class="top">First Name<span>*</span> <input
                             type="text" name="firstname" required placeholder="First Name"
-                            autofocus></label>
+                            ></label>
                     <label class="top">Last Name<span>*</span> <input type="text"
                             name="lastname" required placeholder="Last Name"
-                            autofocus></label>
+                            ></label>
                     <label class="top">Email<span>*</span> <input type="email"
                             name="emails" required placeholder="joedoe@gmail.com"
                            ></label>
@@ -108,7 +113,7 @@
                                 target="_blank">📍Location Map</a></map>
                     </p>
                     <p><a class="email"
-                        href="mailto:bountifulfoods@gmail.com">bountifulfoods@gmail.com</a></p>
+                        href="mailto:bountifulfoodsproduce@gmail.com">bountifulfoodsproduce@gmail.com</a></p>
                     <p>Sales: (800) 872-7247</p>
                     <p>Local Store: (800) 872-7240</p>
                     <p>Food truck hours and location:</p>
