@@ -125,23 +125,17 @@ header #message, form {
     color: var(--color1);
     text-shadow: 1px 1px 2px white;
     text-align: center;
-    
-    
 }
-/* .about-page h1 {
-   
-    padding-top: 10px;
-} */
+
 main {
     display: block;
     background-color: #cce550;
-    /* width: fit-content;*/
     margin: 0 auto;
     width: 400px;
     overflow: auto;
     margin-bottom: -5px;
-    
 }
+
 p {
     margin: 0.5rem;
 }
@@ -156,6 +150,7 @@ p {
     margin: 30px 0.5rem 10px 0.5rem;
     text-align: center;
 }
+
 .local-store,
 .truck-deliver {
     margin: 0.5rem;
@@ -165,16 +160,15 @@ p {
 }
 .cards1 img {
     display: block;
-    /* margin: auto; */
     max-width: 100%;
     width: 380px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    /* box-shadow: 0 0 10px white; */
     border: 1px solid var(--color1);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.588);
 }
+
 .cards1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
@@ -182,12 +176,9 @@ p {
 }
 .coastalp p {
     display: block;
-    /* object-fit: contain;*/
     width: 364px; 
-    /* width: 400px; */
     background-color: rgb(246, 246, 146);
     margin-top: 0;
-    /* margin-left: 0; */
     padding: 15px 0.5rem 0.2rem 0.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -195,7 +186,6 @@ p {
     border-left: 1px solid var(--color1);
     border-right: 1px solid var(--color1);
     border-bottom: 1px solid var(--color1);
-
 }
 
 .image-container {
@@ -258,6 +248,7 @@ p {
     text-align: center;
     padding: 5px;
 }
+
 .line {
     height: 0.2px;
     width: 200px;
@@ -267,12 +258,15 @@ p {
 .coastalp img {
     border-bottom: none;
 }
+
 .weather {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
     gap: 5px;
 }
-.weather h3 {
+
+.weather h3,
+.weatherTwo h3 {
     display: block;
     text-align: center;
     padding-top: 10px;
@@ -283,39 +277,42 @@ p {
     text-align: center;
     font-family: var(--paragraph);
 }
+
 .weather img {
     width: 52px;
 }
+
 .cards {
     display: flex;
     flex-direction: row;
     padding-top: 0;
-    margin-top: -10px;
-    
 }
-.cards ul{
+
+.cards div{
     list-style: none;
     border: 2px solid white;
     background-color: var(--color1);
     color: white;
     padding: 2px;
     width: 130px;
-    height: 170px;
-
+    height: auto;
 }
-.cards ul li {
+
+.cards div p {
     padding: 5px;
     font-weight: bold;
 }
-.cards ul li:nth-child(1) {
+
+.cards p:nth-child(1) {
     border: 2px solid white;
-    margin-bottom: 10px;
 }
+
 .weatherOne {
     border: 10px solid #cce550;
     background-color: rgb(246, 246, 146);
     
 } 
+
 .weatherTwo,
 form {
     padding: 10px;
@@ -329,9 +326,9 @@ form fieldset {
     padding: .5rem 2%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.361);
 }
+
 .theOrder, .nutrition {
     font-weight: normal;
-    
 }
 
 #nutritionH2,
@@ -351,24 +348,27 @@ form legend {
     background-color: var(--color1);
     border-radius: 10px;
 }
+
 form label span {
     color: red;
     font-weight: bold;
 }
+
 label.top {
     display: block;
     padding-top: 1rem;
     margin-top: -20px;
     font-size: 16px;
     font-weight: bold;
-    
 }
+
 select {
     display: block;
     padding-top: 1rem;
     font-size: 16px;
     font-weight: bold;
 }
+
 form label.top input , select, textarea {
     /* -webkit-appearance: none; */
     display: block;
@@ -381,6 +381,7 @@ form label.top input , select, textarea {
     max-width: 20rem;
     background-color: rgba(0, 0, 0, 0.1);
 }
+
 #submit, #clear,
 #button {
     border: none;
@@ -394,6 +395,7 @@ form label.top input , select, textarea {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.496);
     cursor: pointer;
 }
+
 .selectedFruit {
     background-color: var(--color1);
     color: white;
@@ -403,18 +405,20 @@ form label.top input , select, textarea {
     font-weight: bold;
     border-radius: 54%;
 }
+
 .totalp{
     border: none;
     text-align: left;
 }
+
 #submit:hover,
 #clear:hover,
 #button:hover {
     background-color: white;
     color: var(--color1);
     font-weight: bold;
-
 }
+
 .images-about-us {
     display: block;
 }
@@ -426,11 +430,13 @@ form label.top input , select, textarea {
     position: relative;
     margin-bottom: 50px;
 }
+
 .images-about-us p{
     position: absolute;
     margin-top: -100px;
     z-index: 2;
 }
+
 .hours,
 .our-info {
     background-color: var(--color8);
@@ -439,7 +445,6 @@ form label.top input , select, textarea {
     margin-right: auto;
     margin-left: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.679);
-    /* margin-top: -10px; */
     width: 300px;
     margin-bottom: 10px;
     height: auto;
@@ -449,30 +454,20 @@ form label.top input , select, textarea {
 .pin {
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.811);
 }
-.hideme {
-    display: none;
-}
+
 .imagem p {
     background-color: white;
     padding: 10px;
 }
 .imagem img {
     max-width: 100%;
-    
 }
-
-
-
-
-
-
 
 .back {
     float: right;
     padding: 5px;
-   
-    
 }
+
 .middle {
     width: 200px;
     height: auto;
@@ -495,13 +490,13 @@ form label.top input , select, textarea {
     margin-top: 5px;
     padding: 5px;
 }
+
 .email,
 map > a {
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
 }
-
 
 footer {
     display: block;

@@ -13,7 +13,6 @@
         text-align: center;
     }
     header #message {
-
         position: absolute;
         font-size: 32px;
         top: 15px;
@@ -30,23 +29,22 @@
         display: grid;
     }
     .weatherTwo {
-       margin-top: -10px;
+       margin-top: -30px;
     }
 
     section {
         margin: 0.5rem;
         padding: 0.5rem;
-        /* background-color: var(--color1); */
-        /* border: 1px solid var(--color1); */
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
+    
     .alldrink {
         box-shadow: 1px 1px  5px rgba(0, 0, 0, 0.598);
         border: 1px solid white;
     }
+
     .back {
         display: none;
     }
@@ -61,9 +59,6 @@
         display: block;
     }
     
-
-    
-
     .theOrder,
     .nutrition {
         font-weight: normal;
@@ -85,6 +80,7 @@
         display: flex;
         padding: 10px;
     }
+
     .images-about-us p {
         position: static;
         display: inline-block;
@@ -94,27 +90,32 @@
         line-height: 1.5em;
         background-color: var(--color1);
     }
+
     .images-about-us img {
         display: flex;
         margin: auto;
         box-shadow: 0 0 5px black;
     }
+
     .images-about-us h2{
         text-align: center;
         margin-left: 80px;
         margin-right: auto;
     }
+
     .contact-container {
         display: grid;
         grid-template-columns: 500px auto;
         gap: 5px;
         margin: 0 auto;
     }
+    
     .contact-container form{
         display: grid;
         grid-column: 1/2;
        
     }
+    
     .contact-container.hours {
         display: grid;
         grid-column: 2/3;
@@ -123,15 +124,17 @@
     .contact-container form fieldset{
         width: 380px;
     }
+
     .contact-container h2 {
         grid-column: span 3;
     }
+
     .hours-info {
         grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
     }
+
     .hours{
         background-color: var(--color8);
-        
         text-align: center;
         height: 230px;
         margin-top: 30px;

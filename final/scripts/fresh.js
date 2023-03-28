@@ -22,10 +22,12 @@ const displayInfo = (information) => {
     const card2 = document.querySelector('#fruit2');
     const card3 = document.querySelector('#fruit3');
 
+//Call function that creates select options
     information.forEach((info) => {
         createOptions(info, cards, card2, card3);
     });
 
+//Add event listener for form and append select items to the array    
     const form = document.getElementById('myForm');
     form.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -37,10 +39,14 @@ const displayInfo = (information) => {
             const selectedOption = selectElement.options[selectElement.selectedIndex].value;
             selectedOptions.push(selectedOption);
         }
+//Call displaySelectedFruits from option        
         displaySelectedFruits(selectedOptions, information);
+//Call scrollToBottom where the info its displayed        
         scrollToBottom();
     });
 };
+
+//Create form and retrieve info from json file
 const createOptions = (info, cards, card2, card3) => {
     const names = document.createElement('option');
     const name2 = document.createElement('option');
@@ -66,6 +72,7 @@ const createOptions = (info, cards, card2, card3) => {
     card2.appendChild(group2);
     card3.appendChild(group3);
 };
+//Form information updated
 const updateInfo = (information) => {
     const thankYou = document.getElementById('thankYou');
     const fname = document.getElementById('fname').value;
@@ -89,8 +96,10 @@ const updateInfo = (information) => {
     phone.innerHTML = `<strong>Phone:</strong> ${iphone}`
     message.innerHTML = `<strong>Special Instructions:</strong> ${imessage}`
 };
+
+//DisplaySelectedFruits by creating an empty list to store nutrition information for each fruit selected
 const displaySelectedFruits = (selectedOptions, information) => {
-    const h2 = document.getElementById('nutritionH2')
+    const h2 = document.getElementById('nutritionH2');
     h2.innerHTML = `Nutrition per fruit selected`
 
     const selectedFruits = [];
@@ -101,12 +110,14 @@ const displaySelectedFruits = (selectedOptions, information) => {
     const selecSugar = []
     const selecNames = []
 
+//Get drink name    
     const drinkChoice = document.getElementById('drinkName');
     for (let s = 0; s < selectedOptions.length; s++) {
         const selectedFruit = information.find(fruit => fruit.name === selectedOptions[s]);
         selectedFruits.push(selectedFruit);
     };
-    
+
+//Get nutrition based on fruits selected and append to list    
     const myList = document.createElement('ul');
     for (let j = 0; j < selectedFruits.length; j++) {
         const selectedFruit = selectedFruits[j];
@@ -127,10 +138,11 @@ const displaySelectedFruits = (selectedOptions, information) => {
         const theProtein = document.createElement('li');
         const theCalorie = document.createElement('li');
         const theSugar = document.createElement('li');
-        const theFruit = document.createElement('div')
+        const theFruit = document.createElement('li')
 
         theFruit.classList.add('selectedFruit')
-        
+
+//Display nutrition information for each fruit        
         theFruit.textContent = `--- ${selectedFruit.name} ---`
         theCarb.textContent = `Carbohydrates: ${nutrition.carbohydrates}g`;
         theFat.textContent = `Fat: ${nutrition.fat}g`;
@@ -163,12 +175,14 @@ const totalProtein = document.getElementById('totalProtein');
 const totalCalories = document.getElementById('totalCalories');
 const totalSugar = document.getElementById('totalSugar');
 
+//Call the sum function and passed the array i need the total sum
 let sumCarbs = sum(selecCarbs);
 let sumFat = sum(selecFat);
 let sumProtein = sum(selecProtein);
 let sumCalories = sum(selecCalories);
 let sumSugar = sum(selecSugar);
 
+//Insert the sum to the corresponding html tag
 drinkChoice.innerHTML = `Drink choice: "${selecNames.join(' ')}"`
 totalCarbs.innerHTML = `<strong>Total carbohydrates:</strong> ${sumCarbs}g`
 totalFat.innerHTML = `<strong>Total fat:</strong> ${sumFat}g`
@@ -193,6 +207,7 @@ const scrollToBottom = function() {
 
 }
 
+//Get drink count from user using localStorage
 const form = document.getElementById('myForm');
 form.addEventListener('submit', (event) => {
   event.preventDefault();

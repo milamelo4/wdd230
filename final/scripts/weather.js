@@ -27,7 +27,7 @@ getWeather();
 
 function capitalize(str) {
     return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') 
-}
+};
 
 function displayWeather(weatherData) {
     currTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}°F`
@@ -65,9 +65,6 @@ function displayWeather(weatherData) {
     weatherIcon.setAttribute('width', '64')
     condition.textContent = desc
 
-       
-
-
 }
 async function forecastApi() {
     try {
@@ -93,10 +90,10 @@ const displayForecast = (forecastData) => {
                     let getList = forecastData.list[i]
                     //console.log(getList)
                     if (getList.dt_txt.slice(-8) == "18:00:00") {
-                        let card = document.createElement('ul')
-                        let theDate = document.createElement('li')
-                        let temperature = document.createElement('li')
-                        let condition = document.createElement('li')
+                        let card = document.createElement('div')
+                        let theDate = document.createElement('p')
+                        let temperature = document.createElement('p')
+                        let condition = document.createElement('p')
                         let icons = document.createElement('img')
                         let myIcon = getList.weather[0].description
                         let iconsrc;
@@ -130,7 +127,6 @@ const displayForecast = (forecastData) => {
                         icons.setAttribute('alt', `${myIcon} for day ${forecastDate}`)
                         icons.setAttribute('width', '50')
                         icons.setAttribute('loading', 'lazy')
-                        
                         
                         card.appendChild(theDate)
                         card.appendChild(icons)

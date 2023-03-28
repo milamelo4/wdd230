@@ -5,9 +5,6 @@
     }
     nav {
         margin-top: 0px;
-        /* border-top: 5px solid var(--color1);
-        border-right: 5px solid var(--color1);
-        border-bottom: 5px solid var(--color1); */
         grid-column: 2/4;
         justify-self: end;
         align-self: flex-end;
@@ -55,28 +52,26 @@
         right: 50px;
         top: 60px;
     }
+
     .jolla-img {
         width: 400px;
     }
+
     div.imagem {
         padding-top: 10vh;
         padding-bottom: 10vw;
-
-        /*padding-left: 30px; */
         font-family: var(--paragraph);
-
         width: 800px;
         height: 600px;
         margin: 20px auto;
         display: flex;
-
     }
+
     div.imagem {
         background-attachment: fixed;
         background-color: white;
         color: white;
         box-shadow: inset -7px -1px 23px 6px rgba(0, 0, 0, 0.473);
-
     }
 
     .imagem img {
@@ -87,12 +82,10 @@
         background-color: #007f5f93;
         display: flex;
         line-height: 2em;
-        /* display: inline-block; */
         text-shadow: 2px 2px 0px rgb(0, 0, 0);
         width: 300px;
         padding: 10px;
         align-self: center;
-
     }
 
     div#img01 {
@@ -101,12 +94,6 @@
         background-size: contain;
         background-repeat: no-repeat;
         padding: 10px;
-        max-width: 9000px;
-
+        max-width: 900px;
     }
-    
-    
-
-
-
 }
