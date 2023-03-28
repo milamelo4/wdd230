@@ -79,10 +79,10 @@
     }
 
     .imagem > p {
-        background-color: #007f5f93;
+        background-color: #007f5fa6;
         display: flex;
         line-height: 2em;
-        text-shadow: 2px 2px 0px rgb(0, 0, 0);
+        text-shadow: 1px 1px 0px rgb(0, 0, 0);
         width: 300px;
         padding: 10px;
         align-self: center;

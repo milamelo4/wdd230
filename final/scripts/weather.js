@@ -81,7 +81,7 @@ async function forecastApi() {
     }
     
 }
-forecastApi()
+forecastApi();
 
 const displayForecast = (forecastData) => {
     const cards = document.querySelector('div.cards');
