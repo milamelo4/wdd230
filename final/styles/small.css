@@ -118,7 +118,8 @@ header #message, form {
 
 
 .banner h1,
-.about-page h1 {
+.about-page h1,
+.source h1 {
     display: block;
     font-size: 32px;
     color: var(--color1);

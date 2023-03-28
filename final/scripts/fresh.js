@@ -16,6 +16,7 @@ async function getApi() {
 }
 getApi();
 
+//Display information for each fruit
 const displayInfo = (information) => {
     const cards = document.querySelector('#fruit1');
     const card2 = document.querySelector('#fruit2');
