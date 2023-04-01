@@ -193,7 +193,7 @@ p {
 .image-container {
     position: relative;
     width: 400px;
-    height: 540px;
+    height: 600px;
     background-color: var(--color1);
     margin: auto;
 }
@@ -209,7 +209,7 @@ p {
 
 .image2 {
     position: absolute;
-    top: 220px;
+    top: 260px;
     right: 20px;
     transform: rotate(-10deg);
     z-index: 1;
@@ -224,7 +224,7 @@ p {
 }
 .makedrink {
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     right: 15px;
     font-family: var(--paragraph);
     padding: 15px;

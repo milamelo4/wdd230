@@ -39,6 +39,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .image-container {
+        width: 500px;
+    }
     
     .alldrink {
         box-shadow: 1px 1px  5px rgba(0, 0, 0, 0.598);
