@@ -102,7 +102,9 @@ nav a:hover {
 
 .logo img {
     margin: 0.5rem;
-    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.501);
+    padding: .2rem;
+    border: 2px solid var(--color7);
+    background-color: var(--color8);
 }
 
 header #message, form {
@@ -479,10 +481,12 @@ form label.top input , select, textarea {
 
 .foot-logo {
     width: 200px;
-    padding: 5px;
+    /* padding: 5px; */
     margin-top: 5px;
     margin-left: 45px;
-    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.501)
+    padding: .2rem;
+    border: 2px solid var(--color7);
+    background-color: var(--color8);
 }
 
 .email-phone-map {
