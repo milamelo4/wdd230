@@ -162,6 +162,7 @@ p {
 }
 .cards1 img {
     display: block;
+    padding: 5px;
     max-width: 100%;
     width: 380px;
     height: auto;

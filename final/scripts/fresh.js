@@ -110,7 +110,7 @@ const displaySelectedFruits = (selectedOptions, information) => {
     const selecSugar = []
     const selecNames = []
 
-//Get drink name    
+//Get drink name from selected options   
     const drinkChoice = document.getElementById('drinkName');
     for (let s = 0; s < selectedOptions.length; s++) {
         const selectedFruit = information.find(fruit => fruit.name === selectedOptions[s]);
@@ -138,11 +138,11 @@ const displaySelectedFruits = (selectedOptions, information) => {
         const theProtein = document.createElement('li');
         const theCalorie = document.createElement('li');
         const theSugar = document.createElement('li');
-        const theFruit = document.createElement('li')
+        const theFruit = document.createElement('li');
 
         theFruit.classList.add('selectedFruit')
 
-//Display nutrition information for each fruit        
+//Display nutrition information for each fruit selected        
         theFruit.textContent = `--- ${selectedFruit.name} ---`
         theCarb.textContent = `Carbohydrates: ${nutrition.carbohydrates}g`;
         theFat.textContent = `Fat: ${nutrition.fat}g`;
@@ -153,14 +153,14 @@ const displaySelectedFruits = (selectedOptions, information) => {
         theCarb.style.marginTop = '10px';
         theFruit.style.marginTop = '10px'
 
-        selecNames.push(fruitsName)
-        selecCarbs.push(carbs)
-        selecFat.push(fat)
-        selecCalories.push(calorie)
-        selecProtein.push(protein)
-        selecSugar.push(sugar)
+        selecNames.push(fruitsName);
+        selecCarbs.push(carbs);
+        selecFat.push(fat);
+        selecCalories.push(calorie);
+        selecProtein.push(protein);
+        selecSugar.push(sugar);
 
-        myList.appendChild(theFruit)
+        myList.appendChild(theFruit);
         myList.appendChild(theCarb);
         myList.appendChild(theFat);
         myList.appendChild(theProtein);
