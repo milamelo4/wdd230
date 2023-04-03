@@ -101,14 +101,14 @@ const updateInfo = (information) => {
 const displaySelectedFruits = (selectedOptions, information) => {
     const h2 = document.getElementById('nutritionH2');
     h2.innerHTML = `Nutrition per fruit selected`
-
+//Create arrays to push nutri info to then calculate the sum
     const selectedFruits = [];
-    const selecCarbs = []
-    const selecFat = []
-    const selecProtein = []
-    const selecCalories = []
-    const selecSugar = []
-    const selecNames = []
+    const selecCarbs = [];
+    const selecFat = [];
+    const selecProtein = [];
+    const selecCalories = [];
+    const selecSugar = [];
+    const selecNames = [];
 
 //Get drink name from selected options   
     const drinkChoice = document.getElementById('drinkName');
@@ -123,12 +123,20 @@ const displaySelectedFruits = (selectedOptions, information) => {
         const selectedFruit = selectedFruits[j];
         const nutrition = selectedFruit.nutritions;
 
-        const fruitsName = selectedFruit.name
-        const carbs = nutrition.carbohydrates
-        const fat = nutrition.fat
-        const protein = nutrition.protein
-        const calorie = nutrition.calories
-        const sugar = nutrition.sugar
+        const fruitsName = selectedFruit.name;
+        const carbs = nutrition.carbohydrates;
+        const fat = nutrition.fat;
+        const protein = nutrition.protein;
+        const calorie = nutrition.calories;
+        const sugar = nutrition.sugar;
+
+        //Push selected elements to the right array
+        selecNames.push(fruitsName);
+        selecCarbs.push(carbs);
+        selecFat.push(fat);
+        selecCalories.push(calorie);
+        selecProtein.push(protein);
+        selecSugar.push(sugar);
         
         const result = document.getElementById('result');
         result.innerHTML = ''
@@ -140,7 +148,7 @@ const displaySelectedFruits = (selectedOptions, information) => {
         const theSugar = document.createElement('li');
         const theFruit = document.createElement('li');
 
-        theFruit.classList.add('selectedFruit')
+        theFruit.classList.add('selectedFruit');
 
 //Display nutrition information for each fruit selected        
         theFruit.textContent = `--- ${selectedFruit.name} ---`
@@ -152,13 +160,6 @@ const displaySelectedFruits = (selectedOptions, information) => {
         
         theCarb.style.marginTop = '10px';
         theFruit.style.marginTop = '10px'
-
-        selecNames.push(fruitsName);
-        selecCarbs.push(carbs);
-        selecFat.push(fat);
-        selecCalories.push(calorie);
-        selecProtein.push(protein);
-        selecSugar.push(sugar);
 
         myList.appendChild(theFruit);
         myList.appendChild(theCarb);
@@ -196,6 +197,7 @@ const sum = function(selection) {
     return `${num.toFixed(1)}`
 };
 
+//Get the class .theOrder for position on screen
 const scrollToBottom = function() {
     const element = document.querySelector('.theOrder')
     const position = element.offsetTop
@@ -205,9 +207,9 @@ const scrollToBottom = function() {
     });
     return position
 
-}
+};
 
-//Get drink count from user using localStorage
+//Get drink count from user using localStorage getItem, setItem, then use getItem to display on home
 const form = document.getElementById('myForm');
 form.addEventListener('submit', (event) => {
   event.preventDefault();

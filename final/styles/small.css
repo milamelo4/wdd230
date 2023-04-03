@@ -68,9 +68,7 @@ nav ul li a {
 nav ul li.active a {
     background-color: var(--color2);
     color: black;
-   
 }
-
 nav a:hover {
     color: var(--color1);
     background-color: var(--color9);
@@ -158,7 +156,6 @@ p {
     margin: 0.5rem;
     background-color: white;
     padding: 5px;
-
 }
 
 .cards1 img {
@@ -181,10 +178,8 @@ p {
     display: block;
     width: 364px; 
     background-color: rgb(246, 246, 146);
-    margin-top: 0;
     padding: 15px 0.5rem 0.2rem 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.588);
     border-left: 1px solid var(--color1);
     border-right: 1px solid var(--color1);
@@ -227,7 +222,6 @@ p {
     position: absolute;
     bottom: 40px;
     right: 15px;
-    font-family: var(--paragraph);
     padding: 15px;
     background-image: linear-gradient(to right, #144a5a, var(--color1));
     background-size: 200% 100%;
@@ -268,23 +262,12 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
     gap: 5px;
+    text-align: center;
 }
 
-.weather h3,
-.weatherTwo h3 {
+.weather h3{
     display: block;
     text-align: center;
-    padding-top: 10px;
-}
-
-.weather {
-    display: block;
-    text-align: center;
-    font-family: var(--paragraph);
-}
-
-.weather img {
-    width: 52px;
 }
 
 .cards {
@@ -294,7 +277,6 @@ p {
 }
 
 .cards div{
-    list-style: none;
     border: 2px solid white;
     background-color: var(--color1);
     color: white;
@@ -332,7 +314,8 @@ form fieldset {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.361);
 }
 
-.theOrder, .nutrition {
+.theOrder, 
+.nutrition {
     font-weight: normal;
 }
 
@@ -387,7 +370,8 @@ form label.top input , select, textarea {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-#submit, #clear,
+#submit, 
+#clear,
 #button {
     border: none;
     background-color: var(--color1);
@@ -423,11 +407,6 @@ form label.top input , select, textarea {
     color: var(--color1);
     font-weight: bold;
 }
-
-.images-about-us {
-    display: block;
-}
-
 .images-about-us img{
     margin-right: auto;
     margin-left: 80px;
@@ -447,11 +426,9 @@ form label.top input , select, textarea {
     background-color: var(--color8);
     padding: 10px;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.679);
     width: 300px;
-    margin-bottom: 10px;
+    margin: 0 auto 10px ; 
     height: auto;
     overflow: hidden;
 }
@@ -484,7 +461,6 @@ form label.top input , select, textarea {
 
 .foot-logo {
     width: 200px;
-    /* padding: 5px; */
     margin-top: 5px;
     margin-left: 45px;
     padding: .2rem;

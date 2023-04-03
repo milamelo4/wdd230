@@ -60,10 +60,10 @@ function displayWeather(weatherData) {
     //console.log(`speed${wind}`)
 
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc)
-    weatherIcon.setAttribute('loading', 'lazy')
-    weatherIcon.setAttribute('width', '64')
-    condition.textContent = desc
+    weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('loading', 'lazy');
+    weatherIcon.setAttribute('width', '50');
+    condition.textContent = desc;
 
 }
 async function forecastApi() {
@@ -119,32 +119,31 @@ const displayForecast = (forecastData) => {
 
                         let forecastDate = new Date(getList.dt * 1000);
                         theDate.textContent = formatDate(forecastDate)
-                        
 
-                        temperature.textContent = `${(getList.main.temp).toFixed(0)}°F`
-                        condition.textContent = capitalize(getList.weather[0].description)
+                        temperature.textContent = `${(getList.main.temp).toFixed(0)}°F`;
+                        condition.textContent = capitalize(getList.weather[0].description);
                         icons.setAttribute('src', iconsrc);
-                        icons.setAttribute('alt', `${myIcon} for day ${forecastDate}`)
-                        icons.setAttribute('width', '50')
-                        icons.setAttribute('loading', 'lazy')
+                        icons.setAttribute('alt', `${myIcon} for day ${forecastDate}`);
+                        icons.setAttribute('width', '50');
+                        icons.setAttribute('loading', 'lazy');
                         
-                        card.appendChild(theDate)
-                        card.appendChild(icons)
-                        card.appendChild(temperature)
-                        card.appendChild(condition)
-                        cards.appendChild(card)
+                        card.appendChild(theDate);
+                        card.appendChild(icons);
+                        card.appendChild(temperature);
+                        card.appendChild(condition);
+                        cards.appendChild(card);
                     }
                 }
     }
-}
+};
    
-
+//Format timestamp from weather
 function formatDate(dateString) {
   const date = new Date(dateString);
   const month = String(date.getMonth() + 1).padStart(2, '0');
   const day = String(date.getDate()).padStart(2, '0');
   return `${month}/${day}`;
-}
+};
 
 let count = parseInt(localStorage.getItem('specialtyDrinksCount')) || 0;
 

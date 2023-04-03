@@ -53,14 +53,7 @@
         top: 60px;
     }
 
-    .jolla-img {
-        width: 400px;
-    }
-
     div.imagem {
-        padding-top: 10vh;
-        padding-bottom: 10vw;
-        font-family: var(--paragraph);
         width: 800px;
         height: 600px;
         margin: 20px auto;

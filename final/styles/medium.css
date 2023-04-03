@@ -91,7 +91,6 @@
 
     .images-about-us p {
         position: static;
-        display: inline-block;
         height: 180px;
         margin: auto;
         text-align: center;
@@ -142,8 +141,6 @@
     }
 
     .hours{
-        background-color: var(--color8);
-        text-align: center;
         height: 230px;
         margin-top: 30px;
     }
