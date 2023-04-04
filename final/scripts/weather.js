@@ -88,7 +88,7 @@ const displayForecast = (forecastData) => {
         if (typeof forecastData.list === 'object' && forecastData.list !== null && Array.isArray(forecastData.list)) {
                 for (i = 0; i < 24; i++) {
                     let getList = forecastData.list[i]
-                    console.log(getList)
+                    //console.log(getList)
                     if (getList.dt_txt.slice(-8) == "12:00:00") {
                         let card = document.createElement('div')
                         let theDate = document.createElement('p')
