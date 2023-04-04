@@ -147,7 +147,7 @@ function formatDate(dateString) {
 
 let count = parseInt(localStorage.getItem('specialtyDrinksCount')) || 0;
 
-// Update the count display on the page
+// Update the count display on the page using getItem(name)
 const countDisplay = document.getElementById('specialty-drinks-count');
 countDisplay.textContent = `You have made ${count} specialty drinks`;
 
