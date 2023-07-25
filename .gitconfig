@@ -1,0 +1,10 @@
+[user]
+	name = milamelo4
+	email = mel19009@byui.edu
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[core]
+	fsmonitor = true
